@@ -1,317 +1,252 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="zh-CN">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>
-        数学分析三千年03：编者序 - Colin's blog 
-    </title>
-    <style>
-        body {
-            font-family: 'Times New Roman', serif; /* 模拟印刷字体 */
-            line-height: 1.6;
-            margin: 2cm auto; /* 模拟页面边距 */
-            max-width: 15cm; /* 模拟内容宽度 */
-            padding: 0 1cm;
-            text-align: justify; /* 两端对齐 */
-        }
+  <meta charset="utf-8">
+  
+  <title>数学分析三千年03：编者序 | Colin&#39;s blog</title>
+  <meta name="author" content="Colin Zhu">
+  
+  <meta name="description" content="Colin`s articles about AI, Web3, Financial, Knowledge Management and Mathematics">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        .page-container {
-            position: relative;
-            margin-bottom: 3cm; /* 模拟页面间的间距 */
-            padding-top: 1.5cm; /* 顶部留出页眉空间 */
-            padding-bottom: 1.5cm; /* 底部留出页码空间 */
-            min-height: 25cm; /* 模拟页面高度，确保页脚位置 */
-            box-sizing: border-box; /* 边框盒模型，内边距计入总尺寸 */
-        }
+  <meta property="og:title" content="数学分析三千年03：编者序"/>
+  <meta property="og:site_name" content="Colin&#39;s blog"/>
 
-        /* 运行页眉样式（页码和标题） */
-        .page-header {
-            position: absolute;
-            top: 1cm; /* 距离页面顶部1cm */
-            left: 0;
-            right: 0;
-            font-size: 0.9em;
-            color: #555;
-            display: flex; /* 使用 Flexbox 进行布局 */
-            justify-content: space-between; /* 子元素两端对齐 */
-            align-items: baseline; /* 基线对齐 */
-            width: 100%; /* 宽度占满内容区域 */
-        }
+  
+    <meta property="og:image" content=""/>
+  
 
-        /* 首页主标题样式 */
-        .main-title {
-            text-align: center;
-            font-size: 1.5em; /* 主标题字体更大 */
-            margin-top: 0;
-            margin-bottom: 1em;
-        }
+  <link rel="shortcut icon" href="/favicon.png">
+  <style>
+    body {
+        font-family: 'Times New Roman', serif; /* 模拟印刷字体 */
+        line-height: 1.6;
+        margin: 2cm auto; /* 模拟页面边距 */
+        max-width: 15cm; /* 模拟内容宽度 */
+        padding: 0 1cm;
+        text-align: justify; /* 两端对齐 */
+    }
 
-        /* 首页页脚（页码）样式 */
-        .page-footer {
-            position: absolute;
-            bottom: 1cm; /* 距离页面底部1cm */
-            right: 0;
-            font-size: 0.9em;
-            color: #555;
-        }
+    .page-container {
+        position: relative;
+        margin-bottom: 3cm; /* 模拟页面间的间距 */
+        padding-top: 1.5cm; /* 顶部留出页眉空间 */
+        padding-bottom: 1.5cm; /* 底部留出页码空间 */
+        min-height: 25cm; /* 模拟页面高度，确保页脚位置 */
+        box-sizing: border-box; /* 边框盒模型，内边距计入总尺寸 */
+    }
 
-        /* 作者签名样式 */
-        .author-signature {
-            text-align: right;
-            margin-top: 2em;
-        }
-    </style>
-    
-<link rel="stylesheet" href="/css/grid.css">
+    /* 运行页眉样式（页码和标题） */
+    .page-header {
+        position: absolute;
+        top: 1cm; /* 距离页面顶部1cm */
+        left: 0;
+        right: 0;
+        font-size: 0.9em;
+        color: #555;
+        display: flex; /* 使用 Flexbox 进行布局 */
+        justify-content: space-between; /* 子元素两端对齐 */
+        align-items: baseline; /* 基线对齐 */
+        width: 100%; /* 宽度占满内容区域 */
+    }
 
-    
-<link rel="stylesheet" href="/css/custom.css">
+    /* 首页主标题样式 */
+    .main-title {
+        text-align: center;
+        font-size: 1.5em; /* 主标题字体更大 */
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
 
-    
-<link rel="stylesheet" href="/css/ringo.css">
+    /* 首页页脚（页码）样式 */
+    .page-footer {
+        position: absolute;
+        bottom: 1cm; /* 距离页面底部1cm */
+        right: 0;
+        font-size: 0.9em;
+        color: #555;
+    }
 
-     
-        <link rel="icon" type="image/x-icon" href="/img/favicon.ico " />
-     
-     
-     
-        <meta name=" " content="" />
-     
-        <meta name=" " content="" />
-     
- 
+    /* 作者签名样式 */
+    .author-signature {
+        text-align: right;
+        margin-top: 2em;
+    }
+</style>
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
 <meta name="generator" content="Hexo 7.3.0"></head>
 
-  <body>
-    <header id="header" class="clearfix" onclick="window.open('/', '_self')">
-    <div class="site-name">
-        <a href="/" id="logo" class="site-title">
-            Colin&#39;s blog
-        </a>
-        <p class="description site-description">
-            <span style="padding-top:20px; font-size: 10px">
-                AI, Web3 and Mathematics
-            </span>
-        </p>
-    </div>
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Colin&#39;s blog</a></h1>
+  <h2><a href="/">AI, Web3 and Mathematics</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/null">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
 </header>
-<div id="sidebar" role="complementary">
-    <section class="widget">
-        <ul class="menu widget-list">
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-数学分析三千年03：编者序" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2025-06-19T03:17:43.000Z"><a href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B403%EF%BC%9A%E7%BC%96%E8%80%85%E5%BA%8F/">2025-06-19</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">数学分析三千年03：编者序</h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+        <div class="page-container">
+            <h1 class="main-title">作者序</h1>
+            <p>作为作者，我非常高兴本书的德文版（2011年首次出版）受到了广泛好评。事实上，2016年又出版了包含修正和增补的第二版。我的著作《莱布尼茨与牛顿优先权之争的历史》（Die Geschichte des Prioritätsstreits zwischen Leibniz und Newton）的英文译本《牛顿与莱布尼茨优先权之争的历史》于2018年由Birkhauser出版后，我敬爱的“语言编辑”帕特·莫顿不愿退休，反而热衷于开始另一项翻译工作，于是我便着手翻译《3000年分析学》的第二版。现在，它已面世。</p>
+            <p>本书的德文版在数学史系列丛书中有着一些先驱：《6000年数学》、《5000年几何学》、《4000年代数学》，其中只有几何学卷迄今为止被翻译成英文。将分析学史卷加入该系列，从而使分析学史对感兴趣的非专业人士和更广泛的受众开放，这似乎是合乎逻辑的。</p>
+            <p>本卷之所以在该系列中脱颖而出，原因如下。该系列中的所有书籍都旨在以可读的形式呈现科学上可靠的事实，以传达数学的乐趣及其历史发展。然而，虽然数学的文化史可以在不涉及太多数学细节的情况下呈现，几何学可以通过其构造的历史以精美的图画描述，代数学史（至少在19世纪之前）可以从相当基本的数学思考中发展出来，但这种概念在分析学中自然会失效。本质上，分析学是关于无限的科学；即无限大和无限小。它的根源已存在于前苏格拉底哲学家的残篇及其对“连续体”的思考中，以及空间和时间是“连续”的还是由“原子”构成的这一紧迫问题中。分析学的根源甚至可以追溯到法老和巴比伦的时代，希腊人从那里获得了部分知识。但最迟到阿基米德（约公元前287-212年），分析学已经达到了成熟阶段，这要求我的读者积极参与。无论如何想象，如果不彻底研究一些例子，用笔和纸理解其背后的数学，就无法领会阿基米德分析学的意义。尽管在阿基米德之后，这些知识再次被埋没在黑暗中，但最迟在文艺复兴时期它又重新焕发生机，分析学取得了巨大的进步；这门科学再次需要读者的关注！姑且用一种诗意的方式来说：分析学原来是一位苛求的情人，人们必须臣服于她才能获得一些理解。</p>
+            <p>但请不要害怕！我的这些话并不是要劝退你；相反，它们旨在增加你对本书内容的兴趣。你需要不时地思考，但之后你将对数学最重要的学科之一获得深刻而令人满意的见解，</p>
             
-        </ul>
-    </section>
-    <section class="widget sidebar-foot">
-        <ul class="widget-list">
-            <li>Theme <a rel="nofollow" target="_blank" href="https://github.com/HeliumOI/hexo-theme-ringo">Ringo</a>
-                by <a target="_blank" href="/ "> Colin Zhu  </a></li>
-            <li>Proudly powered by  <a rel="nofollow" target="_blank" href="https://hexo.io/">Hexo</a></li>
-        </ul>
-    </section>
-</div>
-
-<div id="helpbar">
-    <div class="back-to-top">
-        <button id="back2top">↑</button>
-        <script>
-            back2top.onclick = function() {
-                var movement = document.body.scrollTop || document.documentElement.scrollTop;
-                scrollBy(0, -movement);
-            }
-        </script>
-    </div>
-</div>
-      <main class="main">
-        <div id="body">
-          <div class="container">
-            <div class="col-12" id="main" role="main">
-    <article class="post post-atpost" itemscope itemtype="http://schema.org/BlogPosting">
-        <div class="post-title">
-            <h1 class="post-title post-title-atpage" itemprop="name headline">
-                <a itemprop="url" href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B403%EF%BC%9A%E7%BC%96%E8%80%85%E5%BA%8F/">
-                    数学分析三千年03：编者序
-                </a>
-            </h1>
         </div>
-        <ul class="post-meta post-meta-atpage">
-            <li class="post-time">
-                2025-06-19
-            </li>
-            <li>
-                <div class="article-category">
-                    
-                </div>
-            </li>
-        </ul>
-        <div class="post-content" itemprop="articleBody">
-            <div class="page-container">
-                <h1 class="main-title">作者序</h1>
-                <p>作为作者，我非常高兴本书的德文版（2011年首次出版）受到了广泛好评。事实上，2016年又出版了包含修正和增补的第二版。我的著作《莱布尼茨与牛顿优先权之争的历史》（Die Geschichte des Prioritätsstreits zwischen Leibniz und Newton）的英文译本《牛顿与莱布尼茨优先权之争的历史》于2018年由Birkhauser出版后，我敬爱的“语言编辑”帕特·莫顿不愿退休，反而热衷于开始另一项翻译工作，于是我便着手翻译《3000年分析学》的第二版。现在，它已面世。</p>
-                <p>本书的德文版在数学史系列丛书中有着一些先驱：《6000年数学》、《5000年几何学》、《4000年代数学》，其中只有几何学卷迄今为止被翻译成英文。将分析学史卷加入该系列，从而使分析学史对感兴趣的非专业人士和更广泛的受众开放，这似乎是合乎逻辑的。</p>
-                <p>本卷之所以在该系列中脱颖而出，原因如下。该系列中的所有书籍都旨在以可读的形式呈现科学上可靠的事实，以传达数学的乐趣及其历史发展。然而，虽然数学的文化史可以在不涉及太多数学细节的情况下呈现，几何学可以通过其构造的历史以精美的图画描述，代数学史（至少在19世纪之前）可以从相当基本的数学思考中发展出来，但这种概念在分析学中自然会失效。本质上，分析学是关于无限的科学；即无限大和无限小。它的根源已存在于前苏格拉底哲学家的残篇及其对“连续体”的思考中，以及空间和时间是“连续”的还是由“原子”构成的这一紧迫问题中。分析学的根源甚至可以追溯到法老和巴比伦的时代，希腊人从那里获得了部分知识。但最迟到阿基米德（约公元前287-212年），分析学已经达到了成熟阶段，这要求我的读者积极参与。无论如何想象，如果不彻底研究一些例子，用笔和纸理解其背后的数学，就无法领会阿基米德分析学的意义。尽管在阿基米德之后，这些知识再次被埋没在黑暗中，但最迟在文艺复兴时期它又重新焕发生机，分析学取得了巨大的进步；这门科学再次需要读者的关注！姑且用一种诗意的方式来说：分析学原来是一位苛求的情人，人们必须臣服于她才能获得一些理解。</p>
-                <p>但请不要害怕！我的这些话并不是要劝退你；相反，它们旨在增加你对本书内容的兴趣。你需要不时地思考，但之后你将对数学最重要的学科之一获得深刻而令人满意的见解，</p>
-                
-            </div>
-        
-            <div class="page-container">
-                
-                <p>作为回报。没有分析学，技术革命以及与此相关的高度工程化世界的持续发展是不可想象的。</p>
-                <p>市场上有一些关于分析学史的书籍，读者理应了解本书与它们的关系。我不声称发布最新或迄今未知的研究成果。然而，本书与其他书籍显著不同。首先，本书像我们德语系列丛书一样，非常注重语境中的历史发展。此外，我强调了前苏格拉底哲学家和基督教中世纪，在这些时期对连续体本质的讨论是决定性的。最后，本书所描述的所有领域的共同主题是无限。这一主题使我无需屈服于20世纪发展令人难以置信的广度，如泛函分析、测度论、积分理论等，而是以非标准分析为终结，在其中我们再次发现了无限小和无限大的量，前苏格拉底哲学家的连续体概念再次得到推崇。从这个意义上说，我们形成了完整的循环，连接了埃利亚的芝诺（约公元前490-430年）、托马斯·布拉德沃丁（约1290-1349年）、艾萨克·牛顿（1643-1727年）、戈特弗里德·威廉·莱布尼茨（1646-1716年）、莱昂哈德·欧拉（1707-1783年）、卡尔·魏尔斯特拉斯（1815-1897年）、奥古斯丁·路易·柯西（1789-1857年），以及最终的亚伯拉罕·罗宾逊（1918-1974年）和德特勒夫·劳格维茨（1932-2000年）。</p>
-                <p>也正因为这个包罗万象的主题，我将集合论的发展纳入了分析学史，这很不寻常。从处理无限的历史来看，集合论当然属于这里。</p>
-                <p>本书得以问世，得益于德国希尔德斯海姆大学的“数学史”项目组，我对此深表感谢。我尤其要感谢已故的海因茨-威廉·阿尔滕、我的朋友克劳斯-于尔根·福斯特和卡尔-海因茨·施洛特对我的信任。海科·韦泽穆勒-科克以他一贯专业的态度负责了本书的设计。只有亲自绘制过图画和草图、修改或纠正过现有图表、并设计过数百张图片说明的人，才能体会到他这项任务的艰巨性。他大量工作的成果可以在本书以及我们系列中的所有其他书籍中看到。没有出版商的鼓励，这本书就不会问世。我尤其要感谢Birkhauser出版社的莎拉·安妮特·古布女士和萨布丽娜·霍克林女士。</p>
-                <p>然而，我并非一名受过专业训练的历史学家。当然，我对历史持续而长期的兴趣帮助很大，但像《大普洛伊茨》（Der große Ploetz）[Ploetz 2008] 或雷克拉姆出版社那些标题以“小历史……”或“小历史”[Maurer 2002]、[Altgeld 2001]、[Dirlmeier et al. 2007]、[Haupt et al. 2008] 开头的精彩小册子是不可或缺的。然而，如有疑问，只有一位博学的历史学家才能真正提供帮助，我很幸运我的朋友兼同事</p>
-            </div>
-        
-            <div class="page-container">
-                
-                <p>不莱梅地区历史研究所的格尔德·比格尔教授一直承受着繁重的工作负担，但他始终在我身边。在我们抽着雪茄、喝着无数杯浓缩咖啡的时候，他为我提供了许多历史背景的见解。</p>
-                <p>尽管在此期间他完成了学业，目前正在撰写博士论文，但我的LATEX专家雅各布·舍恩伯恩，他之前已经负责了本书的德语第二版、德语第一版《莱布尼茨与牛顿优先权之争的历史》及其英文版《牛顿与莱布尼茨优先权之争的历史》，他仍然在我身边监督本书的LATEX技术方面。我只能全心全意地感谢他对这个图书项目的付出！</p>
-                <p>我特别感谢埃伯哈德·克诺布洛赫教授，他不仅牺牲宝贵时间校对德文版，还就古希腊语和拉丁语的正确翻译提供了许多建设性的批评和建议。他不仅是我，也是整整一代科学家的真正榜样，因此本书献给他。</p>
-                <p>我非常感谢出色的帕特里夏（帕特）·莫顿，她再次提出将我的“德式英语”转化为她优美的牛津英语。如果没有她鼓励我们继续图书项目，我甚至不敢开始撰写本书。</p>
-                <p>写这样一本书需要时间；很多时间！因此，我决定写这本书对我的妻子安克来说尤其产生了严重的后果。我不得不在书房和图书馆里花费大量时间，而生活在我缺席的情况下继续进行。为了丰富我关于分析学史的私人藏书，花费了大量金钱购买新书和二手书。所有这些，以及现在我们客厅里、沙发上、椅子上和地板上堆积如山的几米高的书籍和手稿，我的爱妻安克都忍受了，她也幽默地回应，只是偶尔说几句尖锐的话。在汉斯·伍辛的两卷本《6000年数学》出版并在希尔德斯海姆市政厅的一个小型仪式上公之于众后，我妻子说出了她的心声：“我丈夫有一个6000岁的情妇，而且他深爱着她！”为此，也因为她一直容忍我和我的老情妇，我由衷地感谢她。</p>
-                <p class="author-signature">托马斯·索纳尔</p>
-            </div>
-             
-                <blockquote>
-                    <p>文章作者：<a href="/ "> Colin Zhu  </a></p>
-                    <p>文章链接：<a href="http://colin4k.1979927.xyz/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B403%EF%BC%9A%E7%BC%96%E8%80%85%E5%BA%8F/"> http://colin4k.1979927.xyz/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B403%EF%BC%9A%E7%BC%96%E8%80%85%E5%BA%8F/ </a></p>
-                    <p>版权声明：除另有声明外，本博客文章均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> CC BY-NC-SA 4.0 </a> 许可协议。转载请注明原作者与文章出处。</p>
-                </blockquote>
-             
+    
+        <div class="page-container">
+            
+            <p>作为回报。没有分析学，技术革命以及与此相关的高度工程化世界的持续发展是不可想象的。</p>
+            <p>市场上有一些关于分析学史的书籍，读者理应了解本书与它们的关系。我不声称发布最新或迄今未知的研究成果。然而，本书与其他书籍显著不同。首先，本书像我们德语系列丛书一样，非常注重语境中的历史发展。此外，我强调了前苏格拉底哲学家和基督教中世纪，在这些时期对连续体本质的讨论是决定性的。最后，本书所描述的所有领域的共同主题是无限。这一主题使我无需屈服于20世纪发展令人难以置信的广度，如泛函分析、测度论、积分理论等，而是以非标准分析为终结，在其中我们再次发现了无限小和无限大的量，前苏格拉底哲学家的连续体概念再次得到推崇。从这个意义上说，我们形成了完整的循环，连接了埃利亚的芝诺（约公元前490-430年）、托马斯·布拉德沃丁（约1290-1349年）、艾萨克·牛顿（1643-1727年）、戈特弗里德·威廉·莱布尼茨（1646-1716年）、莱昂哈德·欧拉（1707-1783年）、卡尔·魏尔斯特拉斯（1815-1897年）、奥古斯丁·路易·柯西（1789-1857年），以及最终的亚伯拉罕·罗宾逊（1918-1974年）和德特勒夫·劳格维茨（1932-2000年）。</p>
+            <p>也正因为这个包罗万象的主题，我将集合论的发展纳入了分析学史，这很不寻常。从处理无限的历史来看，集合论当然属于这里。</p>
+            <p>本书得以问世，得益于德国希尔德斯海姆大学的“数学史”项目组，我对此深表感谢。我尤其要感谢已故的海因茨-威廉·阿尔滕、我的朋友克劳斯-于尔根·福斯特和卡尔-海因茨·施洛特对我的信任。海科·韦泽穆勒-科克以他一贯专业的态度负责了本书的设计。只有亲自绘制过图画和草图、修改或纠正过现有图表、并设计过数百张图片说明的人，才能体会到他这项任务的艰巨性。他大量工作的成果可以在本书以及我们系列中的所有其他书籍中看到。没有出版商的鼓励，这本书就不会问世。我尤其要感谢Birkhauser出版社的莎拉·安妮特·古布女士和萨布丽娜·霍克林女士。</p>
+            <p>然而，我并非一名受过专业训练的历史学家。当然，我对历史持续而长期的兴趣帮助很大，但像《大普洛伊茨》（Der große Ploetz）[Ploetz 2008] 或雷克拉姆出版社那些标题以“小历史……”或“小历史”[Maurer 2002]、[Altgeld 2001]、[Dirlmeier et al. 2007]、[Haupt et al. 2008] 开头的精彩小册子是不可或缺的。然而，如有疑问，只有一位博学的历史学家才能真正提供帮助，我很幸运我的朋友兼同事</p>
+        </div>
+    
+        <div class="page-container">
+            
+            <p>不莱梅地区历史研究所的格尔德·比格尔教授一直承受着繁重的工作负担，但他始终在我身边。在我们抽着雪茄、喝着无数杯浓缩咖啡的时候，他为我提供了许多历史背景的见解。</p>
+            <p>尽管在此期间他完成了学业，目前正在撰写博士论文，但我的LATEX专家雅各布·舍恩伯恩，他之前已经负责了本书的德语第二版、德语第一版《莱布尼茨与牛顿优先权之争的历史》及其英文版《牛顿与莱布尼茨优先权之争的历史》，他仍然在我身边监督本书的LATEX技术方面。我只能全心全意地感谢他对这个图书项目的付出！</p>
+            <p>我特别感谢埃伯哈德·克诺布洛赫教授，他不仅牺牲宝贵时间校对德文版，还就古希腊语和拉丁语的正确翻译提供了许多建设性的批评和建议。他不仅是我，也是整整一代科学家的真正榜样，因此本书献给他。</p>
+            <p>我非常感谢出色的帕特里夏（帕特）·莫顿，她再次提出将我的“德式英语”转化为她优美的牛津英语。如果没有她鼓励我们继续图书项目，我甚至不敢开始撰写本书。</p>
+            <p>写这样一本书需要时间；很多时间！因此，我决定写这本书对我的妻子安克来说尤其产生了严重的后果。我不得不在书房和图书馆里花费大量时间，而生活在我缺席的情况下继续进行。为了丰富我关于分析学史的私人藏书，花费了大量金钱购买新书和二手书。所有这些，以及现在我们客厅里、沙发上、椅子上和地板上堆积如山的几米高的书籍和手稿，我的爱妻安克都忍受了，她也幽默地回应，只是偶尔说几句尖锐的话。在汉斯·伍辛的两卷本《6000年数学》出版并在希尔德斯海姆市政厅的一个小型仪式上公之于众后，我妻子说出了她的心声：“我丈夫有一个6000岁的情妇，而且他深爱着她！”为此，也因为她一直容忍我和我的老情妇，我由衷地感谢她。</p>
+            <p class="author-signature">托马斯·索纳尔</p>
         </div>
         
-            <p itemprop="keywords" class="tags">
-                
-                    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B4/"> 数学分析三千年 </a>
-                
-            </p>
-        
-    </article>
-    <div class="post-near">
-    <div class="post-near-child post-near-child-left "> 
-        
-            <a href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B402%EF%BC%9A%E4%BD%9C%E8%80%85%E5%BA%8F/">数学分析三千年02：作者序 &laquo; </a>
-        
-        <br /> 上一篇  &laquo;
+      
     </div>
-    <div class="post-near-child post-near-child-right">
+    <footer>
+      
         
-            <a href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B404%EF%BC%9A%E7%9B%AE%E5%BD%95/"> &raquo; 数学分析三千年04：目录</a>
         
-        <br /> &raquo; 下一篇 
-    </div>
-</div>
-</div>
-             
-<div id="comments">
-     
-</div>
- 
-            <footer id="footer" role="contentinfo">
-    
-        &copy; 2020 - 2025
-        <br />
-    
-    
-    <br />
-    
-    
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_value_site_pv">......</span> visits ·
-        <span id="busuanzi_value_site_uv">......</span> visitors 
-    
-</footer>
-          </div>
-        </div>
-      </main>
-      <!-- highlight support -->
+  
+  <div class="tags">
+    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B4/">数学分析三千年</a>
+  </div>
 
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css">
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
 
 
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js"></script>
- 
+<section id="comment">
+  <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
 <script>
-        hljs.initHighlightingOnLoad();
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 </script>
- 
-<!-- prettify support -->
- 
-<!-- mathjax support -->
 
-    
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src=""></script>
+<div class="fb-comments" data-href="http://colin4k.1979927.xyz/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B403%EF%BC%9A%E7%BC%96%E8%80%85%E5%BA%8F/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="colin4k.1979927.xyz">
+  </form>
+</div>
 
 
-<!-- fancybox support -->
- 
-<!-- viewerjs support -->
+  
 
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viewerjs@1.10.0/dist/viewer.min.css">
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B4/">数学分析三千年</a><small>7</small></li>
+  
+  </ul>
+</div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/viewerjs@1.10.0/dist/viewer.min.js"></script>
+  
+  <div class="widget widget-archives">
+    <h3 class="title">归档</h3>
+    <div class="entry">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">六月 2025</a><span class="archive-list-count">8</span></li></ul>
+    </div>
+  </div>
 
-<script type="text/javascript">
-    Viewer.setDefaults({
-        zoomRatio: [0.5],
-        show: function () {
-            this.viewer.zoomTo(1);
-        },
-    });
-    
-    var imageList = document.querySelector('.post-content').getElementsByTagName('img');
-    
-    var imageArray = new Array();
-    Array.prototype.forEach.call(imageList, element => {
-        if (element.alt != "no-view" && element.className != "no-view") {
-            imageArray.push(element);
-        }
-    });
-    
-    Array.prototype.forEach.call(imageArray, element => {
-        var viewer1 = new Viewer(element);
-        viewer1.images = imageArray;
-        viewer1.length = imageArray.length;
-    });
-</script>
- 
-<!-- google analytics support -->
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 Colin Zhu
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
 
 
 
- 
- 
 
-<!-- lazyload support -->
 
-    
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 <script>
-    new LazyLoad({
-        elements_selector: '.post-content img'
-    });
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
 </script>
- 
-  </body>
 
+</body>
 </html>

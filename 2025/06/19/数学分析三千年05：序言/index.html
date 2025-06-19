@@ -1,626 +1,561 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="zh-CN">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>
-        数学分析三千年05：序言 - Colin's blog 
-    </title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0 auto;
-            max-width: 800px;
-            padding: 20px;
-        }
-        .page {
-            margin-bottom: 40px;
-            page-break-after: always;
-        }
-        .page-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 20px;
-        }
-        .page-number {
-            font-size: 0.9em;
-        }
-        h1, h2, h3, h4 {
-            text-align: center;
-            color: #333;
-        }
-        h2 {
-            text-align: center;
-        }
-        .figure-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .figure-container img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-        }
-        .figure-caption {
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-            vertical-align: top;
-        }
-        .copyright {
-            font-size: 0.8em;
-            color: #777;
-            text-align: left;
-            margin-top: 20px;
-        }
-        blockquote {
-            margin: 20px 40px;
-            padding: 10px 20px;
-            border-left: 5px solid #eee;
-            color: #666;
-        }
-        .math {
-            font-family: 'Times New Roman', serif;
-            font-style: italic;
-        }
-        .algorithm-step {
-            margin-left: 20px;
-        }
-        .footnote {
-            font-size: 0.8em;
-            color: #555;
-            margin-top: 10px;
-        }
-        .figure { text-align: center; margin: 1em 0; }
-        .figure img { max-width: 100%; height: auto; }
-        .figure-caption { font-size: 0.9em; margin-top: 0.5em; }
-        .equation { text-align: center; margin: 1em 0; }
-        .equation span { display: block; }
-        .indent { text-indent: 2em; }
-        .sub-figure-caption { text-align: left; margin-top: 0.5em; }
-    </style>  
-    
-<link rel="stylesheet" href="/css/grid.css">
+  <meta charset="utf-8">
+  
+  <title>数学分析三千年05：序言 | Colin&#39;s blog</title>
+  <meta name="author" content="Colin Zhu">
+  
+  <meta name="description" content="Colin`s articles about AI, Web3, Financial, Knowledge Management and Mathematics">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
-<link rel="stylesheet" href="/css/custom.css">
+  <meta property="og:title" content="数学分析三千年05：序言"/>
+  <meta property="og:site_name" content="Colin&#39;s blog"/>
 
-    
-<link rel="stylesheet" href="/css/ringo.css">
+  
+    <meta property="og:image" content=""/>
+  
 
-     
-        <link rel="icon" type="image/x-icon" href="/img/favicon.ico " />
-     
-     
-     
-        <meta name=" " content="" />
-     
-        <meta name=" " content="" />
-     
- 
+  <link rel="shortcut icon" href="/favicon.png">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 20px;
+    }
+    .page {
+        margin-bottom: 40px;
+        page-break-after: always;
+    }
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 20px;
+    }
+    .page-number {
+        font-size: 0.9em;
+    }
+    h1, h2, h3, h4 {
+        text-align: center;
+        color: #333;
+    }
+    h2 {
+        text-align: center;
+    }
+    .figure-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .figure-container img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+    }
+    .figure-caption {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 10px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+    }
+    .copyright {
+        font-size: 0.8em;
+        color: #777;
+        text-align: left;
+        margin-top: 20px;
+    }
+    blockquote {
+        margin: 20px 40px;
+        padding: 10px 20px;
+        border-left: 5px solid #eee;
+        color: #666;
+    }
+    .math {
+        font-family: 'Times New Roman', serif;
+        font-style: italic;
+    }
+    .algorithm-step {
+        margin-left: 20px;
+    }
+    .footnote {
+        font-size: 0.8em;
+        color: #555;
+        margin-top: 10px;
+    }
+    .figure { text-align: center; margin: 1em 0; }
+    .figure img { max-width: 100%; height: auto; }
+    .figure-caption { font-size: 0.9em; margin-top: 0.5em; }
+    .equation { text-align: center; margin: 1em 0; }
+    .equation span { display: block; }
+    .indent { text-indent: 2em; }
+    .sub-figure-caption { text-align: left; margin-top: 0.5em; }
+</style>  <div class="page">
+    <div class="figure-container" style="text-align: right; margin-bottom: 10px;">
+        <!-- "Check for updates" button is an interactive element, not content for translation -->
+    </div>
+    <h1 style="text-align: center;">1 序言：数学分析 3000 年</h1>
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_1.png" alt="Check for updates">
+    </div>
+    <p class="copyright">© Springer Nature Switzerland AG 2021<br>T. Sonar, 数学分析 3000 年, <a href="https://doi.org/10.1007/978-3-030-58223-4_1">https://doi.org/10.1007/978-3-030-58223-4_1</a></p>
+</div>
+
+<div class="page">
+    <table style="width: 100%; margin: 0 auto;">
+        <tbody>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px; width: 25%;border:0px;">公元前3000年以来</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">北方游牧民族迁徙到美索不达米亚南部。苏美尔城邦兴起，并在泥板上刻写楔形文字。尼罗河流域的王国统一。象形文字的出现。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前2707-2170年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及古王国时期。金字塔的出现；萨卡拉的阶梯金字塔，代赫舒尔的弯曲金字塔，胡夫、哈夫拉和门卡乌拉的大金字塔。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前2170-2020年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及第一中间期。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前2235-2094年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">阿卡德的萨尔贡在美索不达米亚建立了阿卡德王国。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前2137-1781年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及中王国时期。数学纸草。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1850年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">莫斯科纸草的推定起源时间。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1793-1550年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及第二中间期。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1650年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">阿赫莫斯撰写了《莱因德数学纸草》。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前2000-1595年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">美索不达米亚古巴比伦时期。在汉谟拉比国王（约公元前1700年）统治下，人类第一批立法文本出现。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1675年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">美索不达米亚一块泥板上刻有正方形对角线的长度。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前1550-1070年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及新王国时期。哈特谢普苏特神庙和底比斯的皇家陵墓。卡纳克阿蒙神庙。阿马尔纳的阿赫那吞太阳崇拜。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1279-1213年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">拉美西斯二世，阿布辛拜勒神庙。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1070-525年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及第三中间期和晚期。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前1700-609年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">亚述王国。数学楔形文字；阶梯金字塔（zikkurates）。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前750-620年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">新亚述王国，世界历史上第一个大帝国；尼姆鲁德和尼尼微的王宫。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前625-539年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">新巴比伦王国，占星术和天文学的鼎盛时期。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前539年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">居鲁士大帝征服巴比伦。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前525年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">波斯人征服埃及。</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前332年</td>
+                <td style="vertical-align: top; padding: 5px 10px;border:0px;">亚历山大大帝征服埃及。</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="footnote" style="text-align: center; margin-top: 20px;">备注：文献中存在不同的年代学。</p>
+</div>
+
+<div class="page">
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_2.png" alt="一张拼贴画，包含多个历史文物：埃德富浮雕、莫斯科数学纸草、楔形文字V2、图坦卡蒙的死亡面具、楔形文字（苏萨）。">
+        <p class="figure-caption">图 1.0.2. 公元前的埃及与美索不达米亚</p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>1.1 什么是"分析"？</h2>
+    <p>分析已有三千年历史？分析不是在17世纪由牛顿和莱布尼茨才出现的吗？</p>
+    <p>要圆满回答这个问题，我们首先应该审视"分析"的定义。互联网上可以找到以下定义¹：</p>
+    <blockquote>"数学分析正式发展于17世纪……"</blockquote>
+    <p>看！根据这个定义，分析大约有400年的历史，但请注意：这个定义继续写道：</p>
+    <p class="footnote">¹ <a href="https://en.wikipedia.org/wiki/Mathematical_analysis">https://en.wikipedia.org/wiki/Mathematical_analysis</a></p>
+</div>
+
+<div class="page">
+    <p>"……但其许多思想可以追溯到更早期的数学家。"</p>
+    <p>但是我们要"追溯"多远呢？</p>
+    <p>可靠的老牌《大英百科全书》将"分析（数学）"定义为：</p>
+    <blockquote>"数学的一个分支，处理连续变化以及从对连续变化的研究中产生的某些通用类型的过程，例如极限、微分和积分。自从牛顿和莱布尼茨在17世纪末发现微积分和积分学以来，分析已经发展成为一个庞大而核心的数学研究领域，并在所有科学以及金融、经济学和社会学等领域都有应用。"</blockquote>
+    <p>我完全没有问题地接受这个定义！分析关注的是连续变化的数学，从中发展出了切线问题、求积问题（即计算弯曲曲线下面积的问题），并最终形成了牛顿和莱布尼茨的实际微积分学。</p>
+    <p>狭义上讲，分析只是无限过程和"无穷小量"的数学分支，这种意义上的分析应该作为一种阿里阿德涅之线（Ariadne's thread）伴随我们穿越历史。然而，这并非始终如一。 "函数"的概念无疑是分析的核心，但它最初与无穷小量无关。尽管如此，对函数概念的讨论无疑属于分析史的范畴。</p>
+    <p>那为什么是3000年呢？嗯，像π或√2这样的特殊数字扮演着一定的角色，而这些数字（或其近似值）确实可以在古埃及和美索不达米亚的文化区域中找到。</p>
+</div>
+
+<div class="page">
+    <h2>1.2 π的前身</h2>
+    <p>在著名的《莱因德纸草》²中已经可以找到圆面积的近似计算。这份纸草是由一位名叫阿赫莫斯（Ahmes）的抄写员在约公元前1650年写成的，他写道他只是抄录了至少200年前的数学问题。</p>
+    <p>在他的纸草问题48中，阿赫莫斯描绘了一个内切于正方形的圆。我们可以从随后的计算中推断，边长为9个单位的正方形面积为81平方单位，直径为9个单位的圆面积为64平方单位。在问题50中，可以找到计算圆面积的精确说明 [Gericke 2003, p. 55]：</p>
+    <p class="footnote">² 因1858年在卢克索购买此纸草的苏格兰人亚历山大·亨利·莱因德（Alexander Henry Rhind）而得名。</p>
+</div>
+
+<div class="page">
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_3.png" alt="图1.2.1. 莱因德纸草的开头。该纸草长5.5米，高32厘米。它包含有关数学主题的问题，如今被称为代数、分数算术、几何和三角学。它本身是公元前12王朝（公元前19世纪）原始文本的副本。抄写员阿赫莫斯于约公元前1650年用僧侣体文字抄写了这份原始文本。（大英博物馆古埃及和苏丹部EA 10057，伦敦 [照片：保罗·詹姆斯·考伊]）">
+        <p class="figure-caption"><b>图1.2.1. 莱因德纸草的开头。</b>该纸草长5.5米，高32厘米。它包含有关数学主题的问题，如今被称为代数、分数算术、几何和三角学。它本身是公元前12王朝（公元前19世纪）原始文本的副本。抄写员阿赫莫斯于约公元前1650年用僧侣体文字抄写了这份原始文本。（大英博物馆古埃及和苏丹部EA 10057，伦敦 [照片：保罗·詹姆斯·考伊]）</p>
+    </div>
+    <blockquote>
+        <p style="font-style: italic;">"计算（直径为）9的圆形区域的例子。它的面积是多少？从（直径）中减去1/9。余数为8。8乘以8。结果为64。"</p>
+        <p>(Beispiel der Berechnung eines runden Feldes vom (Durchmesser) 9. Was ist der Betrag seiner Fläche? Nimm 1/9 von ihm (dem Durchmesser) weg. Der Rest ist 8. Multipliziere 8 mal 8. Es wird 64.)</p>
+    </blockquote>
+    <p>这个计算规则使我们得出结论，埃及人使用 (8/9)² 作为 π/4 的值。由于他们既不知道 π 的性质，也不知道 π 的作用，我们可能会问自己这个值是如何得到的。一种可能性是使用网格。在直径为 d 单位的圆周围画一个边长为 d 的正方形，并将正方形分成9个均匀分布的小正方形，如图1.2.2（左）所示。正方形的面积会严重高估圆的面积，因此我们将正方形四个角的四个小正方形各分成两个三角形，并且只将其中一个三角形计入面积，如图1.2.2（右）所示。因此剩下5个小正方形和4个三角形，圆的面积近似为：</p>
+    <div class="equation">
+        A<sub>circle</sub> ≈ 5 · (d/3)² + 4 · ½ · (d/3)² = 7/9 d².
+    </div>
+</div>
+
+<div class="page">
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_0.png" alt="图1.2.2. 从外部近似圆的面积，一个正方形内切一个圆，正方形被分割成9个小正方形，并展示了如何移除四个角的区域来近似圆。">
+        <p class="figure-caption"><b>图1.2.2. 从外部近似圆的面积</b></p>
+    </div>
+    <p>然而，阿赫莫斯给出的近似值是：</p>
+    <div class="equation">
+        A<sub>circle</sub> ≈ (64/81) d² = (8/9)² d².
+    </div>
+    <p>他显然将（正确的）近似值 <sup>π</sup>⁄₄ d² = <sup>63</sup>⁄₈₁ d² 加上了一个 <sup>1</sup>⁄₈₁ d² 的面积，最终得到了分子和分母都是完全平方数的表达式！但他真的这样做了吗？奥托·诺伊格鲍尔（Otto Neugebauer，1899 – 1990）有些沮丧地评论道 [Neugebauer 1969a, p. 124]：</p>
+    <blockquote>
+        <p style="font-style: italic;">"而且无法理解从这个表达式 [圆面积的 d²] 到埃及公式的推导方式。没有新的文本资料，因此，对这个公式的起源发表假设意义不大，因为显而易见的方法并不能直接导致所需的结果。"</p>
+        <p>(Und es ist nicht einzusehen, wie man von diesem Ausdruck zu der ägyptischen Formel hinüberkommen kann. Ohne neues Textmaterial hat es also wenig Sinn, über die Entstehungsgeschichte dieser Formel Vermutungen zu äußern, da der naheliegende Weg offenbar nicht direkt zum Ziel führt.)</p>
+    </blockquote>
+    <p>由于圆的真实面积由 A<sub>circle</sub> = πr² = (π/4)d² 给出，古埃及人使用了近似值</p>
+    <div class="equation">
+        π<sub>Egypt</sub> = 3.16049
+    </div>
+    <p>这绝不是一个糟糕的近似值！至少相对误差只有</p>
+    <div class="equation">
+        |π<sub>Egypt</sub> - π| / π ≈ 0.00601643,
+    </div>
+    <p>因此大约是 0.6%！</p>
+</div>
+
+<div class="page">
+    <p>在值得一看的电视节目《数学故事》[Du Sautoy 2008] 中，数学家马库斯·杜·索托伊（Marcus du Sautoy，生于1965年）对埃及人如何得出圆面积的公式给出了另一种解释。根据他的解释，近似值 π<sub>Egypt</sub>/4 = (8/9)² 源于一个古埃及棋盘游戏，游戏中必须移动填充半球形凹陷的木板上的球体。使用这些球体可以形成一个直径相当于9个球体的圆。如果将这些球体重新排列成一个正方形，那么这个正方形的边长将是8。如果杜·索托伊的解释是正确的，那么我们在这里就有一个早期尝试来"化圆为方"。这个问题，也称为"圆的求积"，我们稍后会讨论。</p>
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_4.png" alt="图1.2.3. 涅菲尔塔丽王后（第19王朝，拉美西斯二世的妻子）正在玩塞尼特（Senet）游戏。塞尼特游戏的规则可以大致重建。其他游戏，如"猎犬和豺狼"或"蛇游戏"的规则大多未知（涅菲尔塔丽墓室壁画，西底比斯）">
+        <p class="figure-caption"><b>图1.2.3. 涅菲尔塔丽王后</b>（第19王朝，拉美西斯二世的妻子）正在玩塞尼特（Senet）游戏。塞尼特游戏的规则可以大致重建。其他游戏，如"猎犬和豺狼"或"蛇游戏"的规则大多未知（涅菲尔塔丽墓室壁画，西底比斯）</p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>1.3 圣经中的 π</h2>
+    <p>古埃及的 π 值已经比"圣经"值精确得多。在《列王纪上》第7章23节中，我们读到：</p>
+    <blockquote>"他又铸一个铜海，从这边到那边，共十肘，是圆的，高五肘，周围量它，共三十肘。"</blockquote>
+    <p>在《历代志下》第4章2节中，我们发现：</p>
+    <blockquote>"他又铸一个铜海，从这边到那边，共十肘，是圆的，高五肘，周围量它，共三十肘。"</blockquote>
+    <p>因此，这个"海"的形状确实是一个直径 d = 10 肘、周长 U = 30 肘的圆。由于任何圆的周长和直径之间的关系是 U = πd，我们得到</p>
+    <div class="equation">
+        π<sub>Bible</sub> = U/d = 30/10 = 3.
+    </div>
+    <p>这个值也是巴比伦人使用的，而爱德华兹（生于1937年）在 [Edwards 1979, p. 4, Ex.5] 中试图解释它，我发现很有吸引力。与埃及人近似圆面积的方式不同，人们可能想到不仅要给圆外切一个正方形，还要内切一个正方形，如图1.3.1所示。那么，圆的面积应该通过这些正方形面积的算术平均值来近似。外切正方形的面积显然是 A₁ := d² = 4r²。根据在美索不达米亚广为人知的毕达哥拉斯定理，内切正方形的边长是 √r² + r² = √2r，因此内切正方形的面积是 A₂ := 2r²。由于外切正方形的面积高估了圆的面积，而内切正方形的面积低估了圆的面积，我们可以期望算术平均值可以对圆的面积提供有用的近似值：</p>
+    <div class="equation">
+        A<sub>circle</sub> ≈ (A₁ + A₂)/2 = 3r².
+    </div>
+    <p>事实上，这里出现了圣经中的 π 值！</p>
+    <p>但这似乎并非巴比伦人故事的结局。根据贝克曼（Beckmann，1924-1993）[Beckmann 1971, p. 21 ff.] 和诺伊格鲍尔 [Neugebauer 1969b, p. 46 ff.] 的说法，1936年在巴比伦以东约200英里处的苏萨挖掘出土的泥板，其中包含一些几何图形的计算。其中一块泥板涉及内切于圆的正六边形，并指出正六边形的周长与外接圆的周长之比为</p>
+</div>
+
+<div class="page">
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_13.png" alt="图1.3.1. 从内部近似圆的面积。一个圆被外切方形和内切方形包围，半径r被标示出来，直径为2r。">
+        <p class="figure-caption"><b>图1.3.1. 从内部近似圆的面积</b></p>
+    </div>
+    <div class="equation">
+        57/60 + 36/60²
+    </div>
+    <p>巴比伦人知道，如果半径用 r 表示，六边形的周长是 6r，参见图1.3.2。</p>
+    <p>因此所求的比率是 6r/C，如果 C 表示圆的周长。由于</p>
+    <div class="equation">
+        π = C/2r
+    </div>
+    <p>我们得出结论</p>
+    <div class="equation">
+        3/π = 57/60 + 36/60²
+    </div>
+    <p>因此 π = 31/8 = 3.125。</p>
+    <p>这表明巴比伦人对 π 的近似值也比单纯的 3 要好。</p>
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_14.png" alt="图1.3.2. 通过正六边形近似圆的面积。一个正六边形内切于一个圆，中心到顶点的距离r标示出来，圆的周长C也被标示。">
+        <p class="figure-caption"><b>图1.3.2. 通过正六边形近似圆的面积</b></p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>1.4 棱锥台的体积</h2>
+    <p>在莫斯科普希金博物馆保存的《莫斯科数学纸草》中，可以找到问题14，这几乎指向了分析学的一项基本任务。这个问题计算的是棱锥台的体积。</p>
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_5.png" alt="图1.4.1. 莫斯科数学纸草中棱锥台体积的计算，包含僧侣体文字和象形文字。">
+        <p class="figure-caption"><b>图1.4.1. 莫斯科数学纸草中棱锥台体积的计算</b>（莫斯科数学纸草）以僧侣体文字和象形文字书写</p>
+    </div>
+    <p>对于金字塔的建造者来说，这种计算一定特别重要，因为金字塔是分层建造的。因此，金字塔只不过是棱锥台和顶部的锥体部分的加总。我们在这里不想推测埃及人是如何得出棱锥台体积的（正确）公式的，而是请读者参考 [Gillings 1982] 中的相关章节（另见 [Scriba/Schreiber 2000, p. 14 ff.]，[Wußing 2008, p. 99 ff.]）。</p>
+    <p>尽管问题14只涉及使用具体数字进行计算，但埃及人一定已经知道正确的公式：</p>
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_6.png" alt="图1.4.2. 一个对称金字塔和一个直角金字塔，它们拥有相同的底面积和高度，因此体积相同。">
+        <p class="figure-caption"><b>图1.4.2. 一个对称金字塔和一个直角金字塔拥有相同的底面积和高度，它们的体积相同</b></p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_7.png" alt="图1.4.3. 将一个立方体分解成六个中心点在中心的对称金字塔（左），以及分解成三个直角金字塔（右）。">
+        <p class="figure-caption"><b>图1.4.3. 将一个立方体分解成六个中心点在中心的对称金字塔（左），以及分解成三个直角金字塔（右）</b></p>
+    </div>
+    <div class="equation">
+        V = (h/3) (a² + ab + b²) (1.1)
+    </div>
+    <p>其中 a 和 b 是两个底面区域的边长，h 表示棱锥台的高度。诺伊格鲍尔 [Neugebauer 1969a, p. 126] 称之为埃及数学的"瑰宝"（Glanzstück）。</p>
+    <p>指向数学分析的方法很可能是实际计算棱锥体积的方法（在 [Gillings 1982] 中可以找到另一种方法）。为此，埃及抄写员考虑了一个金字塔，其顶点恰好位于其中一个边缘点上方。</p>
+    <p>三个这样的直角（或"倾斜"）金字塔，如果它们拥有相同的高度和底边，则共同构成一个具有相同高度和底边边缘的立方体；也就是说，每个金字塔的体积是立方体体积的三分之一。或者，也可以用6个全等对称金字塔来构建一个立方体，这些金字塔的高度是其底边一半的高度。将其中一个金字塔的顶点对准另一个的顶点放置，并用剩余的四个金字塔填充空隙，如图1.4.4所示。</p>
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_8.png" alt="图1.4.4. 棱锥台的计算可以图示化地理解为将其分解为基本几何形式：中间一个长方体，两侧四个棱柱，边缘四个直角金字塔。对于直角金字塔，情况是相同的长方体，但两侧只有两个体积两倍的棱柱，边缘一个体积四倍的直角金字塔，这样两个棱锥台具有相同的体积 V = (h/3)(a² + ab + b²)。">
+        <p class="figure-caption"><b>图1.4.4. 棱锥台的计算</b>可以通过将其分解为几何基本形式来图形化理解：中间一个长方体，两侧四个棱柱，以及边缘四个直角金字塔；对于直角金字塔，是相同的长方体，但两侧只有两个体积两倍的棱柱，边缘一个体积四倍的直角金字塔，这样两个棱锥台具有相同的体积 V = (h/3)(a² + ab + b²)</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_9.png" alt="图1.4.5. 萨卡拉的法老乔塞尔的阶梯金字塔（约公元前2600年）[照片：H.-W. 阿尔滕]">
+        <p class="figure-caption"><b>图1.4.5. 萨卡拉的法老乔塞尔的阶梯金字塔</b>（约公元前2600年）[照片：H.-W. 阿尔滕]</p>
+    </div>
+    <p>如图1.4.3（左）所示。现在想象图1.4.2中的直角金字塔被切割成许多非常薄的平行于底面的切片，然后将这些切片平移，结果得到一个具有相同体积的对称金字塔，其顶点现在位于方形底面的中心上方。当然，图1.4.4中的棱锥台也是如此。事实上，金字塔在古埃及是从许多层中出现的。早在第一和第二王朝的国王的马斯塔巴（约公元前3000年至2700年）就显示出这些层次。</p>
+    <p>第三王朝的第二位国王乔塞尔下令在他的原始三级马斯塔巴的基础上增加三级，每一级都由许多薄层石块组成。因此，著名的萨卡拉乔塞尔阶梯金字塔约在公元前2680年出现。在第四王朝斯尼夫鲁国王的统治下，从棱锥台的层叠结构向金字塔的抽象几何形式过渡。这似乎是一场巨大的赌博，因为在建造的第一阶段，高达约49米的高度，采用内倾斜层的方法被证明是不稳定的。这是由于坡度角过陡（约58度）以及层倾斜的结果。在第二阶段，底面积被扩大，坡度角减小到54度，但内倾斜层的技术得以保留。由于这也导致了不稳定，在第三阶段坡度角进一步减小到43度，并在当前的棱锥台顶部铺设了水平层。因此，约在公元前2615年，斯尼夫鲁的弯曲金字塔出现了——这是胡夫、哈夫拉和门卡乌拉的大金字塔以及其他所有古王国金字塔的原型，所有这些金字塔都采用水平层叠建造。</p>
+</div>
+
+<div class="page">
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_10.png" alt="图1.4.6. 代赫舒尔的法老斯尼夫鲁的弯曲金字塔[照片：H. 韦瑟穆勒-科克]">
+        <p class="figure-caption"><b>图1.4.6. 代赫舒尔的法老斯尼夫鲁的弯曲金字塔</b>[照片：H. 韦瑟穆勒-科克]</p>
+    </div>
+    <p>公元前2615年——胡夫、哈夫拉和门卡乌拉大金字塔以及古王国其他金字塔的原型，所有这些都采用水平层建造。</p>
+    <p>我们再次引用诺伊格鲍尔 [Neugebauer 1969a, p. 126] 的话：</p>
+    <blockquote>
+        <p style="font-style: italic;">"这个公式 [(1.1)] 的令人惊讶之处有两点：一方面是它的对称形式，另一方面是它的数学正确性，特别是这个公式，如果推导正确，必然需要无穷小量的考虑，也就是说，它超越了初等几何的框架。"</p>
+        <p>(Was an dieser Formel überrascht, ist vor allem zweierlei: einerseits die symmetrische Gestalt, andererseits die mathematische Korrekt-heit, die ja gerade bei dieser Formel, falls sie auch korrekt abgeleitet werden sollte, bekanntlich mit Notwendigkeit Infinitesimalbetracht-ungen verlangt, d.h. über den Rahmen der Elementargeometrie hin-ausführt.)</p>
+    </blockquote>
+    <p>如果将空间图形切割成（原则上无限多的）水平层的思想确实存在于古埃及抄写员的头脑中，那么他们就预见到了分析的核心思想，即所谓的"卡瓦列里原理"。在埃及金字塔建成几千年后，博纳文图拉·卡瓦列里（Bonaventura Cavalieri，1598-1647）发现了计算面积和体积的"不可分量求和"原理。</p>
+</div>
+
+<div class="page">
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_11.png" alt="图1.4.7. 胡夫金字塔（吉萨，开罗）的层状结构[照片：H.-W. 阿尔滕]">
+        <p class="figure-caption"><b>图1.4.7. 胡夫金字塔（吉萨，开罗）的层状结构</b>[照片：H.-W. 阿尔滕]</p>
+    </div>
+    <p>后来，这种技术被定积分的概念所取代，其中（无限多的）无穷小层被"求和"。</p>
+</div>
+
+<div class="page">
+    <h2>1.5 巴比伦人对 √2 的近似</h2>
+    <p>在耶鲁巴比伦收藏中，有一块巴比伦楔形文字泥板，档案号为YBC 7289，上面近似计算了一个单位正方形的对角线长度，作为使用毕达哥拉斯定理的例子，参见 [Alten et al. 2005, p. 41, Abb. 1.3.9]，也请参见图1.5.1。这块楔形文字泥板约公元前1675年。将图1.5.1中的楔形文字转录为数字，得到：</p>
+    <div class="equation">
+        a := 30<br>
+        b := 1, 24, 51, 10<br>
+        c := 42, 25, 35,
+    </div>
+    <p>这些数字是以六十进制系统书写的，即以60为基数的数字系统。在这个系统中，很难找到每个数字的正确位置，因为巴比伦人写的是 1,2,3 = 1·60² + 2·60¹ + 3·60⁰ = 3723 或 1,2,3 = 1·60¹ + 2·60⁰ + 3·60⁻¹ = 62.0166 ...，具体取决于上下文。楔形文字专家现在遵循奥托·诺伊格鲍尔的建议，在前一种情况下写作1,2,3，在后一种情况下是1,2;3；分号清晰地标记了"六十进制小数点"的位置，逗号分隔不同的数字。这些分隔标记是必要的，因为在六十进制系统中，有59个数字，587可能表示5,8,7或58,7。如果习惯于用六十进制数字计算，那么很明显，上面的数字a, b, c中c = a·b是成立的。将这些数字解释为正方形的边长a和对角线c的长度，毕达哥拉斯定理告诉我们c² = 2a²，因此c = √2a。因此，数字b应该近似于√2，我们确实计算出</p>
+    <div class="equation">
+        1; 24, 51, 10 = 1 · 60⁰ + 24 · 60⁻¹ + 51 · 60⁻² + 10 · 60⁻³ = 1.414213
+    </div>
+    <p>因此，平方 (1;24, 51, 10)² = 1; 59, 59, 59, 38, 1, 40 相当接近于2，参见 [Aaboe 1998]。显然，巴比伦人非常清楚正方形对角线的长度是边长的 √2 倍，并且他们手头有对 √2 的极佳近似值。像 √2 或 π 这样的无理数在分析学的发展中非常重要，正是这类</p>
+    <div class="figure-container">
+        <img src="07_Prologue_ 3000 Years of Analysis_12.png" alt="图1.5.1. 关于√2的计算：a) 耶鲁巴比伦收藏的楔形文字泥板YBC 7289，b) 根据雷斯尼科夫（Resnikoff）复制的YBC 7289文本，c) 六十进制系统中的印度-阿拉伯数字文本。[照片：威廉·A·卡塞尔曼]">
+        <p class="figure-caption"><b>图1.5.1. 关于√2的计算：</b>a) 耶鲁巴比伦收藏的楔形文字泥板YBC 7289，b) 根据雷斯尼科夫复制的YBC 7289文本，c) 六十进制系统中的印度-阿拉伯数字文本 [照片：威廉·A·卡塞尔曼]</p>
+    </div>
+</div>
+
+<div class="page">
+    <p>数字使得实数分析成为可能。我们没有线索表明美索不达米亚文化区对无理数有更深入的理解，这也不足为奇。对实数系统结构的真正理解要等到19世纪末才会出现。</p>
+    <p>我们是否已经为标题中的"3000年"找到了理由？胡夫金字塔建于约公元前2600年。如果我们承认古埃及人已经掌握了计算金字塔体积的分析方法，那么分析学就有了5000年的历史。如果我们接受分析学的真正开端（以我们现代的理解）可以在古希腊找到——就像许多其他事物一样——那么梅塔蓬图姆的希帕索斯在约公元前500年发现无理数无疑对分析学的发展至关重要。在这种情况下，分析学将有2500年的历史。关于分析学年龄问题的真正答案是：我们根本不知道！这就是我们选择3000年作为一种妥协的原因。</p>
+</div>
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
 <meta name="generator" content="Hexo 7.3.0"></head>
 
-  <body>
-    <header id="header" class="clearfix" onclick="window.open('/', '_self')">
-    <div class="site-name">
-        <a href="/" id="logo" class="site-title">
-            Colin&#39;s blog
-        </a>
-        <p class="description site-description">
-            <span style="padding-top:20px; font-size: 10px">
-                AI, Web3 and Mathematics
-            </span>
-        </p>
-    </div>
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Colin&#39;s blog</a></h1>
+  <h2><a href="/">AI, Web3 and Mathematics</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/null">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
 </header>
-<div id="sidebar" role="complementary">
-    <section class="widget">
-        <ul class="menu widget-list">
-            
-        </ul>
-    </section>
-    <section class="widget sidebar-foot">
-        <ul class="widget-list">
-            <li>Theme <a rel="nofollow" target="_blank" href="https://github.com/HeliumOI/hexo-theme-ringo">Ringo</a>
-                by <a target="_blank" href="/ "> Colin Zhu  </a></li>
-            <li>Proudly powered by  <a rel="nofollow" target="_blank" href="https://hexo.io/">Hexo</a></li>
-        </ul>
-    </section>
-</div>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-数学分析三千年05：序言" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2025-06-19T03:21:04.000Z"><a href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B405%EF%BC%9A%E5%BA%8F%E8%A8%80/">2025-06-19</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">数学分析三千年05：序言</h1>
+  
 
-<div id="helpbar">
-    <div class="back-to-top">
-        <button id="back2top">↑</button>
-        <script>
-            back2top.onclick = function() {
-                var movement = document.body.scrollTop || document.documentElement.scrollTop;
-                scrollBy(0, -movement);
-            }
-        </script>
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        
+      
     </div>
-</div>
-      <main class="main">
-        <div id="body">
-          <div class="container">
-            <div class="col-12" id="main" role="main">
-    <article class="post post-atpost" itemscope itemtype="http://schema.org/BlogPosting">
-        <div class="post-title">
-            <h1 class="post-title post-title-atpage" itemprop="name headline">
-                <a itemprop="url" href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B405%EF%BC%9A%E5%BA%8F%E8%A8%80/">
-                    数学分析三千年05：序言
-                </a>
-            </h1>
-        </div>
-        <ul class="post-meta post-meta-atpage">
-            <li class="post-time">
-                2025-06-19
-            </li>
-            <li>
-                <div class="article-category">
-                    
-                </div>
-            </li>
-        </ul>
-        <div class="post-content" itemprop="articleBody">
-            <div class="page">
-                <div class="figure-container" style="text-align: right; margin-bottom: 10px;">
-                    <!-- "Check for updates" button is an interactive element, not content for translation -->
-                </div>
-                <h1 style="text-align: center;">1 序言：数学分析 3000 年</h1>
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_1.png" alt="Check for updates">
-                </div>
-                <p class="copyright">© Springer Nature Switzerland AG 2021<br>T. Sonar, 数学分析 3000 年, <a href="https://doi.org/10.1007/978-3-030-58223-4_1">https://doi.org/10.1007/978-3-030-58223-4_1</a></p>
-            </div>
-            
-            <div class="page">
-                <table style="width: 100%; margin: 0 auto;">
-                    <tbody>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px; width: 25%;border:0px;">公元前3000年以来</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">北方游牧民族迁徙到美索不达米亚南部。苏美尔城邦兴起，并在泥板上刻写楔形文字。尼罗河流域的王国统一。象形文字的出现。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前2707-2170年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及古王国时期。金字塔的出现；萨卡拉的阶梯金字塔，代赫舒尔的弯曲金字塔，胡夫、哈夫拉和门卡乌拉的大金字塔。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前2170-2020年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及第一中间期。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前2235-2094年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">阿卡德的萨尔贡在美索不达米亚建立了阿卡德王国。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前2137-1781年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及中王国时期。数学纸草。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1850年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">莫斯科纸草的推定起源时间。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1793-1550年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及第二中间期。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1650年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">阿赫莫斯撰写了《莱因德数学纸草》。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前2000-1595年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">美索不达米亚古巴比伦时期。在汉谟拉比国王（约公元前1700年）统治下，人类第一批立法文本出现。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1675年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">美索不达米亚一块泥板上刻有正方形对角线的长度。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前1550-1070年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及新王国时期。哈特谢普苏特神庙和底比斯的皇家陵墓。卡纳克阿蒙神庙。阿马尔纳的阿赫那吞太阳崇拜。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1279-1213年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">拉美西斯二世，阿布辛拜勒神庙。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前1070-525年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">埃及第三中间期和晚期。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前1700-609年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">亚述王国。数学楔形文字；阶梯金字塔（zikkurates）。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元前750-620年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">新亚述王国，世界历史上第一个大帝国；尼姆鲁德和尼尼微的王宫。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前625-539年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">新巴比伦王国，占星术和天文学的鼎盛时期。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前539年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">居鲁士大帝征服巴比伦。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前525年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">波斯人征服埃及。</td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元前332年</td>
-                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">亚历山大大帝征服埃及。</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="footnote" style="text-align: center; margin-top: 20px;">备注：文献中存在不同的年代学。</p>
-            </div>
-            
-            <div class="page">
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_2.png" alt="一张拼贴画，包含多个历史文物：埃德富浮雕、莫斯科数学纸草、楔形文字V2、图坦卡蒙的死亡面具、楔形文字（苏萨）。">
-                    <p class="figure-caption">图 1.0.2. 公元前的埃及与美索不达米亚</p>
-                </div>
-            </div>
-            
-            <div class="page">
-                <h2>1.1 什么是"分析"？</h2>
-                <p>分析已有三千年历史？分析不是在17世纪由牛顿和莱布尼茨才出现的吗？</p>
-                <p>要圆满回答这个问题，我们首先应该审视"分析"的定义。互联网上可以找到以下定义¹：</p>
-                <blockquote>"数学分析正式发展于17世纪……"</blockquote>
-                <p>看！根据这个定义，分析大约有400年的历史，但请注意：这个定义继续写道：</p>
-                <p class="footnote">¹ <a href="https://en.wikipedia.org/wiki/Mathematical_analysis">https://en.wikipedia.org/wiki/Mathematical_analysis</a></p>
-            </div>
-            
-            <div class="page">
-                <p>"……但其许多思想可以追溯到更早期的数学家。"</p>
-                <p>但是我们要"追溯"多远呢？</p>
-                <p>可靠的老牌《大英百科全书》将"分析（数学）"定义为：</p>
-                <blockquote>"数学的一个分支，处理连续变化以及从对连续变化的研究中产生的某些通用类型的过程，例如极限、微分和积分。自从牛顿和莱布尼茨在17世纪末发现微积分和积分学以来，分析已经发展成为一个庞大而核心的数学研究领域，并在所有科学以及金融、经济学和社会学等领域都有应用。"</blockquote>
-                <p>我完全没有问题地接受这个定义！分析关注的是连续变化的数学，从中发展出了切线问题、求积问题（即计算弯曲曲线下面积的问题），并最终形成了牛顿和莱布尼茨的实际微积分学。</p>
-                <p>狭义上讲，分析只是无限过程和"无穷小量"的数学分支，这种意义上的分析应该作为一种阿里阿德涅之线（Ariadne's thread）伴随我们穿越历史。然而，这并非始终如一。 "函数"的概念无疑是分析的核心，但它最初与无穷小量无关。尽管如此，对函数概念的讨论无疑属于分析史的范畴。</p>
-                <p>那为什么是3000年呢？嗯，像π或√2这样的特殊数字扮演着一定的角色，而这些数字（或其近似值）确实可以在古埃及和美索不达米亚的文化区域中找到。</p>
-            </div>
-            
-            <div class="page">
-                <h2>1.2 π的前身</h2>
-                <p>在著名的《莱因德纸草》²中已经可以找到圆面积的近似计算。这份纸草是由一位名叫阿赫莫斯（Ahmes）的抄写员在约公元前1650年写成的，他写道他只是抄录了至少200年前的数学问题。</p>
-                <p>在他的纸草问题48中，阿赫莫斯描绘了一个内切于正方形的圆。我们可以从随后的计算中推断，边长为9个单位的正方形面积为81平方单位，直径为9个单位的圆面积为64平方单位。在问题50中，可以找到计算圆面积的精确说明 [Gericke 2003, p. 55]：</p>
-                <p class="footnote">² 因1858年在卢克索购买此纸草的苏格兰人亚历山大·亨利·莱因德（Alexander Henry Rhind）而得名。</p>
-            </div>
-            
-            <div class="page">
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_3.png" alt="图1.2.1. 莱因德纸草的开头。该纸草长5.5米，高32厘米。它包含有关数学主题的问题，如今被称为代数、分数算术、几何和三角学。它本身是公元前12王朝（公元前19世纪）原始文本的副本。抄写员阿赫莫斯于约公元前1650年用僧侣体文字抄写了这份原始文本。（大英博物馆古埃及和苏丹部EA 10057，伦敦 [照片：保罗·詹姆斯·考伊]）">
-                    <p class="figure-caption"><b>图1.2.1. 莱因德纸草的开头。</b>该纸草长5.5米，高32厘米。它包含有关数学主题的问题，如今被称为代数、分数算术、几何和三角学。它本身是公元前12王朝（公元前19世纪）原始文本的副本。抄写员阿赫莫斯于约公元前1650年用僧侣体文字抄写了这份原始文本。（大英博物馆古埃及和苏丹部EA 10057，伦敦 [照片：保罗·詹姆斯·考伊]）</p>
-                </div>
-                <blockquote>
-                    <p style="font-style: italic;">"计算（直径为）9的圆形区域的例子。它的面积是多少？从（直径）中减去1/9。余数为8。8乘以8。结果为64。"</p>
-                    <p>(Beispiel der Berechnung eines runden Feldes vom (Durchmesser) 9. Was ist der Betrag seiner Fläche? Nimm 1/9 von ihm (dem Durchmesser) weg. Der Rest ist 8. Multipliziere 8 mal 8. Es wird 64.)</p>
-                </blockquote>
-                <p>这个计算规则使我们得出结论，埃及人使用 (8/9)² 作为 π/4 的值。由于他们既不知道 π 的性质，也不知道 π 的作用，我们可能会问自己这个值是如何得到的。一种可能性是使用网格。在直径为 d 单位的圆周围画一个边长为 d 的正方形，并将正方形分成9个均匀分布的小正方形，如图1.2.2（左）所示。正方形的面积会严重高估圆的面积，因此我们将正方形四个角的四个小正方形各分成两个三角形，并且只将其中一个三角形计入面积，如图1.2.2（右）所示。因此剩下5个小正方形和4个三角形，圆的面积近似为：</p>
-                <div class="equation">
-                    A<sub>circle</sub> ≈ 5 · (d/3)² + 4 · ½ · (d/3)² = 7/9 d².
-                </div>
-            </div>
-            
-            <div class="page">
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_0.png" alt="图1.2.2. 从外部近似圆的面积，一个正方形内切一个圆，正方形被分割成9个小正方形，并展示了如何移除四个角的区域来近似圆。">
-                    <p class="figure-caption"><b>图1.2.2. 从外部近似圆的面积</b></p>
-                </div>
-                <p>然而，阿赫莫斯给出的近似值是：</p>
-                <div class="equation">
-                    A<sub>circle</sub> ≈ (64/81) d² = (8/9)² d².
-                </div>
-                <p>他显然将（正确的）近似值 <sup>π</sup>⁄₄ d² = <sup>63</sup>⁄₈₁ d² 加上了一个 <sup>1</sup>⁄₈₁ d² 的面积，最终得到了分子和分母都是完全平方数的表达式！但他真的这样做了吗？奥托·诺伊格鲍尔（Otto Neugebauer，1899 – 1990）有些沮丧地评论道 [Neugebauer 1969a, p. 124]：</p>
-                <blockquote>
-                    <p style="font-style: italic;">"而且无法理解从这个表达式 [圆面积的 d²] 到埃及公式的推导方式。没有新的文本资料，因此，对这个公式的起源发表假设意义不大，因为显而易见的方法并不能直接导致所需的结果。"</p>
-                    <p>(Und es ist nicht einzusehen, wie man von diesem Ausdruck zu der ägyptischen Formel hinüberkommen kann. Ohne neues Textmaterial hat es also wenig Sinn, über die Entstehungsgeschichte dieser Formel Vermutungen zu äußern, da der naheliegende Weg offenbar nicht direkt zum Ziel führt.)</p>
-                </blockquote>
-                <p>由于圆的真实面积由 A<sub>circle</sub> = πr² = (π/4)d² 给出，古埃及人使用了近似值</p>
-                <div class="equation">
-                    π<sub>Egypt</sub> = 3.16049
-                </div>
-                <p>这绝不是一个糟糕的近似值！至少相对误差只有</p>
-                <div class="equation">
-                    |π<sub>Egypt</sub> - π| / π ≈ 0.00601643,
-                </div>
-                <p>因此大约是 0.6%！</p>
-            </div>
-            
-            <div class="page">
-                <p>在值得一看的电视节目《数学故事》[Du Sautoy 2008] 中，数学家马库斯·杜·索托伊（Marcus du Sautoy，生于1965年）对埃及人如何得出圆面积的公式给出了另一种解释。根据他的解释，近似值 π<sub>Egypt</sub>/4 = (8/9)² 源于一个古埃及棋盘游戏，游戏中必须移动填充半球形凹陷的木板上的球体。使用这些球体可以形成一个直径相当于9个球体的圆。如果将这些球体重新排列成一个正方形，那么这个正方形的边长将是8。如果杜·索托伊的解释是正确的，那么我们在这里就有一个早期尝试来"化圆为方"。这个问题，也称为"圆的求积"，我们稍后会讨论。</p>
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_4.png" alt="图1.2.3. 涅菲尔塔丽王后（第19王朝，拉美西斯二世的妻子）正在玩塞尼特（Senet）游戏。塞尼特游戏的规则可以大致重建。其他游戏，如"猎犬和豺狼"或"蛇游戏"的规则大多未知（涅菲尔塔丽墓室壁画，西底比斯）">
-                    <p class="figure-caption"><b>图1.2.3. 涅菲尔塔丽王后</b>（第19王朝，拉美西斯二世的妻子）正在玩塞尼特（Senet）游戏。塞尼特游戏的规则可以大致重建。其他游戏，如"猎犬和豺狼"或"蛇游戏"的规则大多未知（涅菲尔塔丽墓室壁画，西底比斯）</p>
-                </div>
-            </div>
-            
-            <div class="page">
-                <h2>1.3 圣经中的 π</h2>
-                <p>古埃及的 π 值已经比"圣经"值精确得多。在《列王纪上》第7章23节中，我们读到：</p>
-                <blockquote>"他又铸一个铜海，从这边到那边，共十肘，是圆的，高五肘，周围量它，共三十肘。"</blockquote>
-                <p>在《历代志下》第4章2节中，我们发现：</p>
-                <blockquote>"他又铸一个铜海，从这边到那边，共十肘，是圆的，高五肘，周围量它，共三十肘。"</blockquote>
-                <p>因此，这个"海"的形状确实是一个直径 d = 10 肘、周长 U = 30 肘的圆。由于任何圆的周长和直径之间的关系是 U = πd，我们得到</p>
-                <div class="equation">
-                    π<sub>Bible</sub> = U/d = 30/10 = 3.
-                </div>
-                <p>这个值也是巴比伦人使用的，而爱德华兹（生于1937年）在 [Edwards 1979, p. 4, Ex.5] 中试图解释它，我发现很有吸引力。与埃及人近似圆面积的方式不同，人们可能想到不仅要给圆外切一个正方形，还要内切一个正方形，如图1.3.1所示。那么，圆的面积应该通过这些正方形面积的算术平均值来近似。外切正方形的面积显然是 A₁ := d² = 4r²。根据在美索不达米亚广为人知的毕达哥拉斯定理，内切正方形的边长是 √r² + r² = √2r，因此内切正方形的面积是 A₂ := 2r²。由于外切正方形的面积高估了圆的面积，而内切正方形的面积低估了圆的面积，我们可以期望算术平均值可以对圆的面积提供有用的近似值：</p>
-                <div class="equation">
-                    A<sub>circle</sub> ≈ (A₁ + A₂)/2 = 3r².
-                </div>
-                <p>事实上，这里出现了圣经中的 π 值！</p>
-                <p>但这似乎并非巴比伦人故事的结局。根据贝克曼（Beckmann，1924-1993）[Beckmann 1971, p. 21 ff.] 和诺伊格鲍尔 [Neugebauer 1969b, p. 46 ff.] 的说法，1936年在巴比伦以东约200英里处的苏萨挖掘出土的泥板，其中包含一些几何图形的计算。其中一块泥板涉及内切于圆的正六边形，并指出正六边形的周长与外接圆的周长之比为</p>
-            </div>
-            
-            <div class="page">
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_13.png" alt="图1.3.1. 从内部近似圆的面积。一个圆被外切方形和内切方形包围，半径r被标示出来，直径为2r。">
-                    <p class="figure-caption"><b>图1.3.1. 从内部近似圆的面积</b></p>
-                </div>
-                <div class="equation">
-                    57/60 + 36/60²
-                </div>
-                <p>巴比伦人知道，如果半径用 r 表示，六边形的周长是 6r，参见图1.3.2。</p>
-                <p>因此所求的比率是 6r/C，如果 C 表示圆的周长。由于</p>
-                <div class="equation">
-                    π = C/2r
-                </div>
-                <p>我们得出结论</p>
-                <div class="equation">
-                    3/π = 57/60 + 36/60²
-                </div>
-                <p>因此 π = 31/8 = 3.125。</p>
-                <p>这表明巴比伦人对 π 的近似值也比单纯的 3 要好。</p>
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_14.png" alt="图1.3.2. 通过正六边形近似圆的面积。一个正六边形内切于一个圆，中心到顶点的距离r标示出来，圆的周长C也被标示。">
-                    <p class="figure-caption"><b>图1.3.2. 通过正六边形近似圆的面积</b></p>
-                </div>
-            </div>
-            
-            <div class="page">
-                <h2>1.4 棱锥台的体积</h2>
-                <p>在莫斯科普希金博物馆保存的《莫斯科数学纸草》中，可以找到问题14，这几乎指向了分析学的一项基本任务。这个问题计算的是棱锥台的体积。</p>
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_5.png" alt="图1.4.1. 莫斯科数学纸草中棱锥台体积的计算，包含僧侣体文字和象形文字。">
-                    <p class="figure-caption"><b>图1.4.1. 莫斯科数学纸草中棱锥台体积的计算</b>（莫斯科数学纸草）以僧侣体文字和象形文字书写</p>
-                </div>
-                <p>对于金字塔的建造者来说，这种计算一定特别重要，因为金字塔是分层建造的。因此，金字塔只不过是棱锥台和顶部的锥体部分的加总。我们在这里不想推测埃及人是如何得出棱锥台体积的（正确）公式的，而是请读者参考 [Gillings 1982] 中的相关章节（另见 [Scriba/Schreiber 2000, p. 14 ff.]，[Wußing 2008, p. 99 ff.]）。</p>
-                <p>尽管问题14只涉及使用具体数字进行计算，但埃及人一定已经知道正确的公式：</p>
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_6.png" alt="图1.4.2. 一个对称金字塔和一个直角金字塔，它们拥有相同的底面积和高度，因此体积相同。">
-                    <p class="figure-caption"><b>图1.4.2. 一个对称金字塔和一个直角金字塔拥有相同的底面积和高度，它们的体积相同</b></p>
-                </div>
-            </div>
-            
-            <div class="page">
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_7.png" alt="图1.4.3. 将一个立方体分解成六个中心点在中心的对称金字塔（左），以及分解成三个直角金字塔（右）。">
-                    <p class="figure-caption"><b>图1.4.3. 将一个立方体分解成六个中心点在中心的对称金字塔（左），以及分解成三个直角金字塔（右）</b></p>
-                </div>
-                <div class="equation">
-                    V = (h/3) (a² + ab + b²) (1.1)
-                </div>
-                <p>其中 a 和 b 是两个底面区域的边长，h 表示棱锥台的高度。诺伊格鲍尔 [Neugebauer 1969a, p. 126] 称之为埃及数学的"瑰宝"（Glanzstück）。</p>
-                <p>指向数学分析的方法很可能是实际计算棱锥体积的方法（在 [Gillings 1982] 中可以找到另一种方法）。为此，埃及抄写员考虑了一个金字塔，其顶点恰好位于其中一个边缘点上方。</p>
-                <p>三个这样的直角（或"倾斜"）金字塔，如果它们拥有相同的高度和底边，则共同构成一个具有相同高度和底边边缘的立方体；也就是说，每个金字塔的体积是立方体体积的三分之一。或者，也可以用6个全等对称金字塔来构建一个立方体，这些金字塔的高度是其底边一半的高度。将其中一个金字塔的顶点对准另一个的顶点放置，并用剩余的四个金字塔填充空隙，如图1.4.4所示。</p>
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_8.png" alt="图1.4.4. 棱锥台的计算可以图示化地理解为将其分解为基本几何形式：中间一个长方体，两侧四个棱柱，边缘四个直角金字塔。对于直角金字塔，情况是相同的长方体，但两侧只有两个体积两倍的棱柱，边缘一个体积四倍的直角金字塔，这样两个棱锥台具有相同的体积 V = (h/3)(a² + ab + b²)。">
-                    <p class="figure-caption"><b>图1.4.4. 棱锥台的计算</b>可以通过将其分解为几何基本形式来图形化理解：中间一个长方体，两侧四个棱柱，以及边缘四个直角金字塔；对于直角金字塔，是相同的长方体，但两侧只有两个体积两倍的棱柱，边缘一个体积四倍的直角金字塔，这样两个棱锥台具有相同的体积 V = (h/3)(a² + ab + b²)</p>
-                </div>
-            </div>
-            
-            <div class="page">
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_9.png" alt="图1.4.5. 萨卡拉的法老乔塞尔的阶梯金字塔（约公元前2600年）[照片：H.-W. 阿尔滕]">
-                    <p class="figure-caption"><b>图1.4.5. 萨卡拉的法老乔塞尔的阶梯金字塔</b>（约公元前2600年）[照片：H.-W. 阿尔滕]</p>
-                </div>
-                <p>如图1.4.3（左）所示。现在想象图1.4.2中的直角金字塔被切割成许多非常薄的平行于底面的切片，然后将这些切片平移，结果得到一个具有相同体积的对称金字塔，其顶点现在位于方形底面的中心上方。当然，图1.4.4中的棱锥台也是如此。事实上，金字塔在古埃及是从许多层中出现的。早在第一和第二王朝的国王的马斯塔巴（约公元前3000年至2700年）就显示出这些层次。</p>
-                <p>第三王朝的第二位国王乔塞尔下令在他的原始三级马斯塔巴的基础上增加三级，每一级都由许多薄层石块组成。因此，著名的萨卡拉乔塞尔阶梯金字塔约在公元前2680年出现。在第四王朝斯尼夫鲁国王的统治下，从棱锥台的层叠结构向金字塔的抽象几何形式过渡。这似乎是一场巨大的赌博，因为在建造的第一阶段，高达约49米的高度，采用内倾斜层的方法被证明是不稳定的。这是由于坡度角过陡（约58度）以及层倾斜的结果。在第二阶段，底面积被扩大，坡度角减小到54度，但内倾斜层的技术得以保留。由于这也导致了不稳定，在第三阶段坡度角进一步减小到43度，并在当前的棱锥台顶部铺设了水平层。因此，约在公元前2615年，斯尼夫鲁的弯曲金字塔出现了——这是胡夫、哈夫拉和门卡乌拉的大金字塔以及其他所有古王国金字塔的原型，所有这些金字塔都采用水平层叠建造。</p>
-            </div>
-            
-            <div class="page">
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_10.png" alt="图1.4.6. 代赫舒尔的法老斯尼夫鲁的弯曲金字塔[照片：H. 韦瑟穆勒-科克]">
-                    <p class="figure-caption"><b>图1.4.6. 代赫舒尔的法老斯尼夫鲁的弯曲金字塔</b>[照片：H. 韦瑟穆勒-科克]</p>
-                </div>
-                <p>公元前2615年——胡夫、哈夫拉和门卡乌拉大金字塔以及古王国其他金字塔的原型，所有这些都采用水平层建造。</p>
-                <p>我们再次引用诺伊格鲍尔 [Neugebauer 1969a, p. 126] 的话：</p>
-                <blockquote>
-                    <p style="font-style: italic;">"这个公式 [(1.1)] 的令人惊讶之处有两点：一方面是它的对称形式，另一方面是它的数学正确性，特别是这个公式，如果推导正确，必然需要无穷小量的考虑，也就是说，它超越了初等几何的框架。"</p>
-                    <p>(Was an dieser Formel überrascht, ist vor allem zweierlei: einerseits die symmetrische Gestalt, andererseits die mathematische Korrekt-heit, die ja gerade bei dieser Formel, falls sie auch korrekt abgeleitet werden sollte, bekanntlich mit Notwendigkeit Infinitesimalbetracht-ungen verlangt, d.h. über den Rahmen der Elementargeometrie hin-ausführt.)</p>
-                </blockquote>
-                <p>如果将空间图形切割成（原则上无限多的）水平层的思想确实存在于古埃及抄写员的头脑中，那么他们就预见到了分析的核心思想，即所谓的"卡瓦列里原理"。在埃及金字塔建成几千年后，博纳文图拉·卡瓦列里（Bonaventura Cavalieri，1598-1647）发现了计算面积和体积的"不可分量求和"原理。</p>
-            </div>
-            
-            <div class="page">
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_11.png" alt="图1.4.7. 胡夫金字塔（吉萨，开罗）的层状结构[照片：H.-W. 阿尔滕]">
-                    <p class="figure-caption"><b>图1.4.7. 胡夫金字塔（吉萨，开罗）的层状结构</b>[照片：H.-W. 阿尔滕]</p>
-                </div>
-                <p>后来，这种技术被定积分的概念所取代，其中（无限多的）无穷小层被"求和"。</p>
-            </div>
-            
-            <div class="page">
-                <h2>1.5 巴比伦人对 √2 的近似</h2>
-                <p>在耶鲁巴比伦收藏中，有一块巴比伦楔形文字泥板，档案号为YBC 7289，上面近似计算了一个单位正方形的对角线长度，作为使用毕达哥拉斯定理的例子，参见 [Alten et al. 2005, p. 41, Abb. 1.3.9]，也请参见图1.5.1。这块楔形文字泥板约公元前1675年。将图1.5.1中的楔形文字转录为数字，得到：</p>
-                <div class="equation">
-                    a := 30<br>
-                    b := 1, 24, 51, 10<br>
-                    c := 42, 25, 35,
-                </div>
-                <p>这些数字是以六十进制系统书写的，即以60为基数的数字系统。在这个系统中，很难找到每个数字的正确位置，因为巴比伦人写的是 1,2,3 = 1·60² + 2·60¹ + 3·60⁰ = 3723 或 1,2,3 = 1·60¹ + 2·60⁰ + 3·60⁻¹ = 62.0166 ...，具体取决于上下文。楔形文字专家现在遵循奥托·诺伊格鲍尔的建议，在前一种情况下写作1,2,3，在后一种情况下是1,2;3；分号清晰地标记了"六十进制小数点"的位置，逗号分隔不同的数字。这些分隔标记是必要的，因为在六十进制系统中，有59个数字，587可能表示5,8,7或58,7。如果习惯于用六十进制数字计算，那么很明显，上面的数字a, b, c中c = a·b是成立的。将这些数字解释为正方形的边长a和对角线c的长度，毕达哥拉斯定理告诉我们c² = 2a²，因此c = √2a。因此，数字b应该近似于√2，我们确实计算出</p>
-                <div class="equation">
-                    1; 24, 51, 10 = 1 · 60⁰ + 24 · 60⁻¹ + 51 · 60⁻² + 10 · 60⁻³ = 1.414213
-                </div>
-                <p>因此，平方 (1;24, 51, 10)² = 1; 59, 59, 59, 38, 1, 40 相当接近于2，参见 [Aaboe 1998]。显然，巴比伦人非常清楚正方形对角线的长度是边长的 √2 倍，并且他们手头有对 √2 的极佳近似值。像 √2 或 π 这样的无理数在分析学的发展中非常重要，正是这类</p>
-                <div class="figure-container">
-                    <img src="07_Prologue_ 3000 Years of Analysis_12.png" alt="图1.5.1. 关于√2的计算：a) 耶鲁巴比伦收藏的楔形文字泥板YBC 7289，b) 根据雷斯尼科夫（Resnikoff）复制的YBC 7289文本，c) 六十进制系统中的印度-阿拉伯数字文本。[照片：威廉·A·卡塞尔曼]">
-                    <p class="figure-caption"><b>图1.5.1. 关于√2的计算：</b>a) 耶鲁巴比伦收藏的楔形文字泥板YBC 7289，b) 根据雷斯尼科夫复制的YBC 7289文本，c) 六十进制系统中的印度-阿拉伯数字文本 [照片：威廉·A·卡塞尔曼]</p>
-                </div>
-            </div>
-            
-            <div class="page">
-                <p>数字使得实数分析成为可能。我们没有线索表明美索不达米亚文化区对无理数有更深入的理解，这也不足为奇。对实数系统结构的真正理解要等到19世纪末才会出现。</p>
-                <p>我们是否已经为标题中的"3000年"找到了理由？胡夫金字塔建于约公元前2600年。如果我们承认古埃及人已经掌握了计算金字塔体积的分析方法，那么分析学就有了5000年的历史。如果我们接受分析学的真正开端（以我们现代的理解）可以在古希腊找到——就像许多其他事物一样——那么梅塔蓬图姆的希帕索斯在约公元前500年发现无理数无疑对分析学的发展至关重要。在这种情况下，分析学将有2500年的历史。关于分析学年龄问题的真正答案是：我们根本不知道！这就是我们选择3000年作为一种妥协的原因。</p>
-            </div>
-             
-                <blockquote>
-                    <p>文章作者：<a href="/ "> Colin Zhu  </a></p>
-                    <p>文章链接：<a href="http://colin4k.1979927.xyz/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B405%EF%BC%9A%E5%BA%8F%E8%A8%80/"> http://colin4k.1979927.xyz/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B405%EF%BC%9A%E5%BA%8F%E8%A8%80/ </a></p>
-                    <p>版权声明：除另有声明外，本博客文章均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> CC BY-NC-SA 4.0 </a> 许可协议。转载请注明原作者与文章出处。</p>
-                </blockquote>
-             
-        </div>
+    <footer>
+      
         
-            <p itemprop="keywords" class="tags">
-                
-                    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B4/"> 数学分析三千年 </a>
-                
-            </p>
         
-    </article>
-    <div class="post-near">
-    <div class="post-near-child post-near-child-left "> 
-        
-            <a href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B404%EF%BC%9A%E7%9B%AE%E5%BD%95/">数学分析三千年04：目录 &laquo; </a>
-        
-        <br /> 上一篇  &laquo;
-    </div>
-    <div class="post-near-child post-near-child-right">
-        
-            <a href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B406%EF%BC%9A%E5%B8%8C%E8%85%8A-%E5%B8%8C%E8%85%8A%E5%8C%96%E6%97%B6%E4%BB%A3%E7%9A%84%E8%BF%9E%E7%BB%AD%E7%BB%9F/"> &raquo; 数学分析三千年06：希腊-希腊化时代的连续统</a>
-        
-        <br /> &raquo; 下一篇 
-    </div>
-</div>
-</div>
-             
-<div id="comments">
-     
-</div>
- 
-            <footer id="footer" role="contentinfo">
-    
-        &copy; 2020 - 2025
-        <br />
-    
-    
-    <br />
-    
-    
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_value_site_pv">......</span> visits ·
-        <span id="busuanzi_value_site_uv">......</span> visitors 
-    
-</footer>
-          </div>
-        </div>
-      </main>
-      <!-- highlight support -->
+  
+  <div class="tags">
+    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B4/">数学分析三千年</a>
+  </div>
 
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css">
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
 
 
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js"></script>
- 
+<section id="comment">
+  <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
 <script>
-        hljs.initHighlightingOnLoad();
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 </script>
- 
-<!-- prettify support -->
- 
-<!-- mathjax support -->
 
-    
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src=""></script>
+<div class="fb-comments" data-href="http://colin4k.1979927.xyz/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B405%EF%BC%9A%E5%BA%8F%E8%A8%80/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="colin4k.1979927.xyz">
+  </form>
+</div>
 
 
-<!-- fancybox support -->
- 
-<!-- viewerjs support -->
+  
 
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viewerjs@1.10.0/dist/viewer.min.css">
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B4/">数学分析三千年</a><small>7</small></li>
+  
+  </ul>
+</div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/viewerjs@1.10.0/dist/viewer.min.js"></script>
+  
+  <div class="widget widget-archives">
+    <h3 class="title">归档</h3>
+    <div class="entry">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">六月 2025</a><span class="archive-list-count">8</span></li></ul>
+    </div>
+  </div>
 
-<script type="text/javascript">
-    Viewer.setDefaults({
-        zoomRatio: [0.5],
-        show: function () {
-            this.viewer.zoomTo(1);
-        },
-    });
-    
-    var imageList = document.querySelector('.post-content').getElementsByTagName('img');
-    
-    var imageArray = new Array();
-    Array.prototype.forEach.call(imageList, element => {
-        if (element.alt != "no-view" && element.className != "no-view") {
-            imageArray.push(element);
-        }
-    });
-    
-    Array.prototype.forEach.call(imageArray, element => {
-        var viewer1 = new Viewer(element);
-        viewer1.images = imageArray;
-        viewer1.length = imageArray.length;
-    });
-</script>
- 
-<!-- google analytics support -->
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 Colin Zhu
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
 
 
 
- 
- 
 
-<!-- lazyload support -->
 
-    
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 <script>
-    new LazyLoad({
-        elements_selector: '.post-content img'
-    });
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
 </script>
- 
-  </body>
 
+</body>
 </html>
