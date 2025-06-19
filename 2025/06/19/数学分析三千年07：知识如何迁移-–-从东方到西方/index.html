@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>
+        数学分析三千年07：知识如何迁移 – 从东方到西方 - Colin's blog 
+    </title>
+     
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        .page {
+            margin-bottom: 40px;
+            page-break-after: always;
+        }
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 20px;
+        }
+        .page-number {
+            font-size: 0.9em;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+        }
+        .figure-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .figure-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        .figure-caption {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .copyright {
+            font-size: 0.8em;
+            color: #777;
+            text-align: left;
+            margin-top: 20px;
+        }
+        blockquote {
+            margin: 20px 40px;
+            padding: 10px 20px;
+            border-left: 5px solid #eee;
+            color: #666;
+        }
+        .math {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+        }
+        .algorithm-step {
+            margin-left: 20px;
+        }
+        .footnote {
+            font-size: 0.8em;
+            color: #555;
+            margin-top: 10px;
+        }
+        .figure { text-align: center; margin: 1em 0; }
+        .figure img { max-width: 100%; height: auto; }
+        .figure-caption { font-size: 0.9em; margin-top: 0.5em; }
+        .equation { text-align: center; margin: 1em 0; }
+        .equation span { display: block; }
+        .indent { text-indent: 2em; }
+        .sub-figure-caption { text-align: left; margin-top: 0.5em; }
+        .check-update {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .check-update-box {
+            border: 1px solid #ccc;
+            padding: 5px;
+            display: inline-block;
+        }
+        .check-update-text {
+            font-size: 0.8em;
+        }
+    </style>
+<link rel="stylesheet" href="/css/grid.css">
+
+    
+<link rel="stylesheet" href="/css/custom.css">
+
+    
+<link rel="stylesheet" href="/css/ringo.css">
+
+     
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico " />
+     
+     
+     
+        <meta name=" " content="" />
+     
+        <meta name=" " content="" />
+     
+ 
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    <header id="header" class="clearfix" onclick="window.open('/', '_self')">
+    <div class="site-name">
+        <a href="/" id="logo" class="site-title">
+            Colin&#39;s blog
+        </a>
+        <p class="description site-description">
+            <span style="padding-top:20px; font-size: 10px">
+                AI, Web3 and Mathematics
+            </span>
+        </p>
+    </div>
+</header>
+<div id="sidebar" role="complementary">
+    <section class="widget">
+        <ul class="menu widget-list">
+            
+        </ul>
+    </section>
+    <section class="widget sidebar-foot">
+        <ul class="widget-list">
+            <li>Theme <a rel="nofollow" target="_blank" href="https://github.com/HeliumOI/hexo-theme-ringo">Ringo</a>
+                by <a target="_blank" href="/ "> Colin Zhu  </a></li>
+            <li>Proudly powered by  <a rel="nofollow" target="_blank" href="https://hexo.io/">Hexo</a></li>
+        </ul>
+    </section>
+</div>
+
+<div id="helpbar">
+    <div class="back-to-top">
+        <button id="back2top">↑</button>
+        <script>
+            back2top.onclick = function() {
+                var movement = document.body.scrollTop || document.documentElement.scrollTop;
+                scrollBy(0, -movement);
+            }
+        </script>
+    </div>
+</div>
+      <main class="main">
+        <div id="body">
+          <div class="container">
+            <div class="col-12" id="main" role="main">
+    <article class="post post-atpost" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-title">
+            <h1 class="post-title post-title-atpage" itemprop="name headline">
+                <a itemprop="url" href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B407%EF%BC%9A%E7%9F%A5%E8%AF%86%E5%A6%82%E4%BD%95%E8%BF%81%E7%A7%BB-%E2%80%93-%E4%BB%8E%E4%B8%9C%E6%96%B9%E5%88%B0%E8%A5%BF%E6%96%B9/">
+                    数学分析三千年07：知识如何迁移 – 从东方到西方
+                </a>
+            </h1>
+        </div>
+        <ul class="post-meta post-meta-atpage">
+            <li class="post-time">
+                2025-06-19
+            </li>
+            <li>
+                <div class="article-category">
+                    
+                </div>
+            </li>
+        </ul>
+        <div class="post-content" itemprop="articleBody">
+            <div class="page">
+    
+                <h1>3 知识如何迁移 – 从东方到西方</h1>
+                <div class="check-update">
+                    <div class="check-update-box">
+                        <img src="09_How Knowledge Migrates – From Orient to Occident_1.png" alt="纸币和建筑的拼贴画，其中有伊本·海赛姆（Ibn al-Haytham）和伊本·西那（Ibn Sina）的肖像。">
+                        
+                    </div>
+                    
+                </div>
+                <div class="copyright">
+                    <p>© Springer Nature Switzerland AG 2021</p>
+                    <p>T. Sonar, 3000 Years of Analysis, <a href="https://doi.org/10.1007/978-3-030-58223-4_3">https://doi.org/10.1007/978-3-030-58223-4_3</a></p>
+                    
+                </div>
+            
+                
+            
+                
+            </div>
+            
+            <div class="page">
+                <table style="width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.9em;">
+                    <tbody style="border: 1px solid black;">
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px; width: 20%;border:0px;">公元455年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">罗马被汪达尔人洗劫</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元570年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">穆罕默德生于麦加</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元610年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">穆罕默德显现天使加百列。穆罕默德成为先知</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元622年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">穆罕默德从麦加迁往麦地那，建立新宗教伊斯兰教</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元632-661年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">四位正统哈里发的统治时期</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元634-644年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">伊斯兰教在地中海地区的扩张运动始于第二任哈里发奥马尔一世，即穆罕默德的岳父。奥马尔在地中海地区推行伊斯兰扩张运动。据说奥马尔是伊斯兰帝国的缔造者。</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元705-715年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">伊斯兰教在瓦利德一世统治下第二次大规模扩张进入西班牙</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元732</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">法兰克王国的征服失败。阿拉伯军队在图尔和普瓦捷战役中败于查理·马特尔的军队</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元800年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">查理曼大帝加冕为皇帝</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元969-1171年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">法蒂玛王朝统治埃及</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元1055年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">土耳其塞尔柱人征服巴格达</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元1071年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">耶路撒冷落入塞尔柱人手中</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元1076年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">大马士革落入塞尔柱人手中</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元1086年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">阿尔摩拉维王朝确保了西班牙的伊斯兰控制</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元1095年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">教皇乌尔班二世在克莱蒙特会议上宣布第一次十字军东征。此后还将有六次十字军东征，直至13世纪末</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元1147年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">正统伊斯兰的阿尔摩哈德王朝取代了西班牙的阿尔摩拉维王朝</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元1299年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">奥斯曼帝国建立之年</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元1453年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">奥斯曼人征服君士坦丁堡</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <h3>3.1 数学衰落与阿拉伯人的挽救</h3>
+            
+                <p>
+                    公元5世纪，随着西罗马帝国的灭亡，罗马帝国最终崩溃。民族迁徙和匈奴人的入侵所带来的变动和扭曲震撼了帝国，使其根基动摇。在公元378年的阿德里安堡战役中，瓦伦斯皇帝被哥特人击败，罗马迅速失控。在5世纪中叶，高卢和西班牙的大片地区落入了入侵的汪达尔人、法兰克人和哥特人手中；公元435年，非洲省份落入了汪达尔人手中。西哥特人在410年洗劫了罗马；汪达尔人紧随其后，在455年再次洗劫。罗马皇帝罗慕路斯·奥古斯都于476年被条顿人奥多亚塞罢免，后者的继任者已经表现得像一位西罗马皇帝。然而，奥多亚塞和狄奥多里克大帝
+                </p>
+            </div>
+            
+            <div class="page">
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_2.png" alt="图3.0.2 伊斯兰教扩张图">
+                    <div class="figure-caption">
+                        <b>图 3.0.2.</b> 伊斯兰教在最初的100年里迅速扩张。从大约750年直到9世纪，文化和自然科学达到了鼎盛时期
+                    </div>
+                </div>
+            
+                <p>
+                    渴望得到拜占庭（君士坦丁堡）东罗马皇帝的认可。罗马的波爱修斯（约457-480年，约524-526年之间）在狄奥多里克宫廷工作。他出身名门望族。我们记住他，是因为他后来失宠入狱，在狱中写下了最著名的哲学著作之一：《哲学的慰藉》[Boethius 1999]。在狱中，他曾幻见到了一位以寓言形式出现的哲学女神，波爱修斯由此展开了一场对话，并被记录在《哲学的慰藉》一书中。
+                </p>
+            
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_3.png" alt="图3.1.1 波爱修斯教授学生">
+                    <div class="figure-caption">
+                        <b>图 3.1.1.</b> 波爱修斯教授他的学生（格拉斯哥大学图书馆，特藏部）
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page">
+            
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_4.png" alt="图3.1.2 《算术原理》手稿">
+                    <div class="figure-caption">
+                        <b>图 3.1.2.</b> 波爱修斯：《算术原理》，10世纪手稿，第4页左侧（隆德大学圣劳伦修斯数字图书馆）
+                    </div>
+                </div>
+            
+                <p>
+                    波爱修斯还翻译了亚里士多德的部分著作并对其进行了评论。因此，他成为中世纪经院哲学中希腊哲学的重要传播者，因为在拉丁化了的西欧，希腊语知识几乎不存在。他曾计划将柏拉图和亚里士多德的所有（当时已知的）著作翻译成拉丁文，但他的入狱毁掉了这个计划。波爱修斯也因其一些数学著作而闻名[Cajori 2000, p. 67f.]。
+                </p>
+                <p>
+                    这些著作清楚地表明了罗马帝国末期数学科学的衰落。波爱修斯的《算术原理》只是希腊数学家尼科马库斯（约公元60-120年）一部著作的部分译本，其中缺少了尼科马库斯最精彩的成果。在波爱修斯的几何著作中，我们发现了欧几里得《几何原本》的几个部分的译文。
+                </p>
+                <p>
+                    但波爱修斯对中世纪也产生了深远的影响。他创造了"四艺"（quadrivium）的概念，意指算术、天文学、几何学和音乐这四门科学。他本人将"四艺"称为"通往智慧的四重途径"[Gilson 1989, p. 97]。除了"四艺"之外，还有"三艺"（trivium）：语法、修辞和辩证法。
+                </p>
+            </div>
+            
+            <div class="page">
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_5.png" alt="图3.1.3 波爱修斯手稿中的数字表">
+                    <div class="figure-caption">
+                        <b>图 3.1.3.</b> 波爱修斯《算术原理》手稿中的表格，显示了印度-阿拉伯数字而非罗马数字。表格中，每个数字与其下方数字的比例为3:4。右下角的两个数字（768和576）在PAL制式电视屏幕格式（宽带和高清前）中再次出现，分辨率为768 × 576
+                    </div>
+                </div>
+            
+                <p>
+                    帝国的东部远比罗马成功，罗马帝国的思想在这里存续了更久。首先，拜占庭帝国由于其地理位置，更有效地抵御了外族的入侵。其次，与西罗马相比，东罗马的经济和行政体系保持完好，东罗马军队也依然凝聚。在最后一位拉丁语东罗马皇帝查士丁尼一世（约482-565年）的统治下，拜占庭人甚至重新征服了意大利、西班牙南部和北非的大片地区。然而，东罗马随后卷入了与东方波斯民族的毁灭性战争，波斯民族在7世纪征服了帝国的大片领土。
+                </p>
+                <p>
+                    公元529年，查士丁尼皇帝下令关闭雅典的"异教学校"。这项命令也包括柏拉图学院，该学院已经存在了九个世纪。任何关于数学的思考都停止了；然而，许多数学手稿仍保留在拜占庭、亚历山大和希腊化世界的许多其他地方。
+                </p>
+                <p>
+                    在阿拉伯世界，穆罕默德于公元570年出生于麦加。公元610年，他得到了天使加百列的显现，赋予了他生命的使命。穆罕默德成为了先知，并创立了伊斯兰教这一新宗教。在短短几十年内，叙利亚、美索不达米亚、波斯、埃及、突厥斯坦（即今土库曼斯坦、乌兹别克斯坦、阿富汗以及中国新疆省的塔吉克斯坦和喀什噶尔）和旁遮普（今巴基斯坦）等大片地区被先知旗帜下的军队征服，因此，亚历山大原先帝国和希腊化世界的很大一部分被征服。北非在阿拉伯统治下取得了空前的胜利，一直延伸到大西洋，以及伊比利亚半岛的大片地区。这场胜利进军直到公元732年才被查理·马特尔的军队在图尔和普瓦捷战役中阻止。基本上，阿拉伯扩张旨在完全包围拜占庭帝国并征服君士坦丁堡。
+                </p>
+            </div>
+            
+            <div class="page">
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_6.png" alt="图3.1.4 知识迁移图">
+                    <div class="figure-caption">
+                        <b>图 3.1.4.</b> 知识如何迁移 – 数学知识传承的主要流派。（图例：1：从西方阿拉伯国家通过西班牙和西西里岛在11-13世纪传播到欧洲；2：十字军东征期间与东阿拉伯世界的接触；3：通过拜占庭帝国向欧洲传承希腊古代和中世纪伊斯兰学者的数学著作；4：拜占庭资料对欧洲文艺复兴的直接影响。此后，欧洲数学从16世纪开始传播；19世纪全球统一和符号化数学的发展。）
+                    </div>
+                </div>
+            
+                <p>
+                    在阿拉伯世界帝国中，许多不同的文化和民族被统一，阿拉伯语是它们统一的纽带。这些民族的科学著作散布各处。阿拉伯人开始收集它们——特别是希腊、波斯和印度数学家的大量手稿——在8世纪和9世纪，在他们庞大帝国的东部培养并促进了它们的阿拉伯语翻译。阿巴斯王朝的哈里发们将帝国首都从大马士革迁至巴格达，后者由哈里发曼苏尔建立。在他的继任者统治下，巴格达成为了艺术和科学的中心，这些在阿拉伯世界各地开始蓬勃发展。
+                </p>
+            </div>
+            
+            <div class="page">
+                <p>
+                    哈里发马蒙（813年至833年间在位），哈伦·拉希德之子，建立了"智慧宫"，在那里收藏了希腊、叙利亚、印度和波斯学者的著作，并将其翻译成阿拉伯语，然后进行抄写。在帝国的西部，乌迈亚王朝的统治者阿卜杜勒·拉赫曼（756-788年）在西班牙建立了一个独立的王国，后来成为了科尔多瓦哈里发国。除了巴格达，科尔多瓦成为伊斯兰世界第二个重要的文化中心。哲学家伊本·鲁什德（1126-1198年）（阿维罗伊，参见3.2.3节）在此工作。哈里发们在附近的夏季居所麦地那·阿扎哈拉发展出了一个藏有40万卷的大型图书馆。科尔多瓦在希腊和伊斯兰文化区数学知识向西欧的传播中具有至关重要的作用。
+                </p>
+                <p>
+                    西欧学者在伊比利亚半岛被重新征服的地区与伊斯兰文化接触。包含古代和东方科学家成果和知识的旧手稿的阿拉伯语译本现在已经可用；例如，印度的"悉昙"传入巴格达哈里发宫廷的印度-阿拉伯数字的十进制表示法，印度三角函数（正弦和余弦），以及波斯学者为解决代数方程而发展的天文计算和近似方法[Alten et al. 2005, p. 116ff.]。最重要的是，欧洲科学家认识了希腊数学家的一系列概念、证明方法和大量成果。欧几里得、阿基米德、阿波罗尼乌斯、丢番图、希罗等许多人的著作现在都有了阿拉伯语译本。
+                </p>
+                <p>
+                    在西班牙被重新基督教化的许多地方都建立了翻译和解释学校，其中阿拉伯语著作大多被翻译成拉丁语，即中世纪学者的语言。基督教译者常常与犹太学者密切合作，因此也产生了许多希伯来语译本。托莱多的翻译学校，一个自1085年起重新成为基督教城镇的地方，变得最为人所知和著名。克雷莫纳的杰拉德（约1114-1187年）在托莱多翻译了大约80部作品。在塞戈维亚，切斯特的罗伯特（约1150年）翻译了穆罕默德·伊本·穆萨·花拉子米（约780-约850年）关于代数的著名著作，其名称如今可以在现代词"算法"中找到，这只不过是花拉子米名字的误称。
+                </p>
+                <p>
+                    因此，西班牙，除了重新基督教化的西西里岛，成为了希腊-希腊化和东方数学向欧洲传播的最重要桥头堡。它是知识从东方迁移到西方的一个中转站。
+                </p>
+                <p>
+                    在[Alten et al. 2005]中，阿拉伯科学家在代数领域的独立成就得到了详尽描述；他们在几何学方面的成就则在[Scriba/Schreiber 2000]中进行了考察。但审视他们对分析的贡献也将是有价值的。
+                </p>
+            </div>
+            
+            <div class="page">
+                <h3>3.2 阿拉伯人对分析的贡献</h3>
+            
+                <p>
+                    早在公元773年，巴格达的政府所在地就与印度有了联系[Alten et al. 2005, p. 161f.]。通过这种方式，我们现代的数字1、2、3、4、5、6、7、8、9以及数字0进入了阿拉伯数学。第一部利用这一数字体系的著作是花拉子米关于算术的著作[Juschkewitsch 1964, p. 187]，该著作仅存拉丁文译本。
+                </p>
+                <p>
+                    在分析领域，阿拉伯科学家通过延续阿基米德关于求面积和体积的思想而脱颖而出，但分析不仅通过这些明确的著作得到了丰富。阿拉伯科学家还关注亚里士多德的哲学及其物理学，从而对欧洲中世纪的经院哲学产生了深远影响。
+                </p>
+            
+                <h4>3.2.1 阿维森纳（伊本·西那）：东方的博学家</h4>
+            
+                <p>
+                    阿布·阿里·侯赛因·伊本·阿卜杜拉·伊本·哈桑·伊本·阿里·伊本·西那，或简称伊本·西那，约生于980年波斯的阿夫沙纳，卒于1037年今伊朗地区的哈马丹。他成为当时最著名的学者之一，从事数学家、天文学家、炼金术士和医生等工作。在西方，他以其拉丁化的名字阿维森纳而闻名。
+                </p>
+                <p>
+                    科学史学家乔治·萨尔顿（1884-1956年）对阿维森纳的成就如此兴奋，以至于他将阿维森纳视为伊斯兰教最著名的科学家，或许也是有史以来最著名的科学家。
+                </p>
+                <p>
+                    据说阿维森纳十岁时就能背诵《古兰经》，并且已经阅读了大量文学作品。在接下来的几年里，他学习了欧几里得和托勒密的《天文学大成》。据说他熟练运用印度数字进行计算。十七岁时，他的注意力转向医学，并因此在该领域名垂千古。阿维森纳收集药草，研究其功效，并记录了他的调查结果。整个欧洲中世纪医学后来主要依赖阿维森纳的医学著作。即使在今天，人们对他的著作仍有高度兴趣，因为现代方法正在研究他的药方，以揭示"古代"自然医学的秘密。在12世纪，克雷莫纳的杰拉德翻译了《医典》，这本书在西方一直是重要的教科书，直到17世纪。
+                </p>
+                <p>
+                    我们感兴趣的是，他以独特的风格评论了亚里士多德的著作。他对亚里士多德著作中某些观点的批判后来成为西欧重新接受亚里士多德的基础。特别是他撰写了关于逻辑的著作，并发展了自己的逻辑系统，该系统被称为"阿维森纳逻辑"。因此，他成为了一位独立于亚里士多德的思想家，对亚里士多德的观点始终持批判态度。他与阿维罗伊一起
+                </p>
+            </div>
+            
+            <div class="page">
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_7.png" alt="图3.2.1 伊本·西那肖像画">
+                    <div class="figure-caption">
+                        <b>图 3.2.1.</b> 伊本·西那（阿维森纳）是一位伟大的博学家。他精通多领域，尤其因其医学知识而在欧洲闻名。除其他事项外，他还描述了用于天文学的高度精确测量设备的建造[照片：H. Wesemüller-Kock]
+                    </div>
+                </div>
+            
+                <p>
+                    成为亚里士多德自然研究和哲学最重要的中介者[Strohmaier 2006], [Gutas 1988]。
+                </p>
+            
+                <h4>3.2.2 阿尔哈曾（伊本·海赛姆）：物理学家和数学家</h4>
+            
+                <p>
+                    阿布·阿里·哈桑·伊本·哈桑·伊本·海赛姆，在西方以拉丁语名字阿尔哈曾而闻名，约生于965年巴士拉，卒于1039年或1040年开罗。他被誉为光学之父和伟大的几何学家，但也致力于超越阿基米德的一些成果。阿基米德通过抛物线段绕其对称轴旋转计算了旋转体的体积，而阿尔哈曾则计算了抛物线绕其他轴（例如图3.2.3中的轴AB）旋转时的体积。很久以后，在1615年，约翰内斯·开普勒将在他的著作《新酒桶立体几何》（Nova Stereometria Doliorum Vinariorum）中将该立体称为"抛物纺锤体"。
+                </p>
+                <p>
+                    抛物线的定义是：所有点到固定点（焦点F）和给定直线（准线l）的距离相等。因此在图3.2.3中，抛物线上的点P满足
+                </p>
+            </div>
+            
+            <div class="page">
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_8.png" alt="图3.2.2 纸币上的伊本·海赛姆肖像">
+                    <div class="figure-caption">
+                        <b>图 3.2.2.</b> 纸币，印有阿布·阿里·哈桑·伊本·哈桑·伊本·海赛姆（约965–1039/40年）的肖像（伊拉克 1982年）
+                    </div>
+                </div>
+            
+                <p class="equation">
+                    FP 的长度 = PQ 的长度
+                </p>
+                <p>
+                    这自然也适用于焦点S，即：
+                </p>
+                <p class="equation">
+                    FS 的长度 = SR 的长度 =: f
+                </p>
+                <p>
+                    引入常用的(x, y)坐标系，并用x表示PQ的长度（因此x和y是点P的笛卡尔坐标），线段PQ的长度显然是y + f。根据勾股定理可得
+                </p>
+            
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_12.png" alt="图3.2.3 抛物线纺锤体的产生图">
+                    <div class="figure-caption">
+                        <b>图 3.2.3.</b> 显示通过旋转抛物线段产生抛物线纺锤体的图示
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Continue with the rest of the pages using the same structure... -->
+            
+            <div class="page">
+                <p>即</p>
+                <p class="equation">
+                    (y − f)² + x² = (FP 的长度)²
+                </p>
+                <p class="equation">
+                    由于 FP 的长度 = PQ 的长度 = y + f，因此
+                </p>
+                <p class="equation">
+                    (y - f)² + x² = (y + f)²
+                </p>
+                <p>
+                    将此方程对y求解，我们得到抛物线的方程形式
+                </p>
+                <p class="equation">
+                    y = x² · 1 / 4f (3.1)
+                </p>
+            
+                <p>
+                    现在这个关系不仅在抛物线用坐标系描述时成立，而且普遍成立。固定抛物线上的两点P和Q，在O点画一条切线，然后通过P画一条平行线，如图3.2.4所示，则有
+                </p>
+                <p class="equation">
+                    OX = (XP)² · 1 / 4OFOF</span>
+                </p>
+                <p>
+                    与（3.1）完全类似。为简化起见，我们用OX而不是"OX的长度"。阿尔哈曾还关注抛物线绕OX轴旋转时形成的旋转体。如果O=S，我们就回到了阿基米德处理过的问题。但也可以考虑绕PX旋转[Baron 1987, p. 68]，在这种情况下，选择O=S会导致绕AB轴旋转，如图3.2.3所示。
+                </p>
+                <p>
+                    我们考虑抛物线纺锤体的情况，即绕AB轴旋转。Baron在3.2.3中指出所有其他情况都可以简化为这一种。阿尔哈曾如图3.2.5左图所示，在抛物线中内接矩形条。绕AB旋转时，这些条带变成圆柱形盘。所有盘的体积之和会低估抛物线纺锤体的体积，无论矩形条选择多么薄。然后他如图3.2.5右图所示，用矩形条外接抛物线。这些圆盘的总和会高估实际体积。让我们更仔细地考虑内接盘的情况，我们只需要看
+                </p>
+            
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_13.png" alt="图3.2.4 阿尔哈曾使用的抛物线另一个旋转轴">
+                    <div class="figure-caption">
+                        <b>图 3.2.4.</b> 阿尔哈曾使用的抛物线的另一个旋转轴
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Continue with remaining pages following the same pattern -->
+            
+            <div class="page">
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_14.png" alt="图3.2.5 绕AB旋转的抛物线段的体积计算">
+                    <div class="figure-caption">
+                        <b>图 3.2.5.</b> 抛物线段绕AB旋转时的体积计算
+                    </div>
+                </div>
+            
+                <p>
+                    抛物线的一半，如图3.2.6所示。在此图中选择的表示方式，抛物线的方程显然是
+                </p>
+                <p class="equation">
+                    x = ky²,
+                </p>
+                <p>
+                    其中我们定义 k := 1/4f。如果我们沿y方向遍历抛物线直到y = b，则此点的x值为x = a = kb²。在y轴上，我们将从0到b的线段细分为n等份，每份宽度为
+                </p>
+                <p class="equation">
+                    h := b/n = y<sub>i</sub> - y<sub>i-1</sub>, i = 1, ..., n.
+                </p>
+                <p>
+                    因此，阴影矩形的面积为
+                </p>
+                <p class="equation">
+                    Ai := (a - x<sub>i</sub>) · h
+                </p>
+                <p>
+                    如果这个矩形绕x = a轴旋转，我们就得到一个圆柱形圆盘的体积
+                </p>
+            
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_15.png" alt="图3.2.6 阿尔哈曾计算抛物线纺锤体体积图">
+                    <div class="figure-caption">
+                        <b>图 3.2.6.</b> 关于阿尔哈曾计算抛物线纺锤体体积的图示
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Continue with the rest of the content following the same structure -->
+            
+            <div class="page">
+                <h2>3.2 阿拉伯人对分析的贡献</h2>
+            
+                <p class="equation">
+                    Vi := 底面积 · 高 = π(α - x<sub>i</sub>)² · h.
+                </p>
+                <p>
+                    现在我们有 a = kb² 且 x<sub>i</sub> = ky<sub>i</sub>² = ki²h²，因此
+                </p>
+                <p class="equation">
+                    V<sub>i</sub> = πh(kb² – ki²h²)²
+                </p>
+                <p>
+                    由于 b = nh，可得
+                </p>
+                <p class="equation">
+                    V<sub>i</sub> = πh(kn²h² – ki²h²)² = πh⁵k²(n² – i²).
+                </p>
+                <p>
+                    因此，所有n个圆柱形盘的体积为
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_16.png">
+                </div>
+                <p>
+                    同样地，我们看到外部圆柱形盘的体积是
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_17.png">
+                </div>
+            
+                <p>
+                    为了进行计算，阿尔哈曾需要前n个四次幂的和。在倾斜旋转轴的情况下，还需要前n个立方数的和。相比之下，阿基米德需要的是
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_18.png">
+                </div>
+                <p>
+                    要得到这些和的值
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_19.png">
+                </div>
+                <p>
+                    阿尔哈曾提出了一种巧妙的几何构造。他将和式<img src="09_How Knowledge Migrates – From Orient to Occident_20.png" style="width:40px;height:25px;vertical-align:middle;">几何表示为矩形的并置；参见图3.2.7中的黄色矩形。每个单独矩形的高度为1，并且显然有n个这样的矩形。阿尔哈曾现在将这些矩形条补全为一个大矩形，如图3.2.7所示。大矩形的面积为
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_21.png">
+                </div>
+                <p>
+                    该面积由水平矩形面积之和构成
+                </p>
+            </div>
+            
+            <!-- Continue with the remaining pages following the same structure -->
+            
+            <div class="page">
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_9.png" alt="图3.2.7 求和公式推导图">
+                    <div class="figure-caption">
+                        <b>图 3.2.7.</b> 关于求和公式的推导
+                    </div>
+                </div>
+            
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_22.png">
+                </div>
+                <p>
+                    以及垂直矩形面积之和
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_23.png">
+                </div>
+                <p>
+                    由于 F = F₁ + F₂，阿尔哈曾得到
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_24.png">
+                </div>
+                <p>
+                    如果我们考虑 k = 1，则有
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_25.png">
+                </div>
+                <p>
+                    阿基米德早已知道和的值
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_26.png">
+                </div>
+                <p>
+                    将Σ<sub>i=1</sub><sup>l</sup> i 和 Σ<sub>i=1</sub><sup>n</sup> i的值替换到(3.4)中的方程，
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_27.png">
+                </div>
+            </div>
+            
+            <div class="page">
+                <p>
+                    结果如下，如果我们将左侧展开并将右侧的第一个和分解，则有
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_28.png">
+                </div>
+                <p>
+                    现在，我们右侧又得到了一个<img src="09_How Knowledge Migrates – From Orient to Occident_33.png" style="width:40px;height:25px;vertical-align:middle;">形式的和，我们可以用其值<img src="09_How Knowledge Migrates – From Orient to Occident_34.png" style="width:70px;height:25px;vertical-align:middle;">来替换。最终整理得到
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_29.png">
+                </div>
+                <p>
+                    因此推导出了前n个平方数之和的公式。
+                </p>
+                <p>
+                    现在我们可以以这种方式继续。使用 (3.3) 中的 k = 2 并应用 (3.5)，得到
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_30.png">
+                </div>
+                <p>
+                    在 k = 3 的情况下，借助最后一个方程，我们得到
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_31.png">
+                </div>
+                <p>
+                    将完全覆盖抛物线段的圆柱体体积表示为 V<sub>cylinder</sub> = α · πb²，我们可以通过上述和式表明
+                </p>
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_32.png">
+                </div>
+                <p>
+                    成立 [Edwards 1979, p. 85]。现在阿尔哈曾以阿基米德的方式，即使用"二分归谬法"，证明了这个旋转体的体积恰好是外接圆柱体体积的8/15。
+                </p>
+            
+                <h4>3.2.3 阿维罗伊（伊本·鲁什德）：伊斯兰亚里士多德主义者</h4>
+            
+                <p>
+                    西班牙-阿拉伯哲学家、神秘学家和医生阿维罗伊（伊本·鲁什德）生于1126年的科尔多瓦，多年后那里竖立了一座纪念他的雕像（图3.2.8）。他于1198年逝世于马拉喀什。通过他对亚里士多德许多著作的评论，他成为中世纪经院哲学中接受亚里士多德的核心人物之一。事实上，他因"评论家"之名而闻名。他除了医学之外，主要关注逻辑，他认为逻辑是人类幸福的唯一途径。阿维罗伊还认为亚里士多德逻辑是获得知识的唯一可能性。
+                </p>
+            </div>
+            
+            <div class="page">
+                <p>
+                    知识。他因此过度夸大了亚里士多德的形象，他对这位哲学家的崇拜常常让他越界。因此，他批评了阿维森纳，尽管他对他著作的了解很肤浅。然而，没有人能如此完整且批判性地评论亚里士多德的著作。他邀请他的同胞们思考他们的信仰，通过亚里士多德逻辑来深入理解，并运用自己的感官。因此，他偏离了《古兰经》的传统观念，并被流放至北非，最终在那里去世。即便在今天，阿维罗伊的哲学仍被正统穆斯林所拒绝。
+                </p>
+                <p>
+                    如同阿维森纳的情况，我们无法证明他直接从事过分析。然而，他在经院哲学中扮演了重要角色，因为他对亚里士多德著作的评论被深入研究，甚至导致了亚里士多德主义中一个独立的思想流派，即所谓的阿维罗伊主义，这导致了中世纪基督教哲学内部的紧张关系。阿维罗伊主义曾受到托马斯·阿奎那的反对，最终被禁止。
+                </p>
+            
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_10.png" alt="图3.2.8 阿维罗伊雕像">
+                    <div class="figure-caption">
+                        <b>图 3.2.8.</b> 阿维罗伊（伊本·鲁什德），科尔多瓦雕像
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page">
+                <div class="figure-container">
+                    <img src="09_How Knowledge Migrates – From Orient to Occident_11.png" alt="图3.2.9 阿维罗伊关于亚里士多德《论灵魂》的评论">
+                    <div class="figure-caption">
+                        <b>图 3.2.9.</b> 阿维罗伊关于亚里士多德《论灵魂》的评论（13世纪）
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page">
+                <h3>伊斯兰学者对分析的贡献</h3>
+            
+                <table style="width: 100%; margin: 0 auto;">
+                    <tbody style="border: 1px solid black;">
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;width:20%;">公元980年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">波斯数学家、天文学家、炼金术士和医生<b>阿维森纳</b>（伊本·西那）出生于阿夫沙纳。他的医学著作对西方文化产生了深远影响。</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元935年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;"><b>阿尔哈曾</b>（伊本·海赛姆）出生于巴士拉。</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">约公元1000年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;"><b>阿尔哈曾</b>撰写光学著作，这使他成为该科学的"开创者"。在他的体积计算中，他超越了<b>阿基米德</b>。</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">公元1126年</td>
+                            <td style="vertical-align: top; padding: 5px 10px;border:0px;">西班牙-阿拉伯哲学家、神秘学家和医生<b>阿维罗伊</b>（伊本·鲁什德）出生于科尔多瓦。他对亚里士多德著作的全面评论使他在基督教经院哲学中赢得了"评论家"的荣誉称号。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+             
+                <blockquote>
+                    <p>文章作者：<a href="/ "> Colin Zhu  </a></p>
+                    <p>文章链接：<a href="http://colin4k.1979927.xyz/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B407%EF%BC%9A%E7%9F%A5%E8%AF%86%E5%A6%82%E4%BD%95%E8%BF%81%E7%A7%BB-%E2%80%93-%E4%BB%8E%E4%B8%9C%E6%96%B9%E5%88%B0%E8%A5%BF%E6%96%B9/"> http://colin4k.1979927.xyz/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B407%EF%BC%9A%E7%9F%A5%E8%AF%86%E5%A6%82%E4%BD%95%E8%BF%81%E7%A7%BB-%E2%80%93-%E4%BB%8E%E4%B8%9C%E6%96%B9%E5%88%B0%E8%A5%BF%E6%96%B9/ </a></p>
+                    <p>版权声明：除另有声明外，本博客文章均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> CC BY-NC-SA 4.0 </a> 许可协议。转载请注明原作者与文章出处。</p>
+                </blockquote>
+             
+        </div>
+        
+            <p itemprop="keywords" class="tags">
+                
+                    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B4/"> 数学分析三千年 </a>
+                
+            </p>
+        
+    </article>
+    <div class="post-near">
+    <div class="post-near-child post-near-child-left "> 
+        
+            <a href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B406%EF%BC%9A%E5%B8%8C%E8%85%8A-%E5%B8%8C%E8%85%8A%E5%8C%96%E6%97%B6%E4%BB%A3%E7%9A%84%E8%BF%9E%E7%BB%AD%E7%BB%9F/">数学分析三千年06：希腊-希腊化时代的连续统 &laquo; </a>
+        
+        <br /> 上一篇  &laquo;
+    </div>
+    <div class="post-near-child post-near-child-right">
+        
+            <a>None</a>
+        
+        <br /> &raquo; 下一篇 
+    </div>
+</div>
+</div>
+             
+<div id="comments">
+     
+</div>
+ 
+            <footer id="footer" role="contentinfo">
+    
+        &copy; 2020 - 2025
+        <br />
+    
+    
+    <br />
+    
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_value_site_pv">......</span> visits ·
+        <span id="busuanzi_value_site_uv">......</span> visitors 
+    
+</footer>
+          </div>
+        </div>
+      </main>
+      <!-- highlight support -->
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css">
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js"></script>
+ 
+<script>
+        hljs.initHighlightingOnLoad();
+</script>
+ 
+<!-- prettify support -->
+ 
+<!-- mathjax support -->
+
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src=""></script>
+
+
+<!-- fancybox support -->
+ 
+<!-- viewerjs support -->
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viewerjs@1.10.0/dist/viewer.min.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/viewerjs@1.10.0/dist/viewer.min.js"></script>
+
+<script type="text/javascript">
+    Viewer.setDefaults({
+        zoomRatio: [0.5],
+        show: function () {
+            this.viewer.zoomTo(1);
+        },
+    });
+    
+    var imageList = document.querySelector('.post-content').getElementsByTagName('img');
+    
+    var imageArray = new Array();
+    Array.prototype.forEach.call(imageList, element => {
+        if (element.alt != "no-view" && element.className != "no-view") {
+            imageArray.push(element);
+        }
+    });
+    
+    Array.prototype.forEach.call(imageArray, element => {
+        var viewer1 = new Viewer(element);
+        viewer1.images = imageArray;
+        viewer1.length = imageArray.length;
+    });
+</script>
+ 
+<!-- google analytics support -->
+
+
+
+ 
+ 
+
+<!-- lazyload support -->
+
+    
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
+
+<script>
+    new LazyLoad({
+        elements_selector: '.post-content img'
+    });
+</script>
+ 
+  </body>
+
+</html>
