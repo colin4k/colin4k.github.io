@@ -1,0 +1,2011 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>
+        数学分析三千年04：目录 - Colin's blog 
+    </title>
+    <style>
+        body {
+            font-family: serif;
+            margin: 2em 4em; /* Adjust margins to better resemble PDF */
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 2em; /* More space below main title */
+        }
+        .page-header {
+            text-align: right;
+            font-size: 0.9em;
+            margin-bottom: 1em;
+        }
+        ol {
+            list-style-type: none;
+            padding-left: 0; /* Remove default list padding */
+            margin: 0;
+        }
+        ol li {
+            padding-left: 0;
+        }
+        ol ol {
+            padding-left: 2em; /* Indent for sub-chapters */
+        }
+        ol ol ol {
+            padding-left: 2em; /* Further indent for sub-sub-chapters */
+        }
+        .toc-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            /* Use a fixed font for titles to avoid layout shifts with Chinese chars */
+            font-family: "Times New Roman", "Songti SC", serif;
+            font-size: 1em;
+            margin-bottom: 0.2em; /* Small gap between list items */
+        }
+        .toc-number-title {
+            flex-grow: 1;
+            display: flex;
+            align-items: baseline;
+            white-space: pre; /* Preserve spaces in the title if any, important for leader dots */
+        }
+        .toc-title-text {
+            flex-grow: 1;
+            white-space: normal; /* Allow text to wrap if it's too long, but try to keep it on one line for better TOC visual */
+            overflow: hidden;
+            text-overflow: ellipsis; /* Use ellipsis if text overflows, or just clip */
+            padding-right: 0.5em; /* Space between title and leader dots */
+        }
+        .leader-dots {
+            flex-grow: 1;
+            border-bottom: 1px dotted #000; /* Dotted line */
+            min-width: 1em; /* Ensure some dots even for short titles */
+            margin-left: 0.5em; /* Space between dots and title */
+        }
+        .toc-page {
+            flex-shrink: 0; /* Prevent page number from shrinking */
+            margin-left: 1em; /* Space between dots and page number */
+            font-family: monospace; /* Consistent font for page numbers */
+            text-align: right; /* Ensure page numbers are right-aligned */
+            width: 2em; /* Fixed width for page numbers for alignment */
+        }
+    </style>
+    
+<link rel="stylesheet" href="/css/grid.css">
+
+    
+<link rel="stylesheet" href="/css/custom.css">
+
+    
+<link rel="stylesheet" href="/css/ringo.css">
+
+     
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico " />
+     
+     
+     
+        <meta name=" " content="" />
+     
+        <meta name=" " content="" />
+     
+ 
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    <header id="header" class="clearfix" onclick="window.open('/', '_self')">
+    <div class="site-name">
+        <a href="/" id="logo" class="site-title">
+            Colin&#39;s blog
+        </a>
+        <p class="description site-description">
+            <span style="padding-top:20px; font-size: 10px">
+                AI, Web3 and Mathematics
+            </span>
+        </p>
+    </div>
+</header>
+<div id="sidebar" role="complementary">
+    <section class="widget">
+        <ul class="menu widget-list">
+            
+        </ul>
+    </section>
+    <section class="widget sidebar-foot">
+        <ul class="widget-list">
+            <li>Theme <a rel="nofollow" target="_blank" href="https://github.com/HeliumOI/hexo-theme-ringo">Ringo</a>
+                by <a target="_blank" href="/ "> Colin Zhu  </a></li>
+            <li>Proudly powered by  <a rel="nofollow" target="_blank" href="https://hexo.io/">Hexo</a></li>
+        </ul>
+    </section>
+</div>
+
+<div id="helpbar">
+    <div class="back-to-top">
+        <button id="back2top">↑</button>
+        <script>
+            back2top.onclick = function() {
+                var movement = document.body.scrollTop || document.documentElement.scrollTop;
+                scrollBy(0, -movement);
+            }
+        </script>
+    </div>
+</div>
+      <main class="main">
+        <div id="body">
+          <div class="container">
+            <div class="col-12" id="main" role="main">
+    <article class="post post-atpost" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-title">
+            <h1 class="post-title post-title-atpage" itemprop="name headline">
+                <a itemprop="url" href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B404%EF%BC%9A%E7%9B%AE%E5%BD%95/">
+                    数学分析三千年04：目录
+                </a>
+            </h1>
+        </div>
+        <ul class="post-meta post-meta-atpage">
+            <li class="post-time">
+                2025-06-19
+            </li>
+            <li>
+                <div class="article-category">
+                    
+                </div>
+            </li>
+        </ul>
+        <div class="post-content" itemprop="articleBody">
+            <div class="page-header">XV</div>
+    <ol>
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">1 序言：3000年的分析</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">1</span>
+            </div>
+            <ol>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">1.1 什么是“分析”？</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">3</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">1.2 π的先驱。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">4</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">1.3 圣经中的π</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">8</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">1.4 棱锥台的体积</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">10</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">1.5 巴比伦对√2的近似。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">14</span>
+                    </div>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">2 希腊-希腊化时代的连续统</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">17</span>
+            </div>
+            <ol>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">2.1 希腊人塑造数学</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">20</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.1.1 肇始：米利都的泰勒斯及其弟子。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">21</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.1.2 毕达哥拉斯学派</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">24</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.1.3 欧多克索斯在欧几里得《几何原本》中的比例理论</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">30</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.1.4 穷竭法——希腊式积分</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">36</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.1.5 角锥问题。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">40</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.1.6 古代三大经典问题</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">41</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">2.2 连续统与原子——无穷小与不可分量</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">50</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.2.1 埃利亚学派</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">50</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.2.2 原子论与连续统理论。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">51</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.2.3 不可分量与无穷小</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">54</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.2.4 芝诺悖论。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">57</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">2.3 阿基米德</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">61</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.3.1 生平、逝世与轶事</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">61</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.3.2 阿基米德著作的命运</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">69</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.3.3 方法论：关于力学定理的途径</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">73</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.3.4 用穷竭法求抛物线弓形面积</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">78</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.3.5 论螺旋线。。。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">82</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">2.3.6 阿基米德确定π</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">86</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">2.4 罗马人的贡献</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">88</span>
+                    </div>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+    <div class="page-header">XVI</div>
+    <ol start="3">
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">3 知识如何从东方流向西方。。。。</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">91</span>
+            </div>
+            <ol>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">3.1 数学衰落与阿拉伯人的拯救</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">92</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">3.2 阿拉伯人对分析的贡献</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">98</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">3.2.1 阿维森纳（伊本·西那）：东方的博学家。。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">98</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">3.2.2 阿尔哈曾（伊本·海什木）：物理学家和数学家。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">99</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">3.2.3 阿威罗伊（伊本·鲁世德）：伊斯兰亚里士多德主义者</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">105</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">4 经院哲学中的连续统与原子论</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">109</span>
+            </div>
+            <ol>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">4.1 欧洲的重启</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">111</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">4.2 翻译家盛世</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">120</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">4.3 经院哲学中的连续统</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">127</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">4.3.1 罗伯特·格罗塞特</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">129</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">4.3.2 罗杰·培根。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">131</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">4.3.3 大阿尔伯特</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">133</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">4.3.4 托马斯·布拉德沃丁</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">135</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">4.3.5 尼科尔·奥雷姆</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">141</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">4.4 经院异议者</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">147</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">4.5 库萨的尼古拉斯</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">149</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">4.5.1 数学著作。。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">152</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">5 文艺复兴时期的不可分量与无穷小</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">155</span>
+            </div>
+            <ol>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">5.1 文艺复兴：古典复兴</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">157</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">5.2 重心计算者</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">160</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">5.3 约翰内斯·开普勒。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">169</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">5.3.1 酒桶的新体积测量法</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">191</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">5.4 伽利略·伽利莱。。。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">196</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">5.4.1 伽利略对无穷的处理</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">203</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">5.5 卡瓦列里、古尔丹、托里切利与不可分量的高超技艺。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">208</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">5.5.1 卡瓦列里的不可分量法</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">212</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">5.5.2 古尔丹的批判</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">220</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">5.5.3 伽利略的批判</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">221</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">5.5.4 托里切利的明显悖论</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">222</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">5.5.5 德·圣文森和双曲线下的面积。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">224</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+    <div class="page-header">XVII</div>
+    <ol start="6">
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">6 16世纪到17世纪之交</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">233</span>
+            </div>
+            <ol>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">6.1 莱布尼茨之前的法国分析学。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">235</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.1.1 16世纪到17世纪之交的法国</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">235</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.1.2 勒内·笛卡尔。。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">238</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.1.3 皮埃尔·德·费马</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">248</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.1.4 布莱兹·帕斯卡</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">258</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.1.5 吉尔·佩尔松·德·罗贝尔瓦尔</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">270</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">6.2 莱布尼茨之前的荷兰分析学</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">275</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.2.1 弗兰斯·范·舒滕</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">276</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.2.2 勒内·弗朗索瓦·瓦尔特·德·斯卢斯</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">277</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.2.3 约翰内斯·范·瓦韦伦·胡德</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">279</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.2.4 克里斯蒂安·惠更斯........</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">282</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">6.3 牛顿之前的英国分析学</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">284</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.3.1 对数的发现</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">284</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.3.2 16世纪到17世纪之交的英格兰</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">285</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.3.3 约翰·纳皮尔及其对数</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">288</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.3.4 亨利·布里格斯及其对数</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">295</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.3.5 17世纪的英格兰。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">307</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.3.6 约翰·沃利斯与无穷算术</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">310</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.3.7 艾萨克·巴罗与几何学之爱</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">318</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.3.8 尼古拉斯·墨卡托对对数级数的发现</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">325</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.3.9 首次曲线求长：哈里奥特和尼尔。。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">330</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">6.3.10 詹姆斯·格雷戈里</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">338</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">6.4 印度的分析学</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">339</span>
+                    </div>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">7 牛顿与莱布尼茨——巨擘与对手</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">345</span>
+            </div>
+            <ol>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">7.1 艾萨克·牛顿</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">347</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.1 童年与青年</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">347</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.2 剑桥学生时期。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">350</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.3 卢卡斯教授</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">357</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.4 炼金术、宗教与大危机</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">362</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.5 牛顿担任皇家学会主席。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">366</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.6 二项式定理</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">369</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.7 流数术</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">370</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+    <div class="page-header">XVIII</div>
+    <ol start="7">
+        <li>
+            <ol start="1">
+                <li>
+                    <ol start="8">
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.8 基本定理</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">373</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.9 链式法则与换元法</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">375</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.10 级数计算</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">375</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.11 换元积分法</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">377</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.12 牛顿晚年关于分析的著作</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">378</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.1.13 牛顿与微分方程</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">379</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">7.2 戈特弗里德·威廉·莱布尼茨</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">380</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.2.1 童年、青年与学业</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">380</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.2.2 莱布尼茨在美因茨选帝侯的服役</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">383</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.2.3 莱布尼茨在汉诺威</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">387</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.2.4 优先权之争。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">392</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.2.5 差分序列的初步成就</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">398</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.2.6 莱布尼茨的记法</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">400</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.2.7 特征三角形</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">404</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.2.8 无穷小量</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">406</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.2.9 变换定理</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">412</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.2.10 连续性原理</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">416</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">7.2.11 莱布尼茨的微分方程</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">418</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">7.3 首个批判声音：乔治·伯克利</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">419</span>
+                    </div>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">8 专制主义、启蒙运动、迈向新彼岸</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">423</span>
+            </div>
+            <ol>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">8.1 历史导论</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">425</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">8.2 雅各布和约翰·伯努利。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">433</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">8.2.1 变分法</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">438</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">8.3 莱昂哈德·欧拉</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">443</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">8.3.1 欧拉的函数概念。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">454</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">8.3.2 欧拉视角下的无穷小</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">457</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">8.3.3 三角函数</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">460</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">8.4 布鲁克·泰勒</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">461</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">8.4.1 泰勒级数</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">463</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">8.4.2 关于差分计算的评论。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">465</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">8.5 科林·麦克劳林</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">466</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">8.6 代数解释的开端</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">466</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">8.6.1 拉格朗日的代数分析.....</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">467</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">8.7 傅里叶级数与多维分析</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">469</span>
+                    </div>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+    <div class="page-header">XIX</div>
+    <ol start="8">
+        <li>
+            <ol start="7">
+                <li>
+                    <ol start="1">
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">8.7.1 让·巴蒂斯特·约瑟夫·傅里叶</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">469</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">8.7.2 波动方程的早期讨论</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">472</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">8.7.3 偏微分方程与多维分析。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">473</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">8.7.4 预览：傅里叶级数对分析的重要性。。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">473</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">9 迈向19世纪概念严谨之路。。。</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">479</span>
+            </div>
+            <ol>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">9.1 从维也纳会议到德意志帝国</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">483</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">9.2 19世纪分析学的发展脉络</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">490</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">9.3 伯纳德·博尔扎诺与无穷的悖论。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">491</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">9.3.1 博尔扎诺对分析的贡献</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">493</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">9.4 分析的算术化：柯西</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">497</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">9.4.1 极限与连续性</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">502</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">9.4.2 序列与级数的收敛性</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">503</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">9.4.3 导数与积分。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">506</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">9.5 积分概念的发展</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">507</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">9.6 分析的最终算术化：魏尔斯特拉斯</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">515</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">9.6.1 实数</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">518</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">9.6.2 连续性、可微性与收敛性</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">518</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">9.6.3 一致性</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">521</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">9.7 理查德·戴德金及其同伴</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">523</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">9.7.1 戴德金分割。。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">531</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">10 20世纪之交：集合论与对真正连续统的探索</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">537</span>
+            </div>
+            <ol>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">10.1 从德意志帝国的建立到全球灾难</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">540</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">10.2 圣乔治屠龙：康托尔与集合论</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">545</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">10.2.1 康托尔对实数的构造。。。。。。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">555</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">10.2.2 康托尔与戴德金</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">556</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">10.2.3 超限数</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">565</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">10.2.4 集合论的接受</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">569</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">10.2.5 康托尔与无穷小</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">570</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">10.3 寻找真正的连续统：保罗·杜·布瓦-雷蒙</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">571</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">10.4 寻找真正的连续统：直觉主义者</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">573</span>
+                    </div>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+    <div class="page-header">XX</div>
+    <ol start="10">
+        <li>
+            <ol start="5">
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">10.5 向量分析</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">578</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">10.6 微分几何</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">582</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">10.7 常微分方程</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">584</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">10.8 偏微分方程</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">586</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">10.9 分析变得更加强大：泛函分析。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">588</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">10.9.1 泛函分析的基本概念。。。。。。。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">589</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">10.9.2 泛函分析的历史概述</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">592</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">11 回归本源：非标准分析中的无穷小</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">601</span>
+            </div>
+            <ol>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">11.1 从冷战至今</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">605</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">11.1.1 计算机与人造卫星冲击</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">607</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">11.1.2 冷战及其结束</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">609</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">11.1.3 博洛尼亚改革、危机、恐怖主义。</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">611</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">11.2 无穷小数的重生</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">612</span>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">11.2.1 《黑皮书》中的无穷小数学</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">613</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toc-item">
+                                <div class="toc-number-title">
+                                    <span class="toc-title-text">11.2.2 劳格维茨和施米登的非标准分析</span>
+                                    <span class="leader-dots"></span>
+                                </div>
+                                <span class="toc-page">616</span>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">11.3 罗宾逊与非标准分析。。。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">619</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">11.4 公理化非标准分析：纳尔逊方法。。。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">621</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="toc-item">
+                        <div class="toc-number-title">
+                            <span class="toc-title-text">11.5 非标准分析与光滑世界。</span>
+                            <span class="leader-dots"></span>
+                        </div>
+                        <span class="toc-page">621</span>
+                    </div>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <div class="toc-item">
+                <div class="toc-number-title">
+                    <span class="toc-title-text">12 无处不在的分析</span>
+                    <span class="leader-dots"></span>
+                </div>
+                <span class="toc-page">629</span>
+            </div>
+        </li>
+    </ol>
+
+    <div class="toc-item" style="margin-top: 1.5em;">
+        <div class="toc-number-title">
+            <span class="toc-title-text">参考文献</span>
+            <span class="leader-dots"></span>
+        </div>
+        <span class="toc-page">641</span>
+    </div>
+    <div class="toc-item">
+        <div class="toc-number-title">
+            <span class="toc-title-text">图表目录</span>
+            <span class="leader-dots"></span>
+        </div>
+        <span class="toc-page">661</span>
+    </div>
+    <div class="toc-item">
+        <div class="toc-number-title">
+            <span class="toc-title-text">人名索引</span>
+            <span class="leader-dots"></span>
+        </div>
+        <span class="toc-page">679</span>
+    </div>
+    <div class="toc-item">
+        <div class="toc-number-title">
+            <span class="toc-title-text">主题索引。</span>
+            <span class="leader-dots"></span>
+        </div>
+        <span class="toc-page">691</span>
+    </div>
+             
+                <blockquote>
+                    <p>文章作者：<a href="/ "> Colin Zhu  </a></p>
+                    <p>文章链接：<a href="http://colin4k.1979927.xyz/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B404%EF%BC%9A%E7%9B%AE%E5%BD%95/"> http://colin4k.1979927.xyz/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B404%EF%BC%9A%E7%9B%AE%E5%BD%95/ </a></p>
+                    <p>版权声明：除另有声明外，本博客文章均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> CC BY-NC-SA 4.0 </a> 许可协议。转载请注明原作者与文章出处。</p>
+                </blockquote>
+             
+        </div>
+        
+            <p itemprop="keywords" class="tags">
+                
+                    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B4/"> 数学分析三千年 </a>
+                
+            </p>
+        
+    </article>
+    <div class="post-near">
+    <div class="post-near-child post-near-child-left "> 
+        
+            <a href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B403%EF%BC%9A%E7%BC%96%E8%80%85%E5%BA%8F/">数学分析三千年03：编者序 &laquo; </a>
+        
+        <br /> 上一篇  &laquo;
+    </div>
+    <div class="post-near-child post-near-child-right">
+        
+            <a href="/2025/06/19/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B405%EF%BC%9A%E5%BA%8F%E8%A8%80/"> &raquo; 数学分析三千年05：序言</a>
+        
+        <br /> &raquo; 下一篇 
+    </div>
+</div>
+</div>
+             
+<div id="comments">
+     
+</div>
+ 
+            <footer id="footer" role="contentinfo">
+    
+        &copy; 2020 - 2025
+        <br />
+    
+    
+    <br />
+    
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_value_site_pv">......</span> visits ·
+        <span id="busuanzi_value_site_uv">......</span> visitors 
+    
+</footer>
+          </div>
+        </div>
+      </main>
+      <!-- highlight support -->
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css">
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js"></script>
+ 
+<script>
+        hljs.initHighlightingOnLoad();
+</script>
+ 
+<!-- prettify support -->
+ 
+<!-- mathjax support -->
+
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src=""></script>
+
+
+<!-- fancybox support -->
+ 
+<!-- viewerjs support -->
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viewerjs@1.10.0/dist/viewer.min.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/viewerjs@1.10.0/dist/viewer.min.js"></script>
+
+<script type="text/javascript">
+    Viewer.setDefaults({
+        zoomRatio: [0.5],
+        show: function () {
+            this.viewer.zoomTo(1);
+        },
+    });
+    
+    var imageList = document.querySelector('.post-content').getElementsByTagName('img');
+    
+    var imageArray = new Array();
+    Array.prototype.forEach.call(imageList, element => {
+        if (element.alt != "no-view" && element.className != "no-view") {
+            imageArray.push(element);
+        }
+    });
+    
+    Array.prototype.forEach.call(imageArray, element => {
+        var viewer1 = new Viewer(element);
+        viewer1.images = imageArray;
+        viewer1.length = imageArray.length;
+    });
+</script>
+ 
+<!-- google analytics support -->
+
+
+
+ 
+ 
+
+<!-- lazyload support -->
+
+    
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
+
+<script>
+    new LazyLoad({
+        elements_selector: '.post-content img'
+    });
+</script>
+ 
+  </body>
+
+</html>
