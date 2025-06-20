@@ -248,7 +248,7 @@
     </blockquote>
     <p>这个计算规则使我们得出结论，埃及人使用 (8/9)² 作为 π/4 的值。由于他们既不知道 π 的性质，也不知道 π 的作用，我们可能会问自己这个值是如何得到的。一种可能性是使用网格。在直径为 d 单位的圆周围画一个边长为 d 的正方形，并将正方形分成9个均匀分布的小正方形，如图1.2.2（左）所示。正方形的面积会严重高估圆的面积，因此我们将正方形四个角的四个小正方形各分成两个三角形，并且只将其中一个三角形计入面积，如图1.2.2（右）所示。因此剩下5个小正方形和4个三角形，圆的面积近似为：</p>
     <div class="equation">
-        A<sub>circle</sub> ≈ 5 · (d/3)² + 4 · ½ · (d/3)² = 7/9 d².
+        A<sub>circle</sub> ≈ 5 · (<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>d</mn><mn>3</mn></mfrac></math>)² + 4 · <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math>(<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>d</mn><mn>3</mn></mfrac></math>)² = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>9</mn></mfrac></math> d².
     </div>
 </div>
 
@@ -259,9 +259,9 @@
     </div>
     <p>然而，阿赫莫斯给出的近似值是：</p>
     <div class="equation">
-        A<sub>circle</sub> ≈ (64/81) d² = (8/9)² d².
+        A<sub>circle</sub> ≈ <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>64</mn><mn>81</mn></mfrac></math> d² = (<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>9</mn></mfrac></math>d)²
     </div>
-    <p>他显然将（正确的）近似值 <sup>π</sup>⁄₄ d² = <sup>63</sup>⁄₈₁ d² 加上了一个 <sup>1</sup>⁄₈₁ d² 的面积，最终得到了分子和分母都是完全平方数的表达式！但他真的这样做了吗？奥托·诺伊格鲍尔（Otto Neugebauer，1899 – 1990）有些沮丧地评论道 [Neugebauer 1969a, p. 124]：</p>
+    <p>他显然将（正确的）近似值 <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>9</mn></mfrac></math>d² = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>63</mn><mn>81</mn></mfrac></math>d² 加上了一个 <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>81</mn></mfrac></math>d² 的面积，最终得到了分子和分母都是完全平方数的表达式！但他真的这样做了吗？奥托·诺伊格鲍尔（Otto Neugebauer，1899 – 1990）有些沮丧地评论道 [Neugebauer 1969a, p. 124]：</p>
     <blockquote>
         <p style="font-style: italic;">"而且无法理解从这个表达式 [圆面积的 d²] 到埃及公式的推导方式。没有新的文本资料，因此，对这个公式的起源发表假设意义不大，因为显而易见的方法并不能直接导致所需的结果。"</p>
         <p>(Und es ist nicht einzusehen, wie man von diesem Ausdruck zu der ägyptischen Formel hinüberkommen kann. Ohne neues Textmaterial hat es also wenig Sinn, über die Entstehungsgeschichte dieser Formel Vermutungen zu äußern, da der naheliegende Weg offenbar nicht direkt zum Ziel führt.)</p>
@@ -272,7 +272,7 @@
     </div>
     <p>这绝不是一个糟糕的近似值！至少相对误差只有</p>
     <div class="equation">
-        |π<sub>Egypt</sub> - π| / π ≈ 0.00601643,
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>π<sub>Egypt</sub> - π</mn><mn>π</mn></mfrac></math> ≈ 0.00601643,
     </div>
     <p>因此大约是 0.6%！</p>
 </div>
@@ -293,11 +293,11 @@
     <blockquote>"他又铸一个铜海，从这边到那边，共十肘，是圆的，高五肘，周围量它，共三十肘。"</blockquote>
     <p>因此，这个"海"的形状确实是一个直径 d = 10 肘、周长 U = 30 肘的圆。由于任何圆的周长和直径之间的关系是 U = πd，我们得到</p>
     <div class="equation">
-        π<sub>Bible</sub> = U/d = 30/10 = 3.
+        π<sub>Bible</sub> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>U</mn><mn>D</mn></mfrac></math> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>30</mn><mn>10</mn></mfrac></math> = 3
     </div>
     <p>这个值也是巴比伦人使用的，而爱德华兹（生于1937年）在 [Edwards 1979, p. 4, Ex.5] 中试图解释它，我发现很有吸引力。与埃及人近似圆面积的方式不同，人们可能想到不仅要给圆外切一个正方形，还要内切一个正方形，如图1.3.1所示。那么，圆的面积应该通过这些正方形面积的算术平均值来近似。外切正方形的面积显然是 A₁ := d² = 4r²。根据在美索不达米亚广为人知的毕达哥拉斯定理，内切正方形的边长是 √r² + r² = √2r，因此内切正方形的面积是 A₂ := 2r²。由于外切正方形的面积高估了圆的面积，而内切正方形的面积低估了圆的面积，我们可以期望算术平均值可以对圆的面积提供有用的近似值：</p>
     <div class="equation">
-        A<sub>circle</sub> ≈ (A₁ + A₂)/2 = 3r².
+        A<sub>circle</sub> ≈ <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>A₁ + A₂</mn><mn>2</mn></mfrac></math> = 3r².
     </div>
     <p>事实上，这里出现了圣经中的 π 值！</p>
     <p>但这似乎并非巴比伦人故事的结局。根据贝克曼（Beckmann，1924-1993）[Beckmann 1971, p. 21 ff.] 和诺伊格鲍尔 [Neugebauer 1969b, p. 46 ff.] 的说法，1936年在巴比伦以东约200英里处的苏萨挖掘出土的泥板，其中包含一些几何图形的计算。其中一块泥板涉及内切于圆的正六边形，并指出正六边形的周长与外接圆的周长之比为</p>
@@ -309,7 +309,7 @@
         <p class="figure-caption"><b>图1.3.1. 从内部近似圆的面积</b></p>
     </div>
     <div class="equation">
-        57/60 + 36/60²
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>57</mn><mn>60</mn></mfrac></math> + <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>36</mn><mn>60²</mn></mfrac></math>
     </div>
     <p>巴比伦人知道，如果半径用 r 表示，六边形的周长是 6r，参见图1.3.2。</p>
     <p>因此所求的比率是 6r/C，如果 C 表示圆的周长。由于</p>
@@ -318,7 +318,7 @@
     </div>
     <p>我们得出结论</p>
     <div class="equation">
-        3/π = 57/60 + 36/60²
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>π</mn></mfrac></math> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>57</mn><mn>60</mn></mfrac></math> + <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>36</mn><mn>60²</mn></mfrac></math>
     </div>
     <p>因此 π = 31/8 = 3.125。</p>
     <p>这表明巴比伦人对 π 的近似值也比单纯的 3 要好。</p>
@@ -349,7 +349,7 @@
         <p class="figure-caption"><b>图1.4.3. 将一个立方体分解成六个中心点在中心的对称金字塔（左），以及分解成三个直角金字塔（右）</b></p>
     </div>
     <div class="equation">
-        V = (h/3) (a² + ab + b²) (1.1)
+        V = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>h</mn><mn>3</mn></mfrac></math> (a² + ab + b²) (1.1)
     </div>
     <p>其中 a 和 b 是两个底面区域的边长，h 表示棱锥台的高度。诺伊格鲍尔 [Neugebauer 1969a, p. 126] 称之为埃及数学的"瑰宝"（Glanzstück）。</p>
     <p>指向数学分析的方法很可能是实际计算棱锥体积的方法（在 [Gillings 1982] 中可以找到另一种方法）。为此，埃及抄写员考虑了一个金字塔，其顶点恰好位于其中一个边缘点上方。</p>
