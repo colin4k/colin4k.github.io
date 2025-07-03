@@ -1,0 +1,922 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEE2JWDQPM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MEE2JWDQPM');
+</script>
+  <meta charset="utf-8">
+  
+  <title>数学分析三千年09：文艺复兴时期的不可分量与无穷小量 | Colin&#39;s blog</title>
+  <meta name="author" content="Colin Zhu">
+  
+  <meta name="description" content="Colin`s articles about AI, Web3, Financial, Knowledge Management and Mathematics">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="数学分析三千年09：文艺复兴时期的不可分量与无穷小量"/>
+  <meta property="og:site_name" content="Colin&#39;s blog"/>
+
+  
+    <meta property="og:image" content=""/>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0 auto;
+          max-width: 800px;
+          padding: 20px;
+      }
+      .page {
+          margin-bottom: 40px;
+          page-break-after: always;
+      }
+      .page-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          margin-bottom: 20px;
+      }
+      .page-number {
+          font-size: 0.9em;
+      }
+      h1, h2, h3, h4 {
+          color: #333;
+      }
+      .figure-container {
+          text-align: center;
+          margin: 20px 0;
+      }
+      .figure-container img {
+          max-width: 100%;
+          height: auto;
+          border: 1px solid #ddd;
+      }
+      .figure-caption {
+          font-size: 0.9em;
+          color: #555;
+          margin-top: 10px;
+      }
+      table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 20px 0;
+      }
+      table, th, td {
+          border: 1px solid #ccc;
+      }
+      th, td {
+          padding: 8px;
+          text-align: left;
+          vertical-align: top;
+      }
+      .copyright {
+          font-size: 0.8em;
+          color: #777;
+          text-align: left;
+          margin-top: 20px;
+      }
+      blockquote {
+          margin: 20px 40px;
+          padding: 10px 20px;
+          border-left: 5px solid #eee;
+          color: #666;
+      }
+      .math {
+          font-family: 'Times New Roman', serif;
+          font-style: italic;
+      }
+      .algorithm-step {
+          margin-left: 20px;
+      }
+      .footnote {
+          font-size: 0.8em;
+          color: #555;
+          margin-top: 10px;
+      }
+      .figure { text-align: center; margin: 1em 0; }
+      .figure img { max-width: 100%; height: auto; }
+      .figure-caption { font-size: 0.9em; margin-top: 0.5em; }
+      .equation { text-align: center; margin: 1em 0; }
+      .equation span { display: block; }
+      .indent { text-indent: 2em; }
+      .sub-figure-caption { text-align: left; margin-top: 0.5em; }
+  </style>
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Colin&#39;s blog</a></h1>
+  <h2><a href="/">AI, Web3 and Mathematics</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/null">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-数学分析三千年09：不可分量与无穷小量在文艺复兴时期" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2025-06-21T05:41:28.000Z"><a href="/2025/06/21/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B409%EF%BC%9A%E4%B8%8D%E5%8F%AF%E5%88%86%E9%87%8F%E4%B8%8E%E6%97%A0%E7%A9%B7%E5%B0%8F%E9%87%8F%E5%9C%A8%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%E6%97%B6%E6%9C%9F/">2025-06-21</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">数学分析三千年09：文艺复兴时期的不可分量与无穷小量</h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      <div class="page">
+
+        <h1 style="text-align: center;">5 不可分量与无穷小量在文艺复兴时期</h1>
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_1.png" alt="Image showing four historical figures and a central diagram. Top left: F. Commandino, Top right: P. Guldin, Bottom left: J. Kepler, Bottom right: G. Galilei. The central diagram is titled ">
+        </div>
+    
+        <div class="copyright">
+            <p>© Springer Nature Switzerland AG 2021</p>
+            <p>T. Sonar, 3000 Years of Analysis, <a href="https://doi.org/10.1007/978-3-030-58223-4_5">https://doi.org/10.1007/978-3-030-58223-4_5</a></p>
+        </div>
+    </div>
+    
+    <div class="page">
+    
+    <table>
+            <tbody>
+                <tr>
+                  <td style="border:0px;width:20%">公元1434–1498年</td><td style="border:0px;">佛罗伦萨在美第奇家族统治下</td>
+                  </tr>
+                <tr>
+                
+                  <td style="border:0px;">约公元1445年</td><td style="border:0px;">约翰内斯·古腾堡发明活字印刷术</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1452–1519年</td><td style="border:0px;">列奥纳多·达·芬奇</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1453年</td><td style="border:0px;">土耳其人征服君士坦丁堡；拜占庭帝国终结</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1471–1528年</td><td style="border:0px;">阿尔布雷希特·丢勒</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1475–1520年</td><td style="border:0px;">米开朗基罗</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1492年</td><td style="border:0px;">哥伦布重新发现美洲</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1509–1547年</td><td style="border:0px;">英格兰国王亨利八世</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1517年</td><td style="border:0px;">德国宗教改革开始。马丁·路德在维滕贝格的城堡教堂（Schloßkirche）入口处张贴《九十五条论纲》以反对赎罪券的出售</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1519–1556年</td><td style="border:0px;">神圣罗马帝国皇帝查理五世</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1521年</td><td style="border:0px;">沃尔姆斯会议。路德受到帝国禁令</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1524–1525年</td><td style="border:0px;">德国农民战争</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1530年</td><td style="border:0px;">奥格斯堡宗教和约</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1534年</td><td style="border:0px;">西班牙的依纳爵·罗耀拉创立“耶稣会”（Jesuits）</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1546–1547年</td><td style="border:0px;">施马尔卡尔登战争</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1555年</td><td style="border:0px;">奥格斯堡和约</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1545–1563年</td><td style="border:0px;">特伦特会议；天主教会改革</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1548–1603年</td><td style="border:0px;">英格兰女王伊丽莎白一世</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1556–1598年</td><td style="border:0px;">西班牙国王腓力二世</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1556–1612年</td><td style="border:0px;">皇帝斐迪南一世、马克西米利安二世、鲁道夫二世统治</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1560年</td><td style="border:0px;">早期现代欧洲第一所学院在那不勒斯成立</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1582年</td><td style="border:0px;">教皇格列高利十三世改革历法：儒略历（最初仅在天主教国家）被格列高利历取代</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1588年</td><td style="border:0px;">西班牙无敌舰队覆灭</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1590年</td><td style="border:0px;">罗马圣彼得大教堂穹顶竣工</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1571年</td><td style="border:0px;">10月7日，唐·胡安·奥地利领导的基督教神圣同盟在勒班托战役中击败土耳其舰队</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1579年</td><td style="border:0px;">乌得勒支同盟；北部荷兰省份反西班牙联盟</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1593–1609年</td><td style="border:0px;">对土耳其战争</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1610年</td><td style="border:0px;">伽利略·伽利莱通过望远镜发表轰动性天文发现</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1612–1619年</td><td style="border:0px;">神圣罗马帝国皇帝马蒂亚斯</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1618年</td><td style="border:0px;">布拉格掷窗事件；三十年战争开始</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1619–1637年</td><td style="border:0px;">神圣罗马帝国皇帝斐迪南二世</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">自公元1615年起</td><td style="border:0px;">华伦斯坦作为天主教一方的军事领袖迅速崛起</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">自公元1630年起</td><td style="border:0px;">瑞典人在古斯塔夫二世·阿道夫的领导下介入三十年战争</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1634年</td><td style="border:0px;">华伦斯坦遇刺</td>
+       </tr>
+                <tr>
+                    <td style="border:0px;">公元1648年</td><td style="border:0px;">三十年战争结束</td>
+    </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="page">
+    
+        <h2 style="font-size: 1.5em; text-align: left; margin-top: 30px; margin-bottom: 20px;">5.1 文艺复兴：古典文化的复兴</h2>
+    
+        <p>15世纪初到16世纪末的时期被称为文艺复兴时期。更精确的时间定位则较为困难。约1420年至1500年被称为早期文艺复兴。绘画和素描中的透视法，以及对希腊视觉艺术的推崇，极大地激发了意大利对古典文化的新奇心，这具有非常重要的意义。约1500年至1530年是文艺复兴盛期，在此期间，列奥纳多·达·芬奇（1452-1519）创作了他最著名的画作，米开朗基罗·博纳罗蒂（1475-1564）创作了西斯廷教堂的壁画，阿尔布雷希特·丢勒（1471-1521）则以其铜版画在阿尔卑斯山北部引起关注。从拉斐尔（1483-1520）去世到约1600年的时期被称为晚期文艺复兴，其艺术风格被称为“矫饰主义”；这个词由雅各布·布克哈特（1818-1897）创造。</p>
+    
+        <p>15世纪，受文艺复兴影响，欧洲社会发生了根本性变革。人们试图摆脱受教会和等级森严的结构支配的“他向型”生活束缚。他们转向一种更明确地以个体为特征的存在。强烈的推动力来自</p>
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_2.png" alt="Fig. 5.1.1. The School of Athens ([Fresco by Raphael 1510/1511] in the Vatican in the Stanza della Segnatura). Many well known scholars of Greek antiquity are shown on this fresco. Plato and Aristotle can be found in the centre of the painting in the background; Aristotle holds his Ethics in his hand. In the lower left Pythagoras reads a book. With Averroes, also depicted in this painting, scholars having transferred knowledge from the world of antiquity are appreciated">
+            <p><b>图5.1.1.</b> 雅典学院（[拉斐尔1510/1511年壁画] 位于梵蒂冈签字厅）。这幅壁画描绘了许多著名的古希腊学者。柏拉图和亚里士多德位于画作背景中心；亚里士多德手中拿着他的《伦理学》。左下角的毕达哥拉斯正在读书。画中还描绘了阿威罗伊等学者，他们将古代知识传入西方，受到人们的赞赏。</p>
+        </div>
+    
+    </div>
+    
+    <div class="page">
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_3.png" alt="Fig. 5.1.2. The great humanist Erasmus of Rotterdam (right) [Painting by Hans Holbein the Younger 1523] prepared the Reformation by means of his writings but distanced himself when Martin Luther (left) [Painting by Lucas Cranach the Older 1529] carried out the separation from the Roman-Catholic Church">
+            <p><b>图5.1.2.</b> 伟大人文主义者鹿特丹的伊拉斯谟（右）[小汉斯·霍尔拜因1523年画作] 通过其著作预备了宗教改革，但当马丁·路德（左）[老卢卡斯·克拉纳赫1529年画作] 实施与罗马天主教会分离时，他选择了保持距离。</p>
+        </div>
+    
+        <p>拜占庭帝国的学者们在1453年君士坦丁堡陷落于土耳其人之手后，逃往意大利北部的城镇，从而使这一变革得到了拜占庭学者的支持。这种变化也得到了新兴人文主义的推动，它根据受推崇的古代哲学，将人重新置于世界的中心。人文主义也倡导在伦理哲学领域发挥人的力量。人文主义成为一场全面的教育运动，直到我们这个时代，法国哲学家兼作家让-保罗·萨特（1905-1980）创立了“存在主义人文主义”。在文艺复兴时期，鹿特丹的伊拉斯谟（Desiderius Erasmus，约1465或1469-1536）成为人文主义的领军人物。特别是在德国，人文主义具有强烈的政治成分，反对教皇和罗马天主教会，并最终导致了马丁·路德（1483-1546）的宗教改革。然而，由于新成立教会的激进主义，大多数人文主义者未能进一步跟随。</p>
+    
+        <p>1492年，为西班牙效力的热那亚航海家克里斯托弗·哥伦布（约1451-1506）发现了美洲，他以为那是印度。新的视野确实开启了。约1450年，约翰内斯·根斯弗莱施（Johannes Gensfleisch，1400-1468），被称为古腾堡，发明了活字印刷术。就书籍和其他各种文字的复制而言，这是一项真正的突破。然而，当时已经有许多印刷书籍的技术，但只有古腾堡将它们全部整合、改进和扩展，使得印刷书籍变得可行。如果没有这种书籍印刷术，宗教改革和文艺复兴时期科学知识的快速传播都是不可能的。</p>
+    
+    </div>
+    
+    <div class="page">
+    
+        <p>尼古拉·哥白尼（1473-1543），弗龙堡大教堂的教士和天文学家，在《天体运行论》（论天体运行）中发表了以太阳为中心、行星绕其运转的世界模型。该书于作者去世同年出版，取代了自公元150年左右被接受的克劳迪乌斯·托勒密（约100年-约170年）的地心世界模型。尽管许多作者在谈到《天体运行论》的出版时喜欢提及“科学革命”——这一短语可追溯到托马斯·S·库恩 [Kuhn 1957], [Kuhn 1962]——但哥白尼体系绝不比托勒密的简单。托勒密必须引入本轮以使行星轨道与观测结果一致。现在托勒密需要两倍于其日心模型中的本轮数量 [Neugebauer 1969b, p. 204]！直到约翰内斯·开普勒（1571-1630）才将该理论从圆形轨道中解放出来，并认识到椭圆才是真实的轨道。</p>
+    
+        <p>教会对日心体系有很大的问题并不奇怪，因为这不可避免地与圣经中的某些经文相矛盾。毕竟人是上帝创造的中心，因此必须位于宇宙的中心。《旧约》约书亚记第10章第12-13节记载：</p>
+    
+        <blockquote style="margin-left: 2em; border-left: 2px solid #ccc; padding-left: 1em;">
+            <p>(12) 当耶和华将亚摩利人交在以色列人手中那日，约书亚就向耶和华祷告，说：太阳啊，你要停在基遍；月亮啊，你要停在亚雅仑谷。</p>
+            <p>(13) 于是太阳停止，月亮也站住，直等国民向仇敌报仇。这事岂不是写在雅煞珥书上吗？太阳在天空中止住，不急着落下，约有一整天。</p>
+        </blockquote>
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_4.png" alt="Fig. 5.1.3. Ptolemaic system with epicycles. The diagram shows the Sun as the center, and a Planet orbiting on an epicycle around a larger deferent circle. The epicycle itself orbits around the Sun.">
+            <p><b>图5.1.3.</b> 托勒密本轮系统。除了其他辅助结构，托勒密还引入了本轮，这可能源于佩尔加的阿波罗尼乌斯（约公元前262年-约公元前190年）。观测中，有些行星，如火星，表现出逆行运动。为了在圆形轨道框架内实现这种逆行运动，行星被置于一个小圆上，行星在这个小圆上旋转，而这个小圆——本轮——本身又在一个更大的圆上围绕地球旋转。这个更大的圆被称为均轮。是哥白尼（1473-1543）将太阳置于宇宙中心。</p>
+        </div>
+    
+    </div>
+    
+    <div class="page">
+    
+        <p>如果上帝能够命令太阳完全停止，那么太阳怎么可能不绕地球运行呢？然而，关于哥白尼体系的出版物是可能出现的，只要作者不忘记清楚地称其为模型！伽利略·伽利莱（1564-1642）之所以陷入大麻烦，只是因为他宣称哥白尼的宇宙是真实、实际的体系。</p>
+    
+        <p>在数学领域，人们的目光也回到了古代。在分析学中，阿基米德关于某些图形和物体的重心计算被重新审视、反思并超越。</p>
+    
+        <h2 style="font-size: 1.5em; text-align: left; margin-top: 30px; margin-bottom: 20px;">5.2 重心计算者</h2>
+    
+        <p>16世纪下半叶，一种关于重心计算的文化兴起。这种兴起是基于对阿基米德的著作《论平面平衡或平面重心》的推崇，参见第二章。人们关注的重点是三维物体的重心计算，因为阿基米德在这方面传世甚少。尽管这可能看起来我们现在正在讨论一个次要的战场，但重心计算在微分和积分学的发展中确实发挥了重要作用。例如，当我们阅读戈特弗里德·威廉·莱布尼茨于1675年10月撰写的《基于重心四边形分析》（Analysis tetragonistica ex centrobarycis）时，就能认识到这个领域的重要性 [Leibniz 2008, p. 263-269]，其英文翻译可在 [Child 2005, p. 65ff.] 中找到。</p>
+    
+        <p>弗朗切斯科·毛罗利科（Francesco Maurolico，1494–1575）是一位本笃会修道士，来自一个希腊家庭，在拜占庭帝国首都君士坦丁堡被土耳其人攻陷后，其家族离开了君士坦丁堡，定居在西西里。毛罗利科被认为是16世纪的博学家，他翻译了许多古代作家的著作，其中包括欧几里得和阿基米德。他无疑是一位伟大的几何学家，因为他引入了新的测量方法；他甚至作为历史学家、天文学家，当然还有数学家，都享有盛名。他的作品中只有少数在生前出版；大部分是以手稿形式存在的，例如《De momentis aequalibus》。他作品的完整版最近已在比萨开始出版。在《De momentis aequalibus》中，毛罗利科从一个关于放置在杆上的几个重量的重心的定理开始 [Baron 1987, p. 91f.]。</p>
+    
+    </div>
+    
+    <div class="page">
+    
+         <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_5.png">
+            
+            <p><b>图5.2.1.</b> 左图：16或17世纪绘画的局部[可能出自亨德里克·范·巴伦之手]。这幅画的标题可能是“万物皆有其度”，但它也以学习和知识传承为主题。在欧洲，当时使用了不同的长度（例如，英尺、码）、重量和固体度量单位。就应用而言，测量显然是重点。右图：弗朗切斯科·毛罗利科[版画：M. Bovis根据波利多罗·达·卡拉瓦乔的作品创作]</p>
+        </div>
+    
+        <p style="margin-top: 20px;">如果在图5.2.2中成立</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">AE = CG, EF = GH, BF = DH</span>
+        </p>
+        <p>并且</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">I : O = K : P = M : Q = N : R,</span>
+        </p>
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_14.png" alt="Fig. 5.2.2. Different weights at a rod. Diagram showing a horizontal rod with points A, E, F, B on the top line and C, G, H, D on the bottom line. Weights K, M, N, P, Q, R, I, O are placed below these points. Lines V and Y denote pivot points.">
+            <p><b>图5.2.2.</b> 杆上的不同重量</p>
+        </div>
+    
+    </div>
+    
+    <div class="page">
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_15.png" alt="Fig. 5.2.3. Inscribed and circumscribed cylindrical pieces at a paraboloid of rotation. Two diagrams of a paraboloid with inscribed and circumscribed cylinders, showing height h and points N, B, C, A.">
+            <p><b>图5.2.3.</b> 旋转抛物面内的内接与外接圆柱体</p>
+        </div>
+    
+        <p>那么<span style="font-family: 'Times New Roman', serif;">VB = YD</span> 也成立。这个定理为毛罗利科解释一个精密的称重过程做了准备，他以旋转抛物面为例进行了说明。为此，我们考察旋转抛物面的一个截面，其纵轴 <span style="font-family: 'Times New Roman', serif;">AN</span> 被分成 <span style="font-family: 'Times New Roman', serif;">n</span> 个高度为 <span style="font-family: 'Times New Roman', serif;">h</span> 的等份，如图5.2.3所示。因此，高度 <span style="font-family: 'Times New Roman', serif;">AN</span> 正好是 <span style="font-family: 'Times New Roman', serif;">nh</span>。然后毛罗利科设想了高为 <span style="font-family: 'Times New Roman', serif;">h</span> 的圆柱体被内接和外接于抛物面，如图5.2.3所示。我们首先讨论内接圆柱体。设内接圆柱体的体积分别为 <span style="font-family: 'Times New Roman', serif;">v₁</span>, <span style="font-family: 'Times New Roman', serif;">v₂</span>, . . .<span style="font-family: 'Times New Roman', serif;">v<sub>n-1</sub></span>，其对应半径分别为 <span style="font-family: 'Times New Roman', serif;">r₁</span>,<span style="font-family: 'Times New Roman', serif;">r₂</span>,...,<span style="font-family: 'Times New Roman', serif;">r<sub>n-1</sub></span>。由于所有圆柱体都具有相同的高度 <span style="font-family: 'Times New Roman', serif;">h</span>，它们的体积与 <span style="font-family: 'Times New Roman', serif;">r²</span> 成比例，并且成立</p>
+    
+       
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_16.png" alt="Fig. 5.2.4. Comparison areas at the triangle. Two diagrams of a triangle with inscribed rectangles, showing points N, B, C, A.">
+            <p><b>图5.2.4.</b> 三角形中的比较面积</p>
+        </div>
+    
+    </div>
+    
+    <div class="page">
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_17.png" alt="Fig. 5.2.5. Triangles on the lever arm. Diagram showing a lever arm with points A, G, C, N and a dotted line from G upwards. Another diagram shows a triangle with points S and dimensions h, h/3, h/6, h/2.">
+            <p><b>图5.2.5.</b> 杠杆臂上的三角形</p>
+        </div>
+    
+        <p>现在，基础物体是一个抛物面，因此也成立</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">r<sub>1</sub><sup>2</sup> ~ h, r<sub>2</sub><sup>2</sup> ~ 2h, r<sub>3</sub><sup>2</sup> ~ 3h, ...</span>
+        </p>
+        <p>成立，以至于最终</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">
+                <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>v<sub>1</sub></mn><mn>1</mn></mfrac></math>
+            </span>
+            <span style="font-family: 'Times New Roman', serif;"> = </span>
+            <span style="font-family: 'Times New Roman', serif;">
+                <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>v<sub>2</sub></mn><mn>2</mn></mfrac></math>
+            </span>
+            <span style="font-family: 'Times New Roman', serif;"> = </span>
+            <span style="font-family: 'Times New Roman', serif;">
+                <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>v<sub>3</sub></mn><mn>3</mn></mfrac></math>
+            </span>
+            <span style="font-family: 'Times New Roman', serif;"> = ...</span>
+        </p>
+        <p>接下来是毛罗利科的一个巧妙构思。他在抛物面内的圆柱体中寻找比较面积，并在圆锥和三角形中找到了它们，其尺寸与在抛物面中找到的尺寸相符。也就是说，在图5.2.4所示的三角形内的矩形面积关系为</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">1 : 2 : 3 : 4 : . . . .</span>
+        </p>
+        <p>因此，在杠杆臂上可以将圆柱体替换为相应的矩形。</p>
+        <p>到目前为止，我们只讨论了内接圆柱体的情况；然而，在外接圆柱体的情况下，前面所述的一切也同样适用。</p>
+        <p>现在毛罗利科必须确定重心的实际位置，并将 <span style="font-family: 'Times New Roman', serif;">n</span> 个直角三角形放置在长度为 <span style="font-family: 'Times New Roman', serif;">nh</span> 的杠杆臂上；这正是 <span style="font-family: 'Times New Roman', serif;">AN</span> 的长度。</p>
+        <p>由于单个三角形的重心 <span style="font-family: 'Times New Roman', serif;">S</span> 位于其高度的三分之一处，如图5.2.5所示，因此杠杆臂上 <span style="font-family: 'Times New Roman', serif;">n</span> 个三角形的重心 <span style="font-family: 'Times New Roman', serif;">G</span> 必须位于距中点 <span style="font-family: 'Times New Roman', serif;">C</span> 距离为 <span style="font-family: 'Times New Roman', serif;">h/6</span> 处，即</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">GN = </span>
+            <span style="font-family: 'Times New Roman', serif;">
+                <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>nh</mn><mn>2</mn></mfrac></math>
+            </span>
+            <span style="font-family: 'Times New Roman', serif;"> ± </span>
+            <span style="font-family: 'Times New Roman', serif;">
+                <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>h</mn><mn>6</mn></mfrac></math>
+            </span>
+            <span style="font-family: 'Times New Roman', serif;">,</span>
+        </p>
+        <p>符号取决于三角形在 <span style="font-family: 'Times New Roman', serif;">AN</span> 上的排列方式。即使三角形在垂直方向上任意移动，例如在图5.2.6中所示，结果也相同。因此，毛罗利科现在可以将图5.2.4中的三角形面积视为从矩形中减去和加上三角形的面积。一个阴影三角形的面积是 <span style="font-family: 'Times New Roman', serif;">hb/2</span></p>
+    
+    </div>
+    
+    <div class="page">
+        <p>其中 <span style="font-family: 'Times New Roman', serif;">b</span> 显然由 <span style="font-family: 'Times New Roman', serif;">b = r/n</span> 给出，如果 <span style="font-family: 'Times New Roman', serif;">r</span> 表示线段 <span style="font-family: 'Times New Roman', serif;">AC = AB</span> 的长度。因此所有小三角形的总面积是</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">2 · n · </span>
+            <span style="font-family: 'Times New Roman', serif;">
+                <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>h·b</mn><mn>2</mn></mfrac></math>
+            </span>
+            <span style="font-family: 'Times New Roman', serif;"> = nhb = hr.</span>
+        </p>
+        <p>将大三角形的总面积表示为 <span style="font-family: 'Times New Roman', serif;">F</span>，我们有</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">F = nhr.</span>
+        </p>
+        <p>因此，内接情况下的矩形面积结果为</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">nhr - hr = F - </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>F</mn><mn>n</mn></mfrac></math>
+            <span style="font-family: 'Times New Roman', serif;"> = F (1 - </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>n</mn></mfrac></math>
+            <span style="font-family: 'Times New Roman', serif;">)</span>
+            <span style="float: right;">(5.1)</span>
+        </p>
+        <p>而在外接情况下，我们得到</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">nhr + hr = F + </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>F</mn><mn>n</mn></mfrac></math>
+            <span style="font-family: 'Times New Roman', serif;"> = F (1 + </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>n</mn></mfrac></math>
+            <span style="font-family: 'Times New Roman', serif;">).</span>
+        </p>
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_18.png" alt="Fig. 5.2.6. Shifted triangles on the lever arm. Diagram showing a lever arm with points A, G, C, N and a triangle shifted.">
+            <p><b>图5.2.6.</b> 杠杆臂上的位移三角形</p>
+        </div>
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_19.png" alt="Fig. 5.2.7. Triangular area as sum or difference. Two diagrams showing triangles with shaded inner sections, one yellow, one red.">
+            <p><b>图5.2.7.</b> 三角形面积之和或差</p>
+        </div>
+    
+    </div>
+    
+    <div class="page">
+        <p>计算杠杆臂相对于点<span style="font-family: 'Times New Roman', serif;">N</span>的力矩，我们得到</p>
+        <div class="figure-container">
+        <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_20.png">
+        </div>
+        <p>其中<span style="font-family: 'Times New Roman', serif;">G</span>现在表示矩形的重心。因此得到</p>
+        <div class="figure-container">
+        <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_21.png">
+        </div>
+        <p>我们现在可以清楚地看到两点：内接矩形的重心位置与外接矩形的不同之处在于 <span style="font-family: 'Times New Roman', serif;">2 · h/6 = h/3</span>，并且在 <span style="font-family: 'Times New Roman', serif;">n → ∞, h → 0</span> 且 <span style="font-family: 'Times New Roman', serif;">nh</span> 为常数的情况下，抛物面的重心 <span style="font-family: 'Times New Roman', serif;">G</span> 的位置为</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">G<sub>P</sub>N = </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>
+            <span style="font-family: 'Times New Roman', serif;">AN, 因此 A<sub>G</sub>P:G<sub>P</sub>N = 1 : 2.</span>
+        </p>
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_6.png" alt="Fig. 5.2.8. Federico Commandino [Artist of the Scuola del Barocco, 16th c.] and the title page of his translation of the works of Pappus, 1589. Left: Portrait of Federico Commandino. Right: Title page of 'PAPPI ALEXANDRINI MATHEMATICAE Collectiones. A FEDERICO COMMANDINO VP.BINATE' with publisher details and year 1589." style="max-width: 48%; height: auto; border: 1px solid #ccc;">
+            <p><b>图5.2.8.</b> 费德里科·科曼迪诺 [巴洛克学派艺术家，16世纪] 及其1589年译作《帕普斯作品集》书影</p>
+        </div>
+    
+    </div>
+    
+    <div class="page">
+        <p>毛罗利科当然没有通过取极限来完成这一步，而是通过经典的<span style="font-style: italic;">归谬法</span>。除了毛罗利科，我们还需要提到意大利数学家费德里科·科曼迪诺（Federico Commandino，1509-1575）和卢卡·瓦莱里奥（Luca Valerio，1552-1618），他们都积极参与了物体重心的计算。</p>
+    
+        <p>科曼迪诺曾在帕多瓦和费拉拉学习医学。他通过翻译欧几里得、萨摩斯的阿里斯塔克斯和亚历山大港的帕普斯等古代作品而闻名。他编辑了阿基米德的作品，并于1565年撰写了《固体重心论》（<span style="font-style: italic;">Liber de centro gravitatis solidorum</span>），其中包含了关于四面体几何的“科曼迪诺定理”。卢卡·瓦莱里奥是一位耶稣会士，曾与伽利略·伽利莱通信。他曾学习哲学和神学，是克里斯托弗·克拉维乌斯（Christopher Clavius）的学生。当伽利莱的案件升级，天主教会正式宣布哥白尼的学说为异端时，瓦莱里奥中断了与伽利莱的通信，并退出了林切科学院（Academia dei Lincei）。科曼迪诺和瓦莱里奥的作品在玛格丽特·巴伦（Margaret Baron）的著作中得到了详细描述 [Baron 1987, p. 94ff.]。</p>
+    
+        <p>那个时代最有趣的重心计算者无疑是天才的佛兰德斯人西蒙·斯特芬（Simon Stevin，1548-1620）。斯特芬出生于布鲁日</p>
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_7.png" alt="Fig. 5.2.9. Simon Stevin and his land yacht which he developed for Prince Maurice of Orange, 1649. Image shows a sailing cart on land and a portrait of Simon Stevin." style="max-width: 100%; height: auto;">
+            <p><b>图5.2.9.</b> 西蒙·斯特芬及其为奥兰治亲王莫里斯开发的海陆两用船，1649年</p>
+        </div>
+    
+    </div>
+    
+    <div class="page">
+        <p>但关于他的生平知之甚少。他曾游历波兰、丹麦以及北欧其他国家。回国后，他成为拿骚的莫里斯（后来的奥兰治亲王）的导师，后者任命他为“水利局”（政府公共工程，特别是水管理部门）的第一任主管。斯特芬不仅是一位杰出的数学家，也是一位卓越的工程师和物理学家。他很可能是第一个在计算中使用十进制数并教授其使用方法的人。他有多项发明，在力学领域也证明了自己是一位天才的发现者，例如在静水悖论、潮汐理论以及拒绝永动机存在的方面。在这里，我们只需欣赏他在分析学方面的成就，这些成就可以在他的力学著作中找到。他的重要性在于他努力简化阿基米德关于归谬法的论证。他利用了以下论点：如果两个量之间的差可以变得小于任何给定量，那么这两个量就是相等的。我们回到了毛罗利科在图5.2.10中使用的带有内接矩形的三角形。斯特芬试图证明三角形的重心位于中线<span style="font-family: 'Times New Roman', serif;">AD</span>上。如果三角形<span style="font-family: 'Times New Roman', serif;">ABC</span>的面积表示为<span style="font-family: 'Times New Roman', serif;">F</span>，并且<span style="font-family: 'Times New Roman', serif;">n</span>个内接矩形的面积之和表示为<span style="font-family: 'Times New Roman', serif;">I<sub>n</sub></span>，那么我们在毛罗利科的计算（5.1）中已经看到：</p>
+    
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">F - I<sub>n</sub> = </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>F</mn><mn>n</mn></mfrac></math>
+        </p>
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_22.png" alt="Fig. 5.2.10. A triangle with inscribed rectangles. Diagram shows a triangle with vertices A, B, C and a line segment AD. Several rectangles are inscribed within the triangle." style="max-width: 100%; height: auto;">
+            <p><b>图5.2.10.</b> 带有内接矩形的三角形</p>
+        </div>
+    
+    </div>
+    
+    <div class="page">
+        <p>成立。根据欧几里得（《几何原本》X.1），<span style="font-family: 'Times New Roman', serif;">n</span> 可以选择得足够大，使得 <span style="font-family: 'Times New Roman', serif;">F/n</span> 任意小，因此</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">lim<sub>n→∞</sub> </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>F</mn><mn>n</mn></mfrac></math>
+            <span style="font-family: 'Times New Roman', serif;"> = 0.</span>
+        </p>
+        <p>如果 <span style="font-family: 'Times New Roman', serif;">F₁</span> 和 <span style="font-family: 'Times New Roman', serif;">F₂</span> 分别是三角形部分 <span style="font-family: 'Times New Roman', serif;">ABD</span> 和 <span style="font-family: 'Times New Roman', serif;">ADC</span> 的面积，那么成立</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">F - I<sub>n</sub> = </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>F</mn><mn>n</mn></mfrac></math>
+        </p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">F₁ - </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>I<sub>n</sub></mn><mn>2</mn></mfrac></math>
+            <span style="font-family: 'Times New Roman', serif;"> < </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>F</mn><mn>n</mn></mfrac></math>
+        </p>
+        <p>和</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">F₂ - </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>I<sub>n</sub></mn><mn>2</mn></mfrac></math>
+            <span style="font-family: 'Times New Roman', serif;"> < </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>F</mn><mn>n</mn></mfrac></math>
+        </p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">|F₁ - F₂| < </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>F</mn><mn>n</mn></mfrac></math>
+        </p>
+        <p>因此，给定一个小的面积 <span style="font-family: 'Times New Roman', serif;">ε > 0</span>，总是可以找到一个数 <span style="font-family: 'Times New Roman', serif;">n</span>，使得</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">|F₁ - F₂| < ε.</span>
+        </p>
+        <p>现在，斯特芬没有使用归谬法，而是采用了“逆否命题”的逻辑规则</p>
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">(p → q) ⇒ (¬q → ¬p)</span>
+        </p>
+        <p>以以下形式[Baron 1987, p. 99]:</p>
+        <ol style="margin-left: 2em;">
+            <li><span style="font-family: 'Times New Roman', serif;">如果两个量不同，则它们之间存在有限的差异。</span></li>
+            <li><span style="font-family: 'Times New Roman', serif;">这些量 [即 F₁ 和 F₂] 之间的差异小于一个有限量。</span></li>
+            <li><span style="font-family: 'Times New Roman', serif;">这些量没有差异。</span></li>
+        </ol>
+        <p>斯特芬通过此举，在阿基米德的归谬法之外迈出了决定性的一步：他通过三段论逻辑表明，他不需要阿基米德的迂回方式来走向极限。他的方法在当时非常被接受，但后来卡瓦列里的影响如此之大，以至于人们不再认为严格的极限转换是可行的。</p>
+    
+    </div>
+    
+    <div class="page">
+        <h2 style="font-size: 1.5em; text-align: left; margin-top: 30px; margin-bottom: 20px;">5.3 约翰内斯·开普勒</h2>
+    
+        <p>1571年12月27日，约翰内斯·开普勒出生在符腾堡州的小镇魏尔德施塔特。</p>
+    
+        <p>他将成为有史以来最伟大的天文学家之一——他的“开普勒定律”今天仍是太空飞行的基础——他将作为一位自然科学家而闻名，尤其是在光学领域 [Caspar 1993]。鲜为人知的是，他还在第二次婚礼时对分析学做出了卓越的贡献！</p>
+    
+        <p>约翰内斯出生时，魏尔德施塔特是路德宗城市。在这个拥有约1000名居民的小型帝国自由市中，他的父母属于富裕居民。然而，约翰内斯很可能是在天主教堂接受洗礼，因为当时还没有路德宗教堂或路德宗牧师 [Lemcke 1995]。父亲海因里希是魏尔德施塔特市长的第四个孩子，市长还经营一家酒馆。母亲卡塔琳娜·古尔登曼来自埃尔廷根市长的家庭。</p>
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_8.png" alt="Fig. 5.3.1. Johannes Kepler ([unknown painter, Copy of a lost original of 1610], Benedictine Monastery of Krems) and his birthplace in Weil der Stadt. Today it is the domicile of the Kepler museum [Photo: Markus Hagenlocher]" style="max-width: 100%; height: auto;">
+            <p><b>图5.3.1.</b> 约翰内斯·开普勒（[佚名画家，1610年原作失传复制品]，克雷姆斯本笃会修道院）和他的出生地魏尔德施塔特。今天这里是开普勒博物馆所在地 [摄影：Markus Hagenlocher]</p>
+        </div>
+    
+    </div>
+    
+    <div class="page">
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_9.png" alt="Fig. 5.3.2. The Great Comet of 1577 seen over Prague ([Woodcut by Jiri Daschitzsky, 1577] Georgium Jacobum von Datschitz, Zentralbibliothek Zürich). A woodcut depicting a comet in the sky over a city scene with many people." style="max-width: 100%; height: auto;">
+            <p><b>图5.3.2.</b> 1577年布拉格上空出现的大彗星 ([吉里·达希茨基1577年木刻] 格奥尔基乌斯·雅各布姆·冯·达希茨，苏黎世中央图书馆)</p>
+        </div>
+    
+        <p>也经营一家酒吧。显然，约翰内斯的母亲在公婆家过得很不愉快，整个婚姻也不能称得上幸福。父亲海因里希似乎一无是处。他作为雇佣兵参加了西班牙尼德兰的战争，为天主教一方作战。母亲跟随他，大概是为了把他带回家庭责任中，把小约翰内斯留给了他患上天花的祖父母。这个孩子尽管体质脆弱，但还是活了下来，然而角膜上留下了疤痕，并且终生患有视力缺陷和近视。1575年，我们发现父母都回到了魏尔德施塔特，父亲现在在市场广场买了一所房子。仅仅一年后，他再次出去当雇佣兵。小约翰内斯的学校教育始于1577年，在邻近的利昂贝格学习阅读和写作。1578年，他进入了同样位于利昂贝格的文法学校。文法学校（或拉丁学校）通常只为富裕家庭的孩子或非常有天赋的孩子保留。</p>
+    
+        <p>开普勒后来写道，他的母亲曾在1577年带他登上山顶，向他展示一颗彗星。这颗彗星在白天清晰可见，并被当时许多天文学家观测到。毫无疑问，这颗彗星强烈地激发了约翰内斯对天象的兴趣。</p>
+    
+    </div>
+    
+    <div class="page">
+        <p>但是彗星在当时是什么呢？当时天文学家们还在困惑，彗星究竟是大气现象还是地外起源。在普通人眼中，它们是坏消息的预兆。它们被视为“上帝的电报”，预示着对人类不当行为的严厉惩罚。</p>
+    
+        <p>那时候，许多学童都必须帮助父母在家中工作。因此，上学往往不规律。约翰内斯·开普勒的情况也是如此。他父亲在1577年回家后，于1579年再次卖掉了魏尔德施塔特的祖宅，全家搬到埃尔门丁根，父亲接管了“太阳旅馆”。不迟于此时，约翰内斯不得不开始帮助家里干农活。他只能在冬天上语法学校，但他仍然是个好学生。在埃尔门丁根的日子里，约翰内斯的父亲给他看了一次月食——这进一步的经历可能激发了这个小男孩对天象的兴趣。1583年，父亲破产，放弃了旅馆，带着家人搬到莱昂贝格。同年，约翰内斯通过了“土地考试”，这是开始神职生涯的必要考试。10月16日，他被阿德尔贝格修道院学校录取。这些学校的生活很艰苦，依赖于无情的监视和压迫制度。开普勒对这些难以忍受的条件产生了身心疾病——他患上了高烧和头痛。现在，他的神学疑虑也开始了，这将伴随他一生。路德宗和加尔文宗之间的对立达到了顶峰。路德宗信徒认为耶稣基督肉身存在于圣餐中，而加尔文宗信徒则认为他只存在于“精神”中。开普勒作为一名路德宗信徒，最终确信他只能认同加尔文宗的信仰。当然，这是一种异端！他无法向任何朋友或家人谈论自己的信仰，必须将这种冲突藏在自己心中。这个年轻人关注数学和诗歌，以逃避与同学的冲突。两年后，通过最终考试，他去了毛尔布隆的次级修道院学校，在那里他遭受了同学更多的报复。有一次他发烧非常严重，生命危在旦夕。几个世纪后，赫尔曼·黑塞在他的小说《轮下》（Beneath the Wheel）中描述了毛尔布隆的可怕环境，他自己曾在1891年至1892年间遭受折磨，最终他逃走了！</p>
+    
+        <p>在毛尔布隆两年后，开普勒以优异的成绩通过了图宾根的学士学位考试，并回到毛尔布隆两年，成为“老生”；这个词用于指年长的学生。1589年，他进入图宾根圣堂，在那里他应该在图宾根大学艺术学院学习。此后，他就可以开始学习神学了。这一年，他的母亲做了一件令人发指的事情：她把丈夫赶出了家门，丈夫从此消失了。</p>
+    
+    </div>
+    
+    <div class="page">
+        <p>开普勒除其他讲座外，还参加了著名天文学家迈克尔·梅斯特林（Michael Mästlin，1550-1631），图宾根大学数学教授的数学和天文学讲座。但开普勒也了解了希腊哲学，并研究了尼古拉·库萨的作品。</p>
+    
+        <p>当时开普勒就被认为是聪明的占星家，他为同学们发布星象预测。此外，第一部科幻小说——《梦》（<span style="font-style: italic;">Somnium</span>）（始于1610年）也初具雏形，开普勒将为此书工作一生。这部小说将只在死后出版。在小说中，开普勒描述了一次虚构的月球之旅，并详细描绘了许多天文学细节。1591年8月11日，开普勒以15名候选人中第二名的成绩通过了硕士学位考试。他申请了一份助学金并获得了资助，并在大学继续学习神学。当开普勒读三年级时，图宾根学院被要求为数学系寻找一名教师。格拉茨的数学教师去世了，需要一名继任者。开普勒被命令前往，但他并不愿意。为什么图宾根选择了一名三年级学生？大概是因为他已知的数学能力，但更可能的是，开普勒的异端神学信仰被泄露，学院想摆脱这个异端学生。</p>
+    
+        <p>经过二十天的旅程，开普勒于1594年4月11日抵达格拉茨。当时的数学教师地位不高，声望甚微（如果有的话）。此外，格拉茨的新教徒处境危险。反宗教改革期间，耶稣会士来到格拉茨；他们在1572年建立了一所学院（耶稣会士的修道院），1573年建立了一所高中，1585年建立了一所大学。开普勒当时任教的教会学校是耶稣会大学的对应机构。新教徒和天主教徒之间的局势由于双方，主要是新教徒的固执而日益紧张。天主教大公卡尔开始向新教徒施压，新教徒则以诽谤运动回应。在这种压力下，开普勒以熟悉的方式作出反应——他发起了高烧，直到5月24日才开始授课。他的教学很不熟练，可能很笨拙，以至于第二年他的所有学生都消失了。尽管如此，学校检查员们显然很满意。他们表示 [Caspar 1993, p. 56], [Oeser 1971, p. 31]</p>
+    
+        <blockquote style="margin-left: 2em; border-left: 2px solid #ccc; padding-left: 1em;">
+            <p>“因为数学的学习不适合所有人”</p>
+            <p><span style="font-style: italic;">(Mathematicum studium nit Jedermans thuen ist)</span></p>
+        </blockquote>
+    
+        <p>并在第二年表示他 [Caspar 1993, p. 57], [Oeser 1971, p. 31]</p>
+    
+        <blockquote style="margin-left: 2em; border-left: 2px solid #ccc; padding-left: 1em;">
+            <p>“首先作为演说者[<span style="font-style: italic;">perorando</span>]、其次作为教师[<span style="font-style: italic;">docendo</span>]、最后作为辩论者[<span style="font-style: italic;">disputando</span>]表现出色，以至于</p>
+        </blockquote>
+    
+    </div>
+    
+    <div class="page">
+        <blockquote style="margin-left: 2em; border-left: 2px solid #ccc; padding-left: 1em;">
+            <p>我们除了认为他，考虑到他的年轻，是一个训练有素、谦逊的大师和教授，一个非常适合这所值得称赞的地区学校的人，别无选择。”</p>
+            <p><span style="font-style: italic;">(anfangs perorando, hernach docendo und dann auch disputando dermassen erwisen, was wir anders nit indiciren khönen, dann dz Er bey seiner Jugent ein gelehrter und in moribus ein bescheidener und dieser Einer Ersamen Landschafft Schuell allhie ein wolanstehund Magister und profeßor wie nit ohn ist.)</span></p>
+        </blockquote>
+    
+        <p>除了在格拉茨担任教师外，他还是施蒂利亚地区的数学家，即“施蒂利亚荣誉区”，每年要制作一份包含天气和一般占星术“预测”的年历。开普勒作为数学教师的年收入是150盾；而制作年历他额外赚取20盾。作为比较：他的前任，格奥尔格·施塔迪乌斯，工资是200盾，年历额外收入32盾！</p>
+    
+        <p>现在开普勒作为占星家的实际职业生涯开始了！他1595年的第一份预测就非常成功。他预言了土耳其入侵、严寒和农民起义，所有这些都成为现实。正如莎士比亚的哈姆雷特一样，开普勒也坚信天地间有比可见之物更多的东西。然而，关于占星术准确预测命运的力量，他非常克制！他的某些评论可以证明他的克制，例如 [Gerlach/List 1987, p. 29]<sup>1</sup>：</p>
+    
+        <blockquote style="margin-left: 2em; border-left: 2px solid #ccc; padding-left: 1em;">
+            <p>现在，这占星术是一个愚蠢的女儿（正如我在我的书《论恒星》第59页[KGW I:211, 第6行及以下]中所写），但是亲爱的主啊，如果这位高尚而理性的天文学母亲没有这个愚蠢的女儿，她会怎么样呢，因为世界更加愚蠢……</p>
+            <p><span style="font-style: italic;">(Es ist wol diese Astrologie ein närrisches Töchterlin (hab ich geschrie- ben in meinem Buch de Stella, S. 59 [KGW I:211, Zeile 6f.]). Aber lieber Gott, wo wolt ihr Mutter die hochvernünfftige Astronomie bleiben, wann sie diese närrische Tochter nit hette? Ist doch die Welt noch viel närrischer ...)</span></p>
+        </blockquote>
+    
+        <p>或 [Kepler 2005, p. 197]：</p>
+    
+        <blockquote style="margin-left: 2em; border-left: 2px solid #ccc; padding-left: 1em;">
+            <p>另外，数学家的工资如此奇怪和低廉，如果女儿不赚任何钱，母亲就得挨饿。</p>
+            <p><span style="font-style: italic;">(Und seynd sonsten der Mathematiker Honorar so seltzam und so</span></p>
+        </blockquote>
+        <p style="font-size: 0.8em; margin-top: 1em;"><sup>1</sup> 来自 <span style="font-style: italic;">Tertius interveniens Nummer 7</span>, [Kepler 2005, p. 197].</p>
+    
+    </div>
+    
+    <div class="page">
+        <blockquote style="margin-left: 2em; border-left: 2px solid #ccc; padding-left: 1em;">
+            <p><span style="font-style: italic;">gering, daß die Mutter gewißlich Hunger leyden müste, wann die Tochter nichts erwürbe.)</span></p>
+        </blockquote>
+    
+        <p>开普勒越来越投身于天文学；特别是关于是否有且仅有六颗行星的问题（天王星、海王星和冥王星尚未发现）。开普勒坚信上帝按照一个数学计划设计了宇宙。他尝试了行星轨道距离的不同比例，但他的努力最终失败了。然后他突然有了一个想法：正好有五种柏拉图立体，即正四面体、正六面体、正八面体、正十二面体和正二十面体。难道上帝不是因为有五种柏拉图立体而创造了正好六颗行星吗？开普勒写道 [Kepler 2005a, p. 17]：</p>
+    
+        <blockquote style="margin-left: 2em; border-left: 2px solid #ccc; padding-left: 1em;">
+            <p>地球的轨道是所有其他轨道的尺度。在其外接一个正十二面体；包围它的圆是火星的轨道。在火星外接一个正四面体；包围它的圆是木星的轨道。在木星的圆外接一个正六面体；包围它的圆是土星的轨道。现在将一个正二十面体放在地球的圆内；内接的圆是金星。在金星的圆内放一个正八面体；内接的圆是水星。这就是行星数量的理由。</p>
+            <p><span style="font-style: italic;">(Der Erdkreis ist das Maß für alle anderen. Ihm umschreibe ein Dodekaeder; der diesen umspannenden Kreis ist der Mars. Dem Mars umschreibe ein Tetraeder; der dieses umspannende Kreis ist der Jupiter. Dem Jupiterkreis umschreibe einen Würfel; der diesen einbeschriebene Kreis ist der Saturn. Nun lege in den Erdkreis ein Ikosaeder; der diesem einbeschriebene Kreis ist die Venus. In den Venuskreis lege ein Oktaeder, der diesem einbeschriebene Kreis ist der Merkur. Da hast Du den Grund für die Anzahl von Planeten.)</span></p>
+        </blockquote>
+    
+        <p>我们今天带着一些担忧和保留来看待这个看似幼稚的“结果”，但不仅开普勒一只脚踏在中世纪，另一只脚踏在现代。其他人也会热情地接受这个宇宙模型。开普勒接着说 [Kepler 2005a, p. 17]：</p>
+    
+        <blockquote style="margin-left: 2em; border-left: 2px solid #ccc; padding-left: 1em;">
+            <p>我无法用言语来描述我的发现给我带来了多大的乐趣。</p>
+            <p><span style="font-style: italic;">(Den Genuß, den ich aus meiner Entdeckung geschöpft habe, mit Worten zu beschreiben, wird mir nie möglich sein.)</span></p>
+        </blockquote>
+    
+        <p>开普勒热情地写信给他在图宾根的前老师梅斯特林，并在《宇宙的奥秘》（Mysterium cosmographicum，世界之秘密）一书中写下了他的研究成果，他亲自将手稿带到图宾根，希望能在1596年出版。这本书于1597年出版。</p>
+    
+    </div>
+    
+    <div class="page">
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_10.png" alt="Fig. 5.3.3. Kepler's world model from Mysterium Cosmographicum, 1596. Representation of this model in Harmonices mundi, 1619. Two diagrams, one showing a complex nested sphere model, the other with text labels for planetary orbits and geometric shapes like CUBUS and TETRAHEDRON." style="max-width: 100%; height: auto;">
+            <p><b>图5.3.3.</b> 开普勒的宇宙模型，出自《宇宙的奥秘》，1596年。该模型在《世界的和谐》（<span style="font-style: italic;">Harmonices mundi</span>），1619年中的展示</p>
+        </div>
+    
+        <p>就在同年，开普勒娶了23岁、两次丧偶的芭芭拉·米勒，他一直在格拉茨关注着她。这场婚姻并不幸福。四个孩子中有两个早夭；此外，芭芭拉显然对约翰内斯的科学抱负没有太多同情。她于1611年去世。1598年，格拉茨的反宗教改革达到了高潮：所有在学校、教堂或圣堂工作的新教徒都被驱逐；只有开普勒被允许返回。他迫切地向梅斯特林求助，请求这位前老师在图宾根为他寻找一个可能的职位——梅斯特林没有回复。1598年至1600年间，他正在撰写一份新手稿，《世界的和谐》（<span style="font-style: italic;">Harmonices mundi</span>）。与此同时，他收到了许多关于他的《宇宙的奥秘》的积极反馈；其中包括伽利略·伽利莱和当时最著名的天文学家第谷·布拉赫（Tycho Brahe，1546-1601）[Thoren 1990]。</p>
+    
+        <p>第谷是丹麦贵族后裔，曾在哥本哈根、莱比锡、罗斯托克、巴塞尔和维滕贝格学习哲学、修辞和法律。20岁时，他与一名同学发生争执，导致一场剑术决斗，第谷失去了鼻子。据说，这场导致决斗的争执始于对一个数学公式的讨论。幸运的是，他在这场残酷的身体伤害中幸存下来，但不得不戴上假肢，那是一个可能由铜片制成并用凡士林固定的假鼻子。</p>
+    
+    </div>
+    
+    <div class="page">
+        <p>丹麦国王为第谷提供了不少于两座天文台，即赫文岛上的乌拉尼堡和斯捷尔恩堡，第谷因此成为当时最伟大的观测天文学家。当时还没有望远镜——第谷用肉眼和大型壁挂式象限（如图5.3.4所示）观测天体。国王去世后，其继承人大大缩减了对第谷的资助，于是第谷接受了他的朋友海因里希·兰茨瑙（Heinrich Rantzau，1526-1598）[Oestmann 2004]的邀请，离开丹麦前往汉堡。然而，1599年他去了布拉格，成为帝国宫廷数学家。皇帝曾承诺为他建造一座新的天文台。</p>
+    
+        <p>由于开普勒没有观测用的天文仪器（而且考虑到他的视力缺陷，即使有仪器也无济于事），他依赖他人的观测数据。第谷赞扬了《宇宙的奥秘》，于是邀请开普勒来到布拉格。1601年初，我们发现开普勒在那里。然而，两人很快开始争吵并分道扬镳。第谷一直在寻找一个助手来帮助他处理计算数据。而开普勒则想亲手处理这位伟大天文学家的观测数据，但现在他不得不体验到，第谷不愿意让他参与。此外，所有数据都还是原始形式，完全未经处理。仅仅几周后，开普勒就从格拉茨写了一封道歉信给第谷，第谷接受了。开普勒于1600年10月16日与家人再次抵达布拉格。他患有疟疾和咳嗽。他又一次向他的前老师梅斯特林求助，恳求在图宾根找个职位——梅斯特林再次没有回应，而且在接下来的四年里也没有回应，尽管开普勒继续写信。</p>
+    
+        <p>他岳父的去世让他回到了格拉茨。他从格拉茨写信给皇帝鲁道夫二世，请求一个职位。皇帝命令第谷和开普勒计算新的行星表，第谷建议称之为“鲁道夫星表”（<span style="font-style: italic;">Tabulae Rudolphinae</span>）。皇帝在布拉格的洛雷托广场买了一栋房子，开普勒就住在那儿。但突然，第谷·布拉赫于1601年10月24日去世，死于严重的肾绞痛。近年来，在蒂恩教堂圣母堂打开第谷墓穴后，对其胡须进行了调查。这些通过现代分析方法进行的调查显示，其体内有大量的汞中毒，并且在一种难以忍受的“ concoction”中[Gilder 2005]。开普勒甚至被指控为第谷的谋杀犯。</p>
+    
+        <p>开普勒迅速拿到了第谷的数据资料，以防被继承人争夺；然而，争吵是不可避免的。皇帝任命开普勒为新的宫廷数学家，并命令他继续第谷的工作。开普勒立即开始研究火星的轨道。他也非常关注光学——当然也考虑到他自己的视力问题。在他1604年的著作《光学天文学论》（<span style="font-style: italic;">Ad Vitellionem paralipomena quibus astronomiae pars optica traditur</span>，关于维特洛的附录，其中涉及天文学的光学部分）中，开普勒也研究了人眼，发现视网膜上的图像是倒置的。他还能够解释近视和眼镜的功能。维特洛</p>
+    
+    </div>
+    
+    <div class="page">
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_11.png" alt="Fig. 5.3.4. Tycho Brahe with the mural quadrant from Astronomiae instauratae mechanica, Wandsbek 1598, later colouring. The image depicts Tycho Brahe working with a large mural quadrant inside an observatory-like building, with various other astronomical instruments and figures around him." style="max-width: 100%; height: auto;">
+            <p><b>图5.3.4.</b> 第谷·布拉赫与其《新天文学仪器》（<span style="font-style: italic;">Astronomiae instauratae mechanica</span>），万斯贝克，1598年的壁象限，后期上色</p>
+        </div>
+    
+        <p>（或维特洛）是13世纪的当代人，他约在1270年撰写了一本关于透视法的书，该书在开普勒时代重新流行。开普勒在1603年5月的一封信中写道 [Lemcke 1995, p. 61]：</p>
+    
+    
+    </div>
+    
+    <div class="page">
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_12.png" alt="Fig. 5.3.5. Rudolf II ([Painting about 1590 by Joseph Heintz the Elder] Kunsthistorisches Museum Wien) and in a [painting by G. Arcimboldo, 1590]. Left: Portrait of Rudolf II. Right: Painting by G. Arcimboldo composed of fruits and vegetables to form a face." style="max-width: 48%; height: auto; border: 1px solid #ccc;">
+            <p style="font-size: 0.85em; text-align: left; margin-top: 10px; width: 100%;"><b>图5.3.5.</b> 鲁道夫二世 ([小约瑟夫·海因茨约1590年画作] 维也纳艺术史博物馆) 和 [G. 阿尔钦博托1590年画作]</p>
+        </div>
+    
+    
+        <blockquote style="margin-left: 2em; border-left: 2px solid #ccc; padding-left: 1em;">
+            <p>我已着手研究棘手的光学；[……] 天哪，事情是多么黑暗啊！</p>
+            <p><span style="font-style: italic;">(Ich habe die dornenvolle Optik vorgenommen; [...] Guter Gott, wie dunkel ist die Sache!)</span></p>
+        </blockquote>
+    
+        <p>由于他在光学方面的研究，开普勒后来成为望远镜的科学教父之一。</p>
+    
+        <p>与此同时，火星轨道的研究仍在继续。他熟悉英国医生威廉·吉尔伯特（William Gilbert，1544-1603）的著作《论磁体》（<span style="font-style: italic;">De magnete</span>），该书于1600年出版。吉尔伯特认为磁力是使行星保持在其轨道上的力量，开普勒对这个想法非常着迷。他自问，太阳是否真的可以位于圆形行星轨道的中心，因为第谷的数据与圆形不符。既然所有生命都来自卵（这至少是开普勒的信念），上帝是否可能像母鸡下蛋一样创造了宇宙：行星的轨道可能是卵形的，太阳的位置就是卵黄所在的地方！开普勒需要整整一年的计算，直到1605年复活节才放弃卵形轨道，不得不接受椭圆形轨道，其中太阳位于两个焦点之一。因此，开普勒的第一定律诞生了。半径向量，即连接太阳与行星的直线段，在相等的时间内扫过相等面积，这对他来说也已经很清楚了。这确实是开普勒的第二定律。年初</p>
+    
+    </div>
+    
+    <div class="page">
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_13.png" alt="Fig. 5.3.6. Frontispiece of the Rudolphine Tabels 1627 [Engraving: Georg Keller following a design by Johannes Kepler]. A complex, multi-tiered structure with various figures and astronomical instruments, depicting ancient and contemporary astronomers, and a central table titled 'TABULAE RUDOLPHI ASTRONOMICA'." style="max-width: 100%; height: auto;">
+            <p><b>图5.3.6.</b> 鲁道夫星表1627年的卷首插画 [雕刻：格奥尔格·凯勒，根据约翰内斯·开普勒的设计]</p>
+        </div>
+    
+    </div>
+    
+    <div class="page">
+        <p>1606年完成了一本新书，《新天文学》（<span style="font-style: italic;">Astronomia nova</span>）[Kepler 2005b]。不幸的是，与第谷继承人的争吵和资金瓶颈阻碍了其出版，直到1609年。我们可以看到开普勒天文学著作中直觉、知识和补偿的近乎令人难以置信的结合，当我们考察他对第二定律的推导时，尤其明显。我们在此遵循[Edwards 1979, p. 100f.]。开普勒考虑了行星<span style="font-family: 'Times New Roman', serif;">P</span>绕太阳<span style="font-family: 'Times New Roman', serif;">S</span>运行的轨道。半径向量<span style="font-family: 'Times New Roman', serif;">r</span>如图5.3.7所示。点<span style="font-family: 'Times New Roman', serif;">P₁</span>和<span style="font-family: 'Times New Roman', serif;">P₂</span>分别是轨道的近日点和远日点（实际上是开普勒创造的词）。这两个点都称为拱点。开普勒时代的天文学家从观测中得知，在拱点处行星的速度满足</p>
+    
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">v₁ = </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>k</mn><mn>r<sub>1</sub></mn></mfrac></math>
+            <span style="font-family: 'Times New Roman', serif;">, v₂ = </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>k</mn><mn>r<sub>2</sub></mn></mfrac></math>
+        </p>
+    
+        <p>其中 <span style="font-family: 'Times New Roman', serif;">k</span> 是某个正因子。开普勒于是假设（他称之为“定理”）轨道上的任意位置都满足</p>
+    
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">v = </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>k</mn><mn>r</mn></mfrac></math>
+        </p>
+    
+        <p>这个假设是完全错误的！如果开普勒在椭圆轨道上的点 <span style="font-family: 'Times New Roman', serif;">P</span> 处画一条切线，一条平行于该切线并通过 <span style="font-family: 'Times New Roman', serif;">S</span> 的直线，并计算两条直线之间的距离 <span style="font-family: 'Times New Roman', serif;">R</span>，如图5.3.7所示，那么他就会得到正确的公式。那样的话，实际上是</p>
+    
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">v = </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>k</mn><mn>R</mn></mfrac></math>
+        </p>
+    
+        <p>成立。</p>
+    
+        <p>但是，让我们继续开普勒的计算。由于积分微积分尚未存在，开普勒不得不将行星轨道分成许多微小的角度差 <span style="font-family: 'Times New Roman', serif;">Δθ</span> 离散步，如图5.3.8所示。在每个离散步中，都经过一个弧长元素 <span style="font-family: 'Times New Roman', serif;">Δs</span>。</p>
+    
+        <p>众所周知，速度 = 距离/时间；因此在离散情况下</p>
+    
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">v<sub>i</sub> = </span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>Δs</mn><mn>t<sub>i</sub></mn></mfrac></math>
+          </p>
+        <div class="figure-container">
+        <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_23.png">
+      </div>
+    
+        <p>现在，根据开普勒的错误假设 <span style="font-family: 'Times New Roman', serif;">v<sub>i</sub> = k/r<sub>i</sub></span>，我们得到</p>
+    
+    </div>
+    
+    <div class="page">
+      <div class="figure-container">
+        <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_24.png">
+      </div>
+    
+        <p>开普勒写道 [Koestler 1989, p. 331f.]：</p>
+    
+        <blockquote style="margin-left: 2em; border-left: 2px solid #ccc; padding-left: 1em;">
+            <p>“既然我知道轨道上存在无限数量的点，因而存在无限数量的距离[从太阳]，我想到，这些距离的总和包含在轨道的面积中。我还记得，阿基米德也以同样的方式将一个圆的面积分成无限数量的三角形。”</p>
+        </blockquote>
+    
+        <p>显然，他指的是阿基米德将圆分成三角形的方法，参见2.3.16。轨道上两个包含半径向量之间的每一个微小离散部分——假设<span style="font-family: 'Times New Roman', serif;">Δs</span>很小——近似为一个直角三角形，如图5.3.8所示。这样一个三角形的面积是<span style="font-family: 'Times New Roman', serif;">½ r<sub>i</sub> · Δs</span>，因此轨道覆盖的总面积是</p>
+    
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_25.png">
+            <span style="float: right;">(5.3)</span>
+        </p>
+    
+        <p>结合(5.2)我们得到</p>
+    
+        <div class="figure-container">
+        <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_26.png">
+      </div>
+    
+        <p>其中 <span style="font-family: 'Times New Roman', serif;">h := k/2</span>。至此，开普勒的第二定律出现了：</p>
+    
+        <p style="text-align: center; font-size: 1.1em; margin: 1em 0;">
+            <span style="font-family: 'Times New Roman', serif;">A = h·t.</span>
+        </p>
+    
+        <div class="figure-container">
+            <img src="11_1 Indivisibles and Infinitesimals in the Renaissance_27.png">
+            <div class="figure-caption"><b>图5.3.7.</b> 关于行星绕太阳运行速度的正确计算示意图</div>
+        </div>
+    </div>
+        
+      
+    </div>
+    <footer>
+      
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B4/">数学分析三千年</a>
+  </div>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://colin4k.1979927.xyz/2025/06/21/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B409%EF%BC%9A%E4%B8%8D%E5%8F%AF%E5%88%86%E9%87%8F%E4%B8%8E%E6%97%A0%E7%A9%B7%E5%B0%8F%E9%87%8F%E5%9C%A8%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%E6%97%B6%E6%9C%9F/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="colin4k.1979927.xyz">
+  </form>
+</div>
+
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%89%E5%8D%83%E5%B9%B4/">数学分析三千年</a><small>9</small></li>
+  
+  </ul>
+</div>
+
+
+  
+  <div class="widget widget-archives">
+    <h3 class="title">归档</h3>
+    <div class="entry">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">六月 2025</a><span class="archive-list-count">10</span></li></ul>
+    </div>
+  </div>
+
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 Colin Zhu
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
